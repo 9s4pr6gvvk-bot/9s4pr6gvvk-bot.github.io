@@ -253,6 +253,33 @@ h1 .accent{color:#4da3ff;}
 .stat-n{font-family:'Syne',sans-serif;font-size:38px;font-weight:700;letter-spacing:-.02em;color:#f0ede8;display:block;margin-bottom:6px;}
 .stat-l{font-size:12px;letter-spacing:.08em;color:rgba(240,237,232,.3);text-transform:uppercase;}
 
+/* ABOUT OVERLAPPING PHOTOS */
+.about-photos{position:relative;margin-top:52px;height:260px;}
+.about-photo-main{
+  position:absolute;top:0;left:0;
+  width:68%;height:220px;
+  overflow:hidden;border-radius:6px;
+  box-shadow:0 24px 60px rgba(0,0,0,.5);
+  z-index:1;
+}
+.about-photo-main img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease;}
+.about-photo-main:hover img{transform:scale(1.04);}
+.about-photo-overlap{
+  position:absolute;bottom:0;right:0;
+  width:52%;height:180px;
+  overflow:hidden;border-radius:6px;
+  box-shadow:0 24px 60px rgba(0,0,0,.6);
+  border:3px solid #0a0a0a;
+  z-index:2;
+}
+.about-photo-overlap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease;}
+.about-photo-overlap:hover img{transform:scale(1.04);}
+@media(max-width:640px){
+  .about-photos{height:200px;}
+  .about-photo-main{width:72%;height:170px;}
+  .about-photo-overlap{width:56%;height:140px;}
+}
+
 /* SERVICES */
 .services-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px;}
 .services-head h2{font-family:'Syne',sans-serif;font-size:clamp(38px,4vw,54px);font-weight:700;letter-spacing:-.02em;line-height:1.05;}
@@ -620,10 +647,13 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
     <div class="about-body reveal">
       <p>Based in <strong>Huddersfield, West Yorkshire</strong>, Franks Media is a specialist creative studio delivering bespoke website design and aerial imaging for businesses across Yorkshire. From Huddersfield and Leeds to Bradford, Halifax, Wakefield and Sheffield — we give businesses a presence that commands attention online.</p>
       <p>Whether you need a high-performance business website, a full e-commerce solution, cinematic drone footage, or an interactive 3D property model, we bring the expertise to make it real — on time and on budget.</p>
-      <div class="stats-row">
-        <div class="stat"><span class="stat-n">CAA</span><span class="stat-l">Registered</span></div>
-        <div class="stat"><span class="stat-n">5★</span><span class="stat-l">Rated</span></div>
-        <div class="stat"><span class="stat-n">UK</span><span class="stat-l">Coverage</span></div>
+      <div class="about-photos">
+        <div class="about-photo-main">
+          <img src="https://cdn.prod.website-files.com/67f845f932f268860becd300/67f845f932f268860becd389_Franks%20(5).jpg" alt="Aerial photography Huddersfield">
+        </div>
+        <div class="about-photo-overlap">
+          <img src="https://i.postimg.cc/C10W7vX7/DJI-0151-(2).jpg" alt="Aerial drone photography">
+        </div>
       </div>
     </div>
   </div>
