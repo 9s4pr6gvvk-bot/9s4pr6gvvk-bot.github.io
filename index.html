@@ -355,6 +355,9 @@ a.service-item{color:inherit;}
 .work-panel:nth-child(2){top:110px;}
 .work-panel:nth-child(3){top:124px;}
 .work-panel:nth-child(4){top:138px;}
+.work-panel:nth-child(5){top:152px;}
+.work-panel:nth-child(6){top:166px;}
+.work-panel:nth-child(7){top:180px;}
 
 /* ghost index number */
 .work-panel::before{content:attr(data-index);position:absolute;top:-30px;right:26px;font-family:'Syne',sans-serif;font-size:230px;font-weight:800;line-height:1;letter-spacing:-.05em;color:rgba(255,255,255,.035);pointer-events:none;user-select:none;z-index:0;}
@@ -369,11 +372,6 @@ a.service-item{color:inherit;}
 .work-url svg{width:11px;height:11px;}
 .work-info>p{font-size:15px;line-height:1.8;color:rgba(240,237,232,.5);margin-bottom:28px;max-width:420px;}
 
-/* deliverables list — agency-style index list */
-.work-list{list-style:none;display:flex;flex-direction:column;margin-bottom:34px;max-width:420px;}
-.work-list li{display:flex;align-items:baseline;gap:14px;padding:11px 0;border-bottom:1px solid rgba(255,255,255,.06);font-size:13.5px;color:rgba(240,237,232,.6);}
-.work-list li:first-child{border-top:1px solid rgba(255,255,255,.06);}
-.work-list li i{font-style:normal;font-family:'Syne',sans-serif;font-size:10px;letter-spacing:.1em;color:rgba(0,87,168,.9);font-weight:700;flex-shrink:0;width:22px;}
 .work-cta{align-self:flex-start;}
 
 .work-visual{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;padding:48px 48px 48px 12px;background:radial-gradient(ellipse 70% 60% at 55% 50%,rgba(0,87,168,.14) 0%,transparent 70%);}
@@ -383,29 +381,39 @@ a.service-item{color:inherit;}
 .work-panel:hover .work-visual.is-wide img{transform:scale(1.1) translateY(-8px);}
 
 /* ============ CLIENT LOGOS ============ */
-.logos-strip{margin-top:96px;padding-top:56px;border-top:1px solid rgba(255,255,255,.07);}
-.logos-strip-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:34px;gap:24px;}
+/* LOGOS STRIP - full width */
+.logos-strip{margin-top:96px;padding-top:56px;border-top:1px solid rgba(255,255,255,.07);margin-left:calc(-56px);margin-right:calc(-56px);}
+.logos-strip-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:34px;gap:24px;padding:0 56px;}
 .logos-strip-label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(240,237,232,.3);}
 .logos-strip-hint{font-size:11px;letter-spacing:.06em;color:rgba(240,237,232,.18);}
-.logos-marquee{position:relative;overflow:hidden;padding:6px 0;}
-.logos-marquee::before,.logos-marquee::after{content:'';position:absolute;top:0;bottom:0;width:90px;z-index:2;pointer-events:none;}
+.logos-marquee{position:relative;overflow:hidden;padding:4px 0;}
+.logos-marquee::before,.logos-marquee::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none;}
 .logos-marquee::before{left:0;background:linear-gradient(to right,#0e0e0e,transparent);}
 .logos-marquee::after{right:0;background:linear-gradient(to left,#0e0e0e,transparent);}
-.logos-track{display:flex;align-items:stretch;width:max-content;animation:logos-scroll 30s linear infinite;}
+.logos-track{display:flex;align-items:stretch;width:max-content;animation:logos-scroll 36s linear infinite;}
 .logos-track:hover{animation-play-state:paused;}
-.logo-item{display:flex;align-items:center;justify-content:center;width:200px;height:104px;margin:0 14px;flex-shrink:0;border:1px solid rgba(255,255,255,.07);border-radius:12px;background:rgba(255,255,255,.02);transition:border-color .35s ease,background .35s ease;}
-.logo-item:hover{border-color:rgba(0,87,168,.55);background:rgba(255,255,255,.045);}
-.logo-item a{display:flex;align-items:center;justify-content:center;width:100%;height:100%;padding:20px 28px;}
-.logo-item img{max-width:100%;max-height:100%;object-fit:contain;filter:brightness(0) invert(1);opacity:.45;transition:opacity .35s ease,filter .35s ease;}
-.logo-item:hover img{filter:none;opacity:1;}
+.logo-item{display:flex;align-items:center;justify-content:center;width:250px;height:136px;flex-shrink:0;border-right:1px solid rgba(255,255,255,.07);background:transparent;transition:background .3s ease;padding:0;}
+.logo-item:first-child{border-left:1px solid rgba(255,255,255,.07);}
+.logo-item:hover{background:rgba(255,255,255,.04);}
+.logo-item a{display:flex;align-items:center;justify-content:center;width:100%;height:100%;padding:26px 40px;}
+.logo-item img{max-width:100%;max-height:100%;object-fit:contain;filter:brightness(0) invert(1);opacity:.4;transition:opacity .35s ease,filter .35s ease;}
+.logo-item:hover img{opacity:1;}
+.logo-item-kk img{filter:brightness(0) invert(1);opacity:.4;}
+.logo-item-kk:hover img{filter:brightness(0) invert(1);opacity:1;}
+.logo-item-clegg img{filter:brightness(1);opacity:.4;}
+.logo-item-clegg:hover img{filter:brightness(1);opacity:1;}
+.logo-item-ypct img{filter:grayscale(1) brightness(.8);opacity:.5;}
+.logo-item-ypct:hover img{filter:none;opacity:1;}
+.logo-item-mpc img{filter:brightness(0) invert(1);opacity:.4;}
+.logo-item-mpc:hover img{filter:none;opacity:1;}
 @keyframes logos-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
 @media(prefers-reduced-motion:reduce){.logos-track{animation:none;flex-wrap:wrap;width:auto;}}
 
 @media(max-width:1024px){
   .work-inner{padding:80px 30px;}
   .work-head{flex-direction:column;align-items:flex-start;gap:16px;margin-bottom:48px;}
-  .work-panel{grid-template-columns:1fr;min-height:0;}
-  .work-panel::before{font-size:150px;top:-16px;right:16px;}
+  .work-panel,.work-panel-soon{grid-template-columns:1fr;min-height:0;}
+  .work-panel::before,.work-panel-soon::before{font-size:150px;top:-16px;right:16px;}
   .work-visual{order:-1;padding:44px 36px 8px;}
   .work-visual img{max-height:300px;}
   .work-info{padding:36px 36px 48px;}
@@ -418,17 +426,39 @@ a.service-item{color:inherit;}
   .work-panel:nth-child(2){top:94px;}
   .work-panel:nth-child(3){top:104px;}
   .work-panel:nth-child(4){top:114px;}
+  .work-panel:nth-child(5){top:124px;}
+  .work-panel:nth-child(6){top:132px;}
+  .work-panel:nth-child(7){top:140px;}
   .work-visual{padding:32px 22px 4px;}
   .work-visual img{max-height:220px;}
   .work-info{padding:26px 22px 36px;}
   .work-info>p{font-size:14px;}
-  .work-list li{font-size:12.5px;padding:9px 0;}
   .work-cta{width:100%;justify-content:center;}
-  .logos-strip{margin-top:72px;padding-top:44px;}
-  .logo-item{width:150px;height:82px;margin:0 8px;}
-  .logo-item a{padding:16px 20px;}
+  .logos-strip{margin-top:72px;padding-top:44px;margin-left:-20px;margin-right:-20px;}
+  .logos-strip-head{padding:0 20px;}
+  .logo-item{width:140px;height:86px;}
+  .logo-item a{padding:18px 22px;}
 }
 
+
+/* COMING SOON PANEL */
+.work-panel-soon{position:sticky;top:166px;border-radius:18px;overflow:hidden;background:#131313;border:1px solid rgba(255,255,255,.08);min-height:520px;box-shadow:0 -20px 60px rgba(0,0,0,.45);display:grid;grid-template-columns:1fr 1.1fr 1.1fr;align-items:center;}
+.work-panel-soon::before{content:'06';position:absolute;top:-30px;right:26px;font-family:'Syne',sans-serif;font-size:230px;font-weight:800;line-height:1;letter-spacing:-.05em;color:rgba(255,255,255,.035);pointer-events:none;user-select:none;z-index:0;}
+.work-soon-title{position:relative;z-index:1;padding:64px 24px 64px 56px;display:flex;flex-direction:column;justify-content:center;gap:20px;}
+.work-soon-title h3{font-family:'Syne',sans-serif;font-size:clamp(28px,2.6vw,40px);font-weight:700;letter-spacing:-.02em;line-height:1.05;color:#f0ede8;}
+/* work-soon-devices wrapper removed */
+.work-soon-device{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;padding:48px 40px 48px 12px;background:radial-gradient(ellipse 70% 60% at 55% 50%,rgba(0,87,168,.14) 0%,transparent 70%);}
+.work-soon-device img{width:100%;height:auto;max-height:400px;object-fit:contain;filter:drop-shadow(0 30px 55px rgba(0,0,0,.55));transition:transform .6s cubic-bezier(.22,1,.36,1);}
+.work-panel-soon:hover .work-soon-device img{transform:translateY(-8px);}
+.work-soon-device.is-wide img{transform:scale(1.1);}
+.work-panel-soon:hover .work-soon-device.is-wide img{transform:scale(1.1) translateY(-8px);}
+@media(max-width:640px){
+  .work-panel-soon{grid-template-columns:1fr;min-height:0;top:132px;}
+  .work-panel-soon::before{font-size:150px;top:-16px;right:16px;}
+  .work-soon-title{padding:36px 36px 24px;}
+  .work-soon-devices{padding:8px 22px 36px;gap:0;}
+  .work-soon-device img{max-height:220px;}
+}
 
 /* TESTIMONIAL */
 .testimonial-outer{background:#0e0e0e;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);overflow:hidden;}
@@ -809,7 +839,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
     <div class="work-head reveal">
       <div>
         <div class="label-tag"><div class="label-tag-dot"></div> Web Design</div>
-        <h2>Selected <span class="dim">Work</span><sup>(04)</sup></h2>
+        <h2>Selected <span class="dim">Work</span><sup>(07)</sup></h2>
       </div>
       <p>Four businesses, four different worlds — each site built from scratch to earn its keep. Scroll through the deck.</p>
     </div>
@@ -823,13 +853,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
           <a href="https://www.bielbyassociates.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">bielbyassociates.co.uk
             <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
           </a>
-          <p>A five-star rebuild for a Yorkshire chartered surveying practice — clean structure and clear service pages designed to turn visitors into instructions. Bielby Associates now retain us to keep the site evolving as their business grows.</p>
-          <ul class="work-list">
-            <li><i>A</i>Bespoke design &amp; build</li>
-            <li><i>B</i>Copy &amp; content direction</li>
-            <li><i>C</i>Local SEO foundations</li>
-            <li><i>D</i>Ongoing retainer</li>
-          </ul>
+          <p>Bielby Associates needed a site that matched the calibre of their surveying work. We stripped back a dated web presence and replaced it with something sharp, structured and built to convert — clear service breakdowns, strong local search positioning and a layout that guides visitors straight to an enquiry. The firm now keeps us on retainer for ongoing updates.</p>
           <a href="https://www.bielbyassociates.co.uk" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
             Visit Live Site
             <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
@@ -847,13 +871,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
           <a href="https://www.resultsurveying.com" target="_blank" rel="noopener noreferrer" class="work-url">resultsurveying.com
             <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
           </a>
-          <p>A fast, mobile-first site for a residential and commercial building surveyor, built around clear explanations of services and a straightforward path to booking a survey.</p>
-          <ul class="work-list">
-            <li><i>A</i>Bespoke design &amp; build</li>
-            <li><i>B</i>Mobile-first architecture</li>
-            <li><i>C</i>Enquiry &amp; booking journeys</li>
-            <li><i>D</i>Performance optimisation</li>
-          </ul>
+          <p>Result Surveying’s previous site wasn’t keeping pace with the business. We rebuilt it mobile-first and speed-optimised — cutting load times in half and structuring the content so that homeowners and commercial clients can understand the services on offer and book a survey without friction.</p>
           <a href="https://www.resultsurveying.com" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
             Visit Live Site
             <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
@@ -871,13 +889,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
           <a href="https://www.t1assetmanagement.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">t1assetmanagement.co.uk
             <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
           </a>
-          <p>A restrained, credibility-first site for a financial services firm — precise typography, clear disclosures and messaging built for a client base that expects exactness.</p>
-          <ul class="work-list">
-            <li><i>A</i>Bespoke design &amp; build</li>
-            <li><i>B</i>Brand-led typography</li>
-            <li><i>C</i>Trust &amp; credibility focus</li>
-            <li><i>D</i>Compliance-ready content</li>
-          </ul>
+          <p>Financial services demands a different register — authority without arrogance, clarity without over-simplification. We designed T1’s site around understated typographic confidence, regulatory-ready disclosures and a tone of voice that speaks to high-net-worth individuals without talking down to them.</p>
           <a href="https://www.t1assetmanagement.co.uk" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
             Visit Live Site
             <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
@@ -895,13 +907,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
           <a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">mpcplastering-building.co.uk
             <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
           </a>
-          <p>A brand-new digital presence for a Yorkshire plastering and building contractor — built to turn local searches into quote requests, with a gallery that lets the workmanship speak for itself.</p>
-          <ul class="work-list">
-            <li><i>A</i>Bespoke design &amp; build</li>
-            <li><i>B</i>Quote-request journeys</li>
-            <li><i>C</i>Project gallery</li>
-            <li><i>D</i>Local SEO foundations</li>
-          </ul>
+          <p>MPC had word-of-mouth but no web presence. We gave them one — a clean, image-led site anchored around a project gallery and a fast quote-request journey. Strong local SEO means they now show up when homeowners across Yorkshire search for plastering and building work, not just when someone already has their number.</p>
           <a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
             Visit Live Site
             <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
@@ -911,6 +917,38 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
           <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/MPC%20Computer%20and%20phone.png" alt="MPC Plastering and Building website on desktop and mobile" loading="lazy">
         </div>
       </article>
+
+      <article class="work-panel" data-index="05">
+        <div class="work-info">
+          <div class="work-cat"><div class="badge-dot"></div><span>Charity &amp; Property Community</span></div>
+          <h3>Yorkshire Property Charity Trust</h3>
+          <a href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer" class="work-url">yorkshirepropertycharity.com
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+          </a>
+          <p>Founded in 2015, Yorkshire Property Charitable Trust raises and distributes funds to causes put forward by members of the Yorkshire property community. Having raised over £600,000 across the years, they needed a website that reflected that weight of impact — clear, professional and trusted. We built a site that communicates what the charity does, how to get involved, and why it matters.</p>
+          <a href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
+            Visit Live Site
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="work-visual is-wide">
+          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/YPCT%20COMPUTER%20AND%20PHONE%20(1).png" alt="Yorkshire Property Charity Trust website on desktop and mobile" loading="lazy">
+        </div>
+      </article>
+      <div class="work-panel-soon">
+        <div class="work-soon-title">
+          <div class="work-cat"><div class="badge-dot"></div><span>Coming Soon</span></div>
+          <h3>More Work<br>Dropping Soon.</h3>
+        </div>
+        <div class="work-soon-devices">
+          <div class="work-soon-device is-wide">
+            <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/Knapton%20COMPUTER%20AND%20PHONE%20(1).png" alt="Knapton & Knapton website preview" loading="lazy">
+          </div>
+          <div class="work-soon-device is-wide">
+            <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/Clegg%20COMPUTER%20AND%20PHONE%20(1).png" alt="Clegg Joinery website preview" loading="lazy">
+          </div>
+        </div>
+      </div>
 
     </div>
 
@@ -924,11 +962,19 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
           <div class="logo-item"><a href="https://www.bielbyassociates.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Bielby Associates"><img src="https://images.squarespace-cdn.com/content/v1/68e96700e97e214d978494dd/fcb69960-7cc0-4864-9e06-f41306644dfb/Final+Black+logo.bmp.png?format=1500w" alt="Bielby Associates"></a></div>
           <div class="logo-item"><a href="https://www.resultsurveying.com" target="_blank" rel="noopener noreferrer" aria-label="Result Surveying"><img src="https://images.squarespace-cdn.com/content/v1/691f70804af57b769fcaa963/eeb58a8d-3fad-47c0-96b1-d0ab02ebbe7a/result-logo+%281%29.png?format=1500w" alt="Result Surveying"></a></div>
           <div class="logo-item"><a href="https://www.t1assetmanagement.co.uk" target="_blank" rel="noopener noreferrer" aria-label="T1 Asset Management"><img src="https://images.squarespace-cdn.com/content/v1/601fd0787b0ff91513ebe340/a4fbaec7-8c0d-427b-9f85-bc15ee43844e/Monochrome+on+Transparent.png?format=1500w" alt="T1 Asset Management"></a></div>
-          <div class="logo-item"><a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" aria-label="MPC Plastering and Building"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/MPC%20Transparent%20logo.png" alt="MPC Plastering and Building"></a></div>
+          <div class="logo-item logo-item-mpc"><a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" aria-label="MPC Plastering and Building"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/MPC%20Transparent%20logo.png" alt="MPC Plastering and Building"></a></div>
+          <div class="logo-item logo-item-ypct"><a href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer" aria-label="Yorkshire Property Charity Trust"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/YPCT-01.png" alt="Yorkshire Property Charity Trust"></a></div>
+          <div class="logo-item logo-item-kk"><a href="https://www.knaptonandknapton.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Knapton &amp; Knapton"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/k-k/refs/heads/main/KK%20Logo%202%20(1)1%20(1).png" alt="Knapton &amp; Knapton"></a></div>
+          <div class="logo-item logo-item-clegg"><a href="#" aria-label="Clegg Joinery"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/CLEGG%20PNG.png" alt="Clegg Joinery"></a></div>
+
           <div class="logo-item"><a href="https://www.bielbyassociates.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Bielby Associates"><img src="https://images.squarespace-cdn.com/content/v1/68e96700e97e214d978494dd/fcb69960-7cc0-4864-9e06-f41306644dfb/Final+Black+logo.bmp.png?format=1500w" alt="Bielby Associates"></a></div>
           <div class="logo-item"><a href="https://www.resultsurveying.com" target="_blank" rel="noopener noreferrer" aria-label="Result Surveying"><img src="https://images.squarespace-cdn.com/content/v1/691f70804af57b769fcaa963/eeb58a8d-3fad-47c0-96b1-d0ab02ebbe7a/result-logo+%281%29.png?format=1500w" alt="Result Surveying"></a></div>
           <div class="logo-item"><a href="https://www.t1assetmanagement.co.uk" target="_blank" rel="noopener noreferrer" aria-label="T1 Asset Management"><img src="https://images.squarespace-cdn.com/content/v1/601fd0787b0ff91513ebe340/a4fbaec7-8c0d-427b-9f85-bc15ee43844e/Monochrome+on+Transparent.png?format=1500w" alt="T1 Asset Management"></a></div>
-          <div class="logo-item"><a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" aria-label="MPC Plastering and Building"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/MPC%20Transparent%20logo.png" alt="MPC Plastering and Building"></a></div>
+          <div class="logo-item logo-item-mpc"><a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" aria-label="MPC Plastering and Building"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/MPC%20Transparent%20logo.png" alt="MPC Plastering and Building"></a></div>
+          <div class="logo-item logo-item-ypct"><a href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer" aria-label="Yorkshire Property Charity Trust"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/YPCT-01.png" alt="Yorkshire Property Charity Trust"></a></div>
+          <div class="logo-item logo-item-kk"><a href="https://www.knaptonandknapton.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Knapton &amp; Knapton"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/k-k/refs/heads/main/KK%20Logo%202%20(1)1%20(1).png" alt="Knapton &amp; Knapton"></a></div>
+          <div class="logo-item logo-item-clegg"><a href="#" aria-label="Clegg Joinery"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/CLEGG%20PNG.png" alt="Clegg Joinery"></a></div>
+
         </div>
       </div>
     </div>
