@@ -413,8 +413,8 @@ a.service-item{color:inherit;}
 @media(max-width:1024px){
   .work-inner{padding:80px 30px;}
   .work-head{flex-direction:column;align-items:flex-start;gap:16px;margin-bottom:48px;}
-  .work-panel,.work-panel-soon{grid-template-columns:1fr;min-height:0;}
-  .work-panel::before,.work-panel-soon::before{font-size:150px;top:-16px;right:16px;}
+  .work-panel{grid-template-columns:1fr;min-height:0;}
+  .work-panel::before{font-size:150px;top:-16px;right:16px;}
   .work-visual{order:-1;padding:44px 36px 8px;}
   .work-visual img{max-height:300px;}
   .work-info{padding:36px 36px 48px;}
@@ -443,24 +443,6 @@ a.service-item{color:inherit;}
 }
 
 
-/* COMING SOON PANEL */
-.work-panel-soon{position:sticky;top:194px;border-radius:18px;overflow:hidden;background:#131313;border:1px solid rgba(255,255,255,.08);min-height:520px;box-shadow:0 -20px 60px rgba(0,0,0,.45);display:grid;grid-template-columns:1fr 1.1fr;align-items:center;}
-.work-panel-soon::before{content:'07';position:absolute;top:-30px;right:26px;font-family:'Syne',sans-serif;font-size:230px;font-weight:800;line-height:1;letter-spacing:-.05em;color:rgba(255,255,255,.035);pointer-events:none;user-select:none;z-index:0;}
-.work-soon-title{position:relative;z-index:1;padding:64px 24px 64px 56px;display:flex;flex-direction:column;justify-content:center;gap:20px;}
-.work-soon-title h3{font-family:'Syne',sans-serif;font-size:clamp(28px,2.6vw,40px);font-weight:700;letter-spacing:-.02em;line-height:1.05;color:#f0ede8;}
-/* work-soon-devices wrapper removed */
-.work-soon-device{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;padding:48px 40px 48px 12px;background:radial-gradient(ellipse 70% 60% at 55% 50%,rgba(0,87,168,.14) 0%,transparent 70%);}
-.work-soon-device img{width:100%;height:auto;max-height:400px;object-fit:contain;filter:drop-shadow(0 30px 55px rgba(0,0,0,.55));transition:transform .6s cubic-bezier(.22,1,.36,1);}
-.work-panel-soon:hover .work-soon-device img{transform:translateY(-8px);}
-.work-soon-device.is-wide img{transform:scale(1.1);}
-.work-panel-soon:hover .work-soon-device.is-wide img{transform:scale(1.1) translateY(-8px);}
-@media(max-width:640px){
-  .work-panel-soon{grid-template-columns:1fr;min-height:0;top:148px;}
-  .work-panel-soon::before{font-size:150px;top:-16px;right:16px;}
-  .work-soon-title{padding:36px 36px 24px;}
-  .work-soon-devices{padding:8px 22px 36px;gap:0;}
-  .work-soon-device img{max-height:220px;}
-}
 
 /* TESTIMONIAL */
 .testimonial-outer{background:#0e0e0e;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);overflow:hidden;}
@@ -742,7 +724,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
     <div class="work-head reveal">
       <div>
         <div class="label-tag"><div class="label-tag-dot"></div> Web Design</div>
-        <h2>Selected <span class="dim">Work</span><sup>(08)</sup></h2>
+        <h2>Selected <span class="dim">Work</span><sup>(07)</sup></h2>
       </div>
       <p>Seven projects, seven different briefs. Each site built from scratch to earn its keep.</p>
     </div>
@@ -856,15 +838,23 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
         </div>
       </article>
 
-      <div class="work-panel-soon">
-        <div class="work-soon-title">
-          <div class="work-cat"><div class="badge-dot"></div><span>Coming Soon</span></div>
-          <h3>More Work<br>Dropping Soon.</h3>
+      <article class="work-panel" data-index="07">
+        <div class="work-info">
+          <div class="work-cat"><div class="badge-dot"></div><span>Joinery &amp; Carpentry</span></div>
+          <h3>Clegg Joinery</h3>
+          <a href="https://www.cleggjoinery.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">cleggjoinery.co.uk
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+          </a>
+          <p>A full brand and web build from the ground up. We designed the Clegg Joinery logo first, then carried that identity through into a site built to show the standard of the joinery itself. Clean galleries, clear services and a direct route to a quote for homeowners and contractors across Yorkshire.</p>
+          <a href="https://www.cleggjoinery.co.uk" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
+            Visit Live Site
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+          </a>
         </div>
-        <div class="work-soon-device is-wide">
-          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/Clegg%20COMPUTER%20AND%20PHONE%20(1).png" alt="Clegg Joinery website preview" loading="lazy">
+        <div class="work-visual is-wide">
+          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/Clegg%20COMPUTER%20AND%20PHONE%20(1).png" alt="Clegg Joinery website on desktop and mobile" loading="lazy">
         </div>
-      </div>
+      </article>
 
     </div>
 
@@ -881,7 +871,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
           <div class="logo-item logo-item-mpc"><a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" aria-label="MPC Plastering and Building"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/MPC%20Transparent%20logo.png" alt="MPC Plastering and Building"></a></div>
           <div class="logo-item logo-item-ypct"><a href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer" aria-label="Yorkshire Property Charity Trust"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/YPCT-01.png" alt="Yorkshire Property Charity Trust"></a></div>
           <div class="logo-item logo-item-kk"><a href="https://www.knaptonandknapton.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Knapton &amp; Knapton"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/k-k/refs/heads/main/KK%20Logo%202%20(1)1%20(1).png" alt="Knapton &amp; Knapton"></a></div>
-          <div class="logo-item logo-item-clegg"><a href="#" aria-label="Clegg Joinery"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/CLEGG%20PNG.png" alt="Clegg Joinery"></a></div>
+          <div class="logo-item logo-item-clegg"><a href="https://www.cleggjoinery.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Clegg Joinery"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/CLEGG%20PNG.png" alt="Clegg Joinery"></a></div>
 
           <div class="logo-item"><a href="https://www.bielbyassociates.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Bielby Associates"><img src="https://images.squarespace-cdn.com/content/v1/68e96700e97e214d978494dd/fcb69960-7cc0-4864-9e06-f41306644dfb/Final+Black+logo.bmp.png?format=1500w" alt="Bielby Associates"></a></div>
           <div class="logo-item"><a href="https://www.resultsurveying.com" target="_blank" rel="noopener noreferrer" aria-label="Result Surveying"><img src="https://images.squarespace-cdn.com/content/v1/691f70804af57b769fcaa963/eeb58a8d-3fad-47c0-96b1-d0ab02ebbe7a/result-logo+%281%29.png?format=1500w" alt="Result Surveying"></a></div>
@@ -889,7 +879,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
           <div class="logo-item logo-item-mpc"><a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" aria-label="MPC Plastering and Building"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/MPC%20Transparent%20logo.png" alt="MPC Plastering and Building"></a></div>
           <div class="logo-item logo-item-ypct"><a href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer" aria-label="Yorkshire Property Charity Trust"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/YPCT-01.png" alt="Yorkshire Property Charity Trust"></a></div>
           <div class="logo-item logo-item-kk"><a href="https://www.knaptonandknapton.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Knapton &amp; Knapton"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/k-k/refs/heads/main/KK%20Logo%202%20(1)1%20(1).png" alt="Knapton &amp; Knapton"></a></div>
-          <div class="logo-item logo-item-clegg"><a href="#" aria-label="Clegg Joinery"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/CLEGG%20PNG.png" alt="Clegg Joinery"></a></div>
+          <div class="logo-item logo-item-clegg"><a href="https://www.cleggjoinery.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Clegg Joinery"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/CLEGG%20PNG.png" alt="Clegg Joinery"></a></div>
 
         </div>
       </div>
