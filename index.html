@@ -380,6 +380,8 @@ a.service-item{color:inherit;}
 .work-panel:hover .work-visual img{transform:translateY(-8px);}
 .work-visual.is-wide img{transform:scale(1.1);}
 .work-panel:hover .work-visual.is-wide img{transform:scale(1.1) translateY(-8px);}
+.work-visual.is-wider img{transform:scale(1.42) translateY(-6%);}
+.work-panel:hover .work-visual.is-wider img{transform:scale(1.42) translateY(calc(-6% - 8px));}
 
 /* ============ CLIENT LOGOS ============ */
 /* LOGOS STRIP - full width */
@@ -442,8 +444,6 @@ a.service-item{color:inherit;}
   .logo-item a{padding:18px 22px;}
 }
 
-
-
 /* TESTIMONIAL */
 .testimonial-outer{background:#0e0e0e;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);overflow:hidden;}
 .testimonial-inner{max-width:1320px;margin:0 auto;padding:100px 56px;display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;}
@@ -504,7 +504,6 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
 .slider-btn{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#f0ede8;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .25s,border-color .25s;}
 .slider-btn:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3);}
 .slider-btn svg{width:14px;height:14px;}
-
 
 /* CONTACT MODAL */
 .modal-overlay{position:fixed;inset:0;z-index:999;background:rgba(0,0,0,.75);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .35s ease;}
@@ -733,6 +732,24 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
 
       <article class="work-panel" data-index="01">
         <div class="work-info">
+          <div class="work-cat"><div class="badge-dot"></div><span>Rent Review Specialist</span></div>
+          <h3>T1 Asset Management</h3>
+          <a href="https://www.t1assetmanagement.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">t1assetmanagement.co.uk
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+          </a>
+          <p>A refined, authoritative online presence for T1 Asset Management, conveying trust and professionalism to prospective clients from the first visit.</p>
+          <a href="https://www.t1assetmanagement.co.uk" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
+            Visit Live Site
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="work-visual is-wider">
+          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/T1%20phone%20and%20computer%20new%20transparent.png" alt="T1 Asset Management website on desktop and mobile" loading="lazy">
+        </div>
+      </article>
+
+      <article class="work-panel" data-index="02">
+        <div class="work-info">
           <div class="work-cat"><div class="badge-dot"></div><span>Chartered Surveyors</span></div>
           <h3>Bielby Associates</h3>
           <a href="https://www.bielbyassociates.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">bielbyassociates.co.uk
@@ -749,96 +766,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
         </div>
       </article>
 
-      <article class="work-panel" data-index="02">
-        <div class="work-info">
-          <div class="work-cat"><div class="badge-dot"></div><span>Building Surveying</span></div>
-          <h3>Result Surveying</h3>
-          <a href="https://www.resultsurveying.com" target="_blank" rel="noopener noreferrer" class="work-url">resultsurveying.com
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-          <p>Result Surveying’s previous site wasn’t keeping pace with the business. We rebuilt it mobile-first and speed-optimised cutting load times in half and structuring the content so that homeowners and commercial clients can understand the services on offer and book a survey without friction.</p>
-          <a href="https://www.resultsurveying.com" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
-            Visit Live Site
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="work-visual">
-          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/Result-Surveying-Website-Launch-PNG-(1).png" alt="Result Surveying website on desktop and mobile" loading="lazy">
-        </div>
-      </article>
-
       <article class="work-panel" data-index="03">
-        <div class="work-info">
-          <div class="work-cat"><div class="badge-dot"></div><span>Rent Review Specialist</span></div>
-          <h3>T1 Asset Management</h3>
-          <a href="https://www.t1assetmanagement.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">t1assetmanagement.co.uk
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-          <p>A refined, authoritative online presence for T1 Asset Management, conveying trust and professionalism to prospective clients from the first visit.</p>
-          <a href="https://www.t1assetmanagement.co.uk" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
-            Visit Live Site
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="work-visual">
-          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/d1c48c081b2747a544e432218781bf75252e4eb1/T1%20Asset%20Management%20Website%20Launch%20(1).png" alt="T1 Asset Management website on desktop and mobile" loading="lazy">
-        </div>
-      </article>
-
-      <article class="work-panel" data-index="04">
-        <div class="work-info">
-          <div class="work-cat"><div class="badge-dot"></div><span>Plastering &amp; Building</span></div>
-          <h3>MPC Plastering &amp; Building</h3>
-          <a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">mpcplastering-building.co.uk
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-          <p>MPC had word-of-mouth but no web presence. We gave them one a clean, image-led site anchored around a project gallery and a fast quote-request journey. Strong local SEO means they now show up when homeowners across Yorkshire search for plastering and building work, not just when someone already has their number.</p>
-          <a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
-            Visit Live Site
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="work-visual is-wide">
-          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/MPC%20Computer%20and%20phone.png" alt="MPC Plastering and Building website on desktop and mobile" loading="lazy">
-        </div>
-      </article>
-
-      <article class="work-panel" data-index="05">
-        <div class="work-info">
-          <div class="work-cat"><div class="badge-dot"></div><span>Charity &amp; Property Community</span></div>
-          <h3>Yorkshire Property Charity Trust</h3>
-          <a href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer" class="work-url">yorkshirepropertycharity.com
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-          <p>Founded in 2015, Yorkshire Property Charitable Trust has raised over £600,000 for causes put forward by the Yorkshire property community. They needed a site that matched that track record clear, professional and trusted. We built one.</p>
-          <a href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
-            Visit Live Site
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="work-visual is-wide">
-          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/YPCT%20COMPUTER%20AND%20PHONE%20(1).png" alt="Yorkshire Property Charity Trust website on desktop and mobile" loading="lazy">
-        </div>
-      </article>
-      <article class="work-panel" data-index="06">
-        <div class="work-info">
-          <div class="work-cat"><div class="badge-dot"></div><span>Architectural Consultancy</span></div>
-          <h3>Knapton &amp; Knapton</h3>
-          <a href="https://www.knaptonandknapton.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">knaptonandknapton.co.uk
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-          <p>Knapton &amp; Knapton needed a web presence that matched the precision and craft of their architectural work. We built a clean, considered site that puts their projects front and centre letting the work speak, with a structure that makes it straightforward for prospective clients to understand the practice and get in touch.</p>
-          <a href="https://www.knaptonandknapton.co.uk" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
-            Visit Live Site
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="work-visual is-wide">
-          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/Knapton%20COMPUTER%20AND%20PHONE%20(1).png" alt="Knapton and Knapton website on desktop and mobile" loading="lazy">
-        </div>
-      </article>
-
-      <article class="work-panel" data-index="07">
         <div class="work-info">
           <div class="work-cat"><div class="badge-dot"></div><span>Joinery &amp; Carpentry</span></div>
           <h3>Clegg Joinery</h3>
@@ -856,6 +784,77 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
         </div>
       </article>
 
+      <article class="work-panel" data-index="04">
+        <div class="work-info">
+          <div class="work-cat"><div class="badge-dot"></div><span>Architectural Consultancy</span></div>
+          <h3>Knapton &amp; Knapton</h3>
+          <a href="https://www.knaptonandknapton.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">knaptonandknapton.co.uk
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+          </a>
+          <p>Knapton &amp; Knapton needed a web presence that matched the precision and craft of their architectural work. We built a clean, considered site that puts their projects front and centre letting the work speak, with a structure that makes it straightforward for prospective clients to understand the practice and get in touch.</p>
+          <a href="https://www.knaptonandknapton.co.uk" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
+            Visit Live Site
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="work-visual is-wide">
+          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/Knapton%20COMPUTER%20AND%20PHONE%20(1).png" alt="Knapton and Knapton website on desktop and mobile" loading="lazy">
+        </div>
+      </article>
+
+      <article class="work-panel" data-index="05">
+        <div class="work-info">
+          <div class="work-cat"><div class="badge-dot"></div><span>Plastering &amp; Building</span></div>
+          <h3>MPC Plastering &amp; Building</h3>
+          <a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">mpcplastering-building.co.uk
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+          </a>
+          <p>MPC had word-of-mouth but no web presence. We gave them one a clean, image-led site anchored around a project gallery and a fast quote-request journey. Strong local SEO means they now show up when homeowners across Yorkshire search for plastering and building work, not just when someone already has their number.</p>
+          <a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
+            Visit Live Site
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="work-visual is-wide">
+          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/MPC%20Computer%20and%20phone.png" alt="MPC Plastering and Building website on desktop and mobile" loading="lazy">
+        </div>
+      </article>
+
+      <article class="work-panel" data-index="06">
+        <div class="work-info">
+          <div class="work-cat"><div class="badge-dot"></div><span>Building Surveying</span></div>
+          <h3>Result Surveying</h3>
+          <a href="https://www.resultsurveying.com" target="_blank" rel="noopener noreferrer" class="work-url">resultsurveying.com
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+          </a>
+          <p>Result Surveying’s previous site wasn’t keeping pace with the business. We rebuilt it mobile-first and speed-optimised cutting load times in half and structuring the content so that homeowners and commercial clients can understand the services on offer and book a survey without friction.</p>
+          <a href="https://www.resultsurveying.com" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
+            Visit Live Site
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="work-visual">
+          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/Result-Surveying-Website-Launch-PNG-(1).png" alt="Result Surveying website on desktop and mobile" loading="lazy">
+        </div>
+      </article>
+
+      <article class="work-panel" data-index="07">
+        <div class="work-info">
+          <div class="work-cat"><div class="badge-dot"></div><span>Charity &amp; Property Community</span></div>
+          <h3>Yorkshire Property Charity Trust</h3>
+          <a href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer" class="work-url">yorkshirepropertycharity.com
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+          </a>
+          <p>Founded in 2015, Yorkshire Property Charitable Trust has raised over £600,000 for causes put forward by the Yorkshire property community. They needed a site that matched that track record clear, professional and trusted. We built one.</p>
+          <a href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
+            Visit Live Site
+            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="work-visual is-wide">
+          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/YPCT%20COMPUTER%20AND%20PHONE%20(1).png" alt="Yorkshire Property Charity Trust website on desktop and mobile" loading="lazy">
+        </div>
+      </article>
     </div>
 
     <div class="logos-strip reveal">
@@ -886,9 +885,6 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
     </div>
   </div>
 </div>
-
-
-
 
 <!-- FEATURE -->
 <div class="feature-outer">
