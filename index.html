@@ -2,6 +2,28 @@
 <html lang="en-GB">
 <head>
 <meta charset="UTF-8">
+<!-- Google tag (gtag.js) with consent gating -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {'analytics_storage':'denied','ad_storage':'denied'});
+  window.__GA_ID = "G-V8N1Y72KV0";
+  window.__loadGA = function(){
+    if (window.__gaLoaded) return; window.__gaLoaded = true;
+    var s = document.createElement("script"); s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + window.__GA_ID;
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag("config", window.__GA_ID);
+  };
+  (function(){
+    var c = null; try { c = localStorage.getItem("fm_cookie_consent"); } catch(e){}
+    if (c === "accepted") {
+      gtag('consent', 'update', {'analytics_storage':'granted'});
+      window.__loadGA();
+    }
+  })();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- PRIMARY SEO -->
@@ -141,6 +163,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+:root{
+  --sans-fallback:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
+  --accent:#0057A8;--accent-bright:#4da3ff;
+  --ease:cubic-bezier(.22,.61,.36,1);--ease-io:cubic-bezier(.65,.05,.36,1);
+  --shadow-md:0 2px 6px rgba(0,0,0,.28),0 18px 40px -20px rgba(0,0,0,.55);
+  --shadow-lg:0 4px 12px rgba(0,0,0,.3),0 40px 80px -32px rgba(0,0,0,.7);
+}
 html{scroll-behavior:smooth;}
 body{background:#0a0a0a;color:#f0ede8;font-family:'Outfit',sans-serif;font-weight:300;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
 a{text-decoration:none;color:inherit;}
@@ -280,23 +309,26 @@ h1 .accent{color:#4da3ff;}
 .services-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px;}
 .services-head h2{font-family:'Syne',sans-serif;font-size:clamp(38px,4vw,54px);font-weight:700;letter-spacing:-.02em;line-height:1.05;}
 .services-head p{font-size:15px;line-height:1.75;color:rgba(240,237,232,.4);max-width:340px;justify-self:end;align-self:end;}
-.service-list{display:flex;flex-direction:column;}
+.service-list{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
 a.service-item{color:inherit;}
 .service-item{
-  display:grid;grid-template-columns:60px 1fr auto;align-items:center;gap:32px;
-  padding:36px 0 36px 20px;border-bottom:1px solid rgba(255,255,255,.07);
-  transition:padding-left .35s;position:relative;overflow:hidden;
+  position:relative;display:flex;flex-direction:column;height:100%;
+  padding:38px 32px 34px;border:1px solid rgba(255,255,255,.09);border-radius:14px;background:#111;
+  transition:border-color .42s cubic-bezier(.22,.61,.36,1),transform .62s cubic-bezier(.22,.61,.36,1),box-shadow .62s cubic-bezier(.22,.61,.36,1);overflow:hidden;
 }
-.service-item::before{content:'';position:absolute;left:0;top:0;bottom:0;width:0;background:#0057A8;transition:width .4s ease;z-index:0;}
-.service-item:hover::before{width:3px;}
-.service-item > *{position:relative;z-index:1;}
-.si-num{font-family:'Syne',sans-serif;font-size:13px;letter-spacing:.08em;color:rgba(240,237,232,.2);font-weight:600;}
-.si-body h3{font-family:'Syne',sans-serif;font-size:20px;font-weight:600;letter-spacing:-.01em;margin-bottom:8px;color:#f0ede8;transition:color .25s;}
+.service-item::before{content:'';position:absolute;left:0;top:0;right:0;height:0;background:#0057A8;transition:height .4s ease;}
+.service-item:hover{border-color:rgba(255,255,255,.22);transform:translateY(-6px);box-shadow:0 4px 12px rgba(0,0,0,.3),0 40px 80px -32px rgba(0,0,0,.7);}
+.service-item:hover::before{height:3px;}
+.si-num{font-family:'Syne',sans-serif;font-size:12px;letter-spacing:.16em;color:rgba(77,163,255,.85);font-weight:600;margin-bottom:22px;}
+.si-body{display:flex;flex-direction:column;flex:1;}
+.si-body h3{font-family:'Syne',sans-serif;font-size:22px;font-weight:600;letter-spacing:-.015em;line-height:1.18;margin-bottom:14px;color:#f0ede8;transition:color .25s;}
 .service-item:hover .si-body h3{color:#4da3ff;}
-.si-body p{font-size:14px;line-height:1.7;color:rgba(240,237,232,.38);}
-.si-arrow{width:40px;height:40px;border:1px solid rgba(255,255,255,.1);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:rgba(240,237,232,.3);transition:all .3s;}
+.si-body p{font-size:14px;line-height:1.7;color:rgba(240,237,232,.42);}
+.si-link{margin-top:auto;padding-top:26px;}
+.si-arrow{position:absolute;top:34px;right:28px;width:38px;height:38px;border:1px solid rgba(255,255,255,.12);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:rgba(240,237,232,.3);transition:all .3s;}
 .service-item:hover .si-arrow{border-color:#0057A8;color:#4da3ff;transform:rotate(-45deg);}
-.si-arrow svg{width:15px;height:15px;}
+.si-arrow svg{width:14px;height:14px;}
+@media(max-width:960px){.service-list{grid-template-columns:1fr;}}
 /* Blue sublink used in service items */
 .si-link{display:inline-flex;align-items:center;gap:7px;margin-top:12px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#4da3ff;font-weight:500;border-bottom:1px solid rgba(77,163,255,.3);padding-bottom:2px;}
 .si-link svg{width:10px;height:10px;}
@@ -457,13 +489,18 @@ a.service-item{color:inherit;}
 .t-role{font-size:12px;color:rgba(240,237,232,.35);margin-top:3px;letter-spacing:.04em;}
 
 /* CTA */
-.cta-wrap{background:#0057A8;padding:100px 56px;position:relative;overflow:hidden;}
-.cta-bg-txt{position:absolute;font-family:'Syne',sans-serif;font-size:240px;font-weight:800;color:rgba(255,255,255,.06);line-height:1;letter-spacing:-.04em;top:50%;left:50%;transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none;user-select:none;}
-.cta-inner{position:relative;z-index:1;max-width:1320px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:60px;}
-.cta-inner h2{font-family:'Syne',sans-serif;font-size:clamp(36px,5vw,64px);font-weight:800;letter-spacing:-.03em;line-height:1.0;color:#fff;max-width:600px;}
-.cta-right{flex-shrink:0;display:flex;flex-direction:column;gap:16px;align-items:flex-start;}
-.cta-right p{font-size:15px;color:rgba(255,255,255,.65);line-height:1.6;max-width:260px;}
-.btn-outline-white{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6);font-weight:500;border-bottom:1px solid rgba(255,255,255,.3);padding-bottom:2px;transition:color .25s,border-color .25s;font-family:'Outfit',sans-serif;}
+.cta-wrap{position:relative;padding:170px 56px;min-height:600px;display:flex;align-items:center;overflow:hidden;background:#0a0a0a;}
+.cta-wrap::before{content:'';position:absolute;inset:0;background:url('https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/Copy%20of%20Franks%20(1).jpg') center/cover no-repeat;transform:scale(1.02);z-index:0;}
+.cta-wrap::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(8,8,8,.72) 0%,rgba(8,8,8,.42) 45%,rgba(8,10,14,.18) 100%),linear-gradient(to top,rgba(8,8,8,.55) 0%,transparent 40%);}
+.cta-eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:26px;}
+.cta-eyebrow-line{width:30px;height:1px;background:#4da3ff;}
+.cta-eyebrow span{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(240,237,232,.75);font-weight:400;}
+.cta-inner{position:relative;z-index:2;width:100%;max-width:1320px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;gap:90px;}
+.cta-left{max-width:700px;}
+.cta-inner h2{font-family:'Syne',sans-serif;font-size:clamp(40px,5.6vw,72px);font-weight:700;letter-spacing:-.03em;line-height:1.0;color:#fff;text-shadow:0 2px 30px rgba(0,0,0,.35);}
+.cta-right{flex-shrink:0;display:flex;flex-direction:column;gap:18px;align-items:flex-start;padding-bottom:6px;}
+.cta-right p{font-size:15px;color:rgba(240,237,232,.82);line-height:1.65;max-width:280px;text-shadow:0 1px 12px rgba(0,0,0,.5);}
+.btn-outline-white{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.72);font-weight:500;border-bottom:1px solid rgba(255,255,255,.35);padding-bottom:2px;transition:color .25s,border-color .25s;font-family:'Outfit',sans-serif;}
 .btn-outline-white:hover{color:#fff;border-color:rgba(255,255,255,.8);}
 .btn-outline-white svg{width:11px;height:11px;}
 
@@ -691,8 +728,8 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
     <a href="drone-photography.html" class="service-item reveal">
       <span class="si-num">02</span>
       <div class="si-body">
-        <h3>Drone Photography &amp; Cinematography</h3>
-        <p>CAA Registered drone photography and videography for estate agents, chartered surveyors, property developers, construction firms, tourism operators and more. Stunning imagery that sets your listings and marketing apart.</p>
+        <h3>Drone Photography</h3>
+        <p>CAA Registered drone photography paired with precise 3D perspectives and interactive models. For estate agents, surveyors, developers and tourism operators who want imagery and spatial detail that photography alone cannot capture.</p>
         <span class="si-link">
           View drone photography services
           <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
@@ -702,16 +739,20 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
         <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
       </div>
     </a>
-    <div class="service-item reveal">
+    <a href="#work" class="service-item reveal">
       <span class="si-num">03</span>
       <div class="si-body">
-        <h3>3D Perspectives</h3>
-        <p>Precise digital replicas of spaces and properties interactive models that showcase dimensions and layout in a way photography cannot.</p>
+        <h3>Drone Cinematography</h3>
+        <p>Cinematic aerial video that brings properties, developments and locations to life. Smooth, broadcast-quality footage built to make your marketing stand out.</p>
+        <span class="si-link">
+          Watch our latest work
+          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
+        </span>
       </div>
       <div class="si-arrow">
         <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
       </div>
-    </div>
+    </a>
   </div>
 </section>
 
@@ -1004,9 +1045,11 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
 
 <!-- CTA -->
 <div class="cta-wrap" id="cta">
-  <div class="cta-bg-txt">FM</div>
   <div class="cta-inner">
-    <h2>Let's build something great together.</h2>
+    <div class="cta-left">
+      <div class="cta-eyebrow"><span class="cta-eyebrow-line"></span><span>Let's work together</span></div>
+      <h2>Let's build something great together.</h2>
+    </div>
     <div class="cta-right">
       <p>Get in touch today no obligation, just a conversation about your project.</p>
       <button onclick="openModal()" class="btn btn-white">
@@ -1289,6 +1332,51 @@ function prevSlide(){goToSlide((currentSlide-1+totalSlides)%totalSlides);}
       requestAnimationFrame(function(){requestAnimationFrame(function(){el.classList.remove('fade-in');el.classList.add('visible');});});
     },360);
   },2800);
+})();
+</script>
+<!-- COOKIE CONSENT BANNER -->
+<style>
+.cookie-banner{position:fixed;left:24px;right:24px;bottom:24px;z-index:1000;max-width:480px;background:#141414;border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:26px 26px 22px;box-shadow:0 20px 60px rgba(0,0,0,.55);transform:translateY(140%);opacity:0;transition:transform .5s cubic-bezier(.22,.61,.36,1),opacity .5s ease;}
+.cookie-banner.show{transform:translateY(0);opacity:1;}
+.cookie-banner .cc-label{display:inline-block;font-family:'Syne',sans-serif;font-size:13px;font-weight:600;letter-spacing:.02em;color:#f0ede8;margin-bottom:10px;}
+.cookie-banner p{font-size:13px;line-height:1.65;color:rgba(240,237,232,.55);margin-bottom:18px;}
+.cookie-banner p a{color:#4da3ff;border-bottom:1px solid rgba(77,163,255,.3);padding-bottom:1px;}
+.cookie-banner p a:hover{color:#7ec0ff;}
+.cookie-actions{display:flex;gap:10px;flex-wrap:wrap;}
+.cc-btn{flex:1;min-width:120px;padding:11px 18px;border-radius:8px;font-family:'Outfit',sans-serif;font-size:13px;font-weight:500;letter-spacing:.02em;cursor:pointer;border:none;transition:background .25s,transform .2s,border-color .25s,color .25s;display:inline-flex;align-items:center;justify-content:center;gap:8px;}
+.cc-accept{background:#0057A8;color:#fff;}
+.cc-accept:hover{background:#0066cc;transform:translateY(-1px);}
+.cc-decline{background:transparent;color:rgba(240,237,232,.6);border:1px solid rgba(255,255,255,.14);}
+.cc-decline:hover{color:#f0ede8;border-color:rgba(255,255,255,.35);}
+@media(max-width:540px){.cookie-banner{left:16px;right:16px;bottom:16px;padding:22px 20px 18px;}}
+</style>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+  <span class="cc-label">Cookies</span>
+  <p>We use cookies to understand how visitors use our site and to improve it. Analytics cookies are only set with your consent. See our <a href="legal.html#cookies">Cookie Policy</a>.</p>
+  <div class="cookie-actions">
+    <button class="cc-btn cc-accept" id="cookieAccept">Accept</button>
+    <button class="cc-btn cc-decline" id="cookieDecline">Decline</button>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY="fm_cookie_consent";
+  var banner=document.getElementById("cookieBanner");
+  var acc=document.getElementById("cookieAccept");
+  var dec=document.getElementById("cookieDecline");
+  function stored(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function save(v){try{localStorage.setItem(KEY,v);}catch(e){}}
+  function hide(){banner.classList.remove("show");}
+  function show(){banner.classList.add("show");}
+  function accept(){
+    save("accepted"); hide();
+    if(window.gtag){gtag("consent","update",{"analytics_storage":"granted"});}
+    if(window.__loadGA){window.__loadGA();}
+  }
+  function decline(){ save("declined"); hide(); }
+  if(acc)acc.addEventListener("click",accept);
+  if(dec)dec.addEventListener("click",decline);
+  if(!stored()){ setTimeout(show,700); }
 })();
 </script>
 </body>
