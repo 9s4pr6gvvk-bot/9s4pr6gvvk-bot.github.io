@@ -2,12 +2,34 @@
 <html lang="en-GB">
 <head>
 <meta charset="UTF-8">
+<!-- Google tag (gtag.js) with consent gating -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('consent', 'default', {'analytics_storage':'denied','ad_storage':'denied'});
+  window.__GA_ID = "G-V8N1Y72KV0";
+  window.__loadGA = function(){
+    if (window.__gaLoaded) return; window.__gaLoaded = true;
+    var s = document.createElement("script"); s.async = true;
+    s.src = "https://www.googletagmanager.com/gtag/js?id=" + window.__GA_ID;
+    document.head.appendChild(s);
+    gtag('js', new Date());
+    gtag("config", window.__GA_ID);
+  };
+  (function(){
+    var c = null; try { c = localStorage.getItem("fm_cookie_consent"); } catch(e){}
+    if (c === "accepted") {
+      gtag('consent', 'update', {'analytics_storage':'granted'});
+      window.__loadGA();
+    }
+  })();
+</script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Drone Photography Huddersfield &amp; Leeds | Property Drone Photography Yorkshire</title>
 <meta name="description" content="Professional drone photography for estate agents, chartered surveyors and property developers in Huddersfield and Leeds. Property drone photography, roof surveys and site documentation across West Yorkshire. Get a free quote.">
 <meta name="keywords" content="drone photography Huddersfield, drone photography Leeds, drone photographer estate agents Yorkshire, property drone photography Huddersfield, roof survey drone Huddersfield, property drone photography Leeds, drone survey West Yorkshire, drone photography chartered surveyors Yorkshire, property drone photography Huddersfield Leeds, roof inspection drone Yorkshire">
 <meta name="robots" content="index, follow">
-<link rel="canonical" href="https://www.franks-media.co.uk/drone-photography.html">
+<link rel="canonical" href="https://franks-media.co.uk/drone-photography.html">
 <meta property="og:title" content="Drone Photography Huddersfield &amp; Leeds | Franks Media">
 <meta property="og:description" content="Professional drone photography for estate agents, chartered surveyors and property developers across Huddersfield and Leeds. Roof surveys and site documentation.">
 <meta property="og:image" content="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/Copy%20of%20Franks%20(10).jpg">
@@ -27,7 +49,7 @@
       "addressRegion": "West Yorkshire",
       "addressCountry": "GB"
     },
-    "url": "https://www.franks-media.co.uk",
+    "url": "https://franks-media.co.uk",
     "email": "info@franks-media.co.uk"
   },
   "serviceType": "Drone Photography",
@@ -57,14 +79,14 @@ nav.scrolled{padding:16px 56px;background:rgba(10,10,10,.92);backdrop-filter:blu
 .nav-links{display:flex;gap:36px;list-style:none;}
 .nav-links a{font-size:13px;letter-spacing:.06em;color:rgba(240,237,232,.7);font-weight:400;transition:color .25s;}
 .nav-links a:hover,.nav-links a.active{color:#f0ede8;}
-/* Nav button — matches btn-blue quality */
+/* Nav button, matches btn-blue quality */
 .nav-btn{font-size:13px;letter-spacing:.05em;font-weight:500;padding:11px 22px;border-radius:8px;color:#fff;background:#0057A8;border:none;transition:background .25s,transform .2s,box-shadow .2s;white-space:nowrap;cursor:pointer;font-family:'Outfit',sans-serif;display:inline-flex;align-items:center;gap:8px;box-shadow:0 2px 12px rgba(0,87,168,.35);}
 .nav-btn:hover{background:#0066cc;transform:translateY(-1px);box-shadow:0 4px 18px rgba(0,87,168,.5);}
 .nav-btn svg{width:12px;height:12px;transition:transform .25s;}
 .nav-btn:hover svg{transform:translateX(3px);}
 
 /* HERO */
-.hero{height:100svh;min-height:680px;position:relative;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;}
+.hero{height:100svh;min-height:680px;position:relative;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;padding-top:120px;}
 .hero-bg{position:absolute;inset:0;animation:zoomIn 16s ease-out forwards;}
 .hero-bg img{width:100%;height:100%;object-fit:cover;display:block;}
 @keyframes zoomIn{from{transform:scale(1.06);}to{transform:scale(1);}}
@@ -74,14 +96,14 @@ nav.scrolled{padding:16px 56px;background:rgba(10,10,10,.92);backdrop-filter:blu
 .hero-eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:22px;animation:fadeUp .9s .2s both;}
 .hero-eyebrow-line{width:32px;height:1px;background:rgba(240,237,232,.55);}
 .hero-eyebrow span{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(240,237,232,.75);text-shadow:0 1px 6px rgba(0,0,0,.5);}
-h1{font-family:'Syne',sans-serif;font-size:clamp(48px,7vw,90px);font-weight:700;line-height:.98;letter-spacing:-.025em;color:#fff;max-width:820px;animation:fadeUp .9s .35s both;text-shadow:0 2px 20px rgba(0,0,0,.5);}
+h1{font-family:'Syne',sans-serif;font-size:clamp(40px,5.6vw,76px);font-weight:700;line-height:1.02;letter-spacing:-.025em;color:#fff;max-width:820px;animation:fadeUp .9s .35s both;text-shadow:0 2px 20px rgba(0,0,0,.5);}
 h1 .accent{color:#4da3ff;}
 .hero-sub{font-size:17px;line-height:1.75;color:rgba(255,255,255,.72);max-width:520px;margin-top:22px;animation:fadeUp .9s .5s both;text-shadow:0 1px 8px rgba(0,0,0,.6);}
 .hero-actions{display:flex;align-items:center;gap:14px;margin-top:30px;flex-wrap:wrap;animation:fadeUp .9s .62s both;}
 .btn{padding:13px 26px;border-radius:8px;font-family:'Outfit',sans-serif;font-size:13px;font-weight:500;letter-spacing:.05em;display:inline-flex;align-items:center;gap:9px;transition:all .25s;cursor:pointer;border:none;}
 .btn-blue{background:#0057A8;color:#fff;}
 .btn-blue:hover{background:#0066cc;transform:translateY(-1px);}
-/* Ghost button — visible on hero, no longer disappears */
+/* Ghost button, visible on hero, no longer disappears */
 .btn-ghost{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.5);backdrop-filter:blur(6px);}
 .btn-ghost:hover{background:rgba(255,255,255,.25);border-color:rgba(255,255,255,.8);}
 .btn-white{background:#fff;color:#0a0a0a;}
@@ -230,10 +252,11 @@ h2.display .accent{color:#4da3ff;}
 .form-success-msg p{font-size:14px;color:rgba(240,237,232,.5);line-height:1.6;}
 
 /* CTA */
-.cta-section{background:#0057A8;padding:100px 56px;position:relative;overflow:hidden;}
-.cta-bg-txt{position:absolute;font-family:'Syne',sans-serif;font-size:240px;font-weight:800;color:rgba(255,255,255,.06);line-height:1;letter-spacing:-.04em;top:50%;left:50%;transform:translate(-50%,-50%);white-space:nowrap;pointer-events:none;}
-.cta-inner{position:relative;z-index:1;max-width:1320px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;gap:60px;}
-.cta-inner h2{font-family:'Syne',sans-serif;font-size:clamp(34px,5vw,60px);font-weight:800;letter-spacing:-.03em;line-height:1.0;color:#fff;max-width:560px;}
+.cta-section{position:relative;padding:160px 56px;min-height:580px;display:flex;align-items:center;overflow:hidden;background:#0a0a0a;}
+.cta-section::before{content:'';position:absolute;inset:0;background:url('https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/Copy%20of%20Franks%20(1).jpg') center/cover no-repeat;transform:scale(1.02);z-index:0;}
+.cta-section::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(8,8,8,.72) 0%,rgba(8,8,8,.42) 45%,rgba(8,10,14,.18) 100%),linear-gradient(to top,rgba(8,8,8,.55) 0%,transparent 40%);}
+.cta-inner{position:relative;z-index:2;max-width:1320px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;gap:60px;}
+.cta-inner h2{font-family:'Syne',sans-serif;font-size:clamp(36px,4.4vw,60px);font-weight:700;letter-spacing:-.03em;line-height:1.0;color:#fff;max-width:600px;text-shadow:0 2px 24px rgba(0,0,0,.4);}
 .cta-right{flex-shrink:0;display:flex;flex-direction:column;gap:14px;align-items:flex-start;}
 .cta-right p{font-size:15px;color:rgba(255,255,255,.65);line-height:1.65;max-width:260px;}
 .cta-link{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7);font-weight:500;border-bottom:1px solid rgba(255,255,255,.4);padding-bottom:2px;transition:color .25s;font-family:'Outfit',sans-serif;}
@@ -333,10 +356,10 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
 
 <section class="hero">
   <div class="hero-bg">
-    <img src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/Copy%20of%20Franks%20(7).jpg" alt="Drone photography Huddersfield West Yorkshire">
+    <img src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/Copy%20of%20Franks%20(7).jpg" alt="Drone photography Huddersfield West Yorkshire" fetchpriority="high" decoding="async">
   </div>
   <div class="hero-content">
-    <div class="hero-eyebrow"><div class="hero-eyebrow-line"></div><span>Drone Photography — Huddersfield &amp; Leeds, West Yorkshire</span></div>
+    <div class="hero-eyebrow"><div class="hero-eyebrow-line"></div><span>Drone Photography, Huddersfield &amp; Leeds, West Yorkshire</span></div>
     <h1>Drone Photography<br>for <span class="accent">Property</span><br>Professionals.</h1>
     <p class="hero-sub">High-quality drone photography for estate agents, chartered surveyors, developers and homeowners across Huddersfield, Leeds and West Yorkshire.</p>
     <div class="hero-actions">
@@ -372,7 +395,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
   <div class="s">
     <div class="intro-grid">
       <div class="intro-img-wrap reveal">
-        <img class="intro-img" src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/Copy%20of%20Franks.png" alt="Drone photography West Yorkshire property">
+        <img class="intro-img" src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/Copy%20of%20Franks.png" alt="Drone photography West Yorkshire property" loading="lazy" decoding="async">
         <div class="intro-img-badge">
           <span>Huddersfield &amp; Leeds</span>
           <small>West Yorkshire Coverage</small>
@@ -382,7 +405,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
         <div class="label-tag"><div class="label-tag-dot"></div> About the Service</div>
         <h2 class="display" style="margin-bottom:22px;">Imagery that makes<br>properties <span class="accent">stand out.</span></h2>
         <p class="body-p">Based in <strong>Huddersfield</strong>, Franks Media delivers professional drone photography for property professionals across <strong>West Yorkshire</strong>. We work with estate agents, chartered surveyors, developers and homeowners to produce drone imagery that commands attention and drives results.</p>
-        <p class="body-p">Whether you're marketing a residential listing, documenting a commercial site or inspecting a roof — we deliver clean, professional results, every time.</p>
+        <p class="body-p">Whether you're marketing a residential listing, documenting a commercial site or inspecting a roof, we deliver clean, professional results, every time.</p>
         <div style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap;">
           <button onclick="openModal()" class="btn btn-blue">Enquire Now <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg></button>
           <a href="#gallery" class="btn btn-ghost" style="background:rgba(255,255,255,.06);color:#f0ede8;border:1px solid rgba(255,255,255,.12);">View Our Work</a>
@@ -409,13 +432,13 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
       <div class="svc reveal">
         <div class="svc-num">02</div>
         <div class="svc-name">Roof Surveys</div>
-        <p class="svc-desc">Safe, non-invasive drone roof inspections for domestic and commercial properties. Identify damage, missing tiles, chimney defects or guttering issues without scaffolding — high-resolution imagery delivered the same day.</p>
+        <p class="svc-desc">Safe, non-invasive drone roof inspections for domestic and commercial properties. Identify damage, missing tiles, chimney defects or guttering issues without scaffolding, with high-resolution imagery delivered the same day.</p>
         <div class="svc-tags"><span class="svc-tag">Domestic</span><span class="svc-tag">Commercial</span><span class="svc-tag">Same-Day Delivery</span></div>
       </div>
       <div class="svc reveal">
         <div class="svc-num">03</div>
         <div class="svc-name">Site &amp; Survey Documentation</div>
-        <p class="svc-desc">Accurate drone imagery for chartered surveyors, planning consultants and developers. Site overviews, boundary documentation, pre and post-development records — delivered professionally across West Yorkshire.</p>
+        <p class="svc-desc">Accurate drone imagery for chartered surveyors, planning consultants and developers. Site overviews, boundary documentation, pre and post-development records, delivered professionally across West Yorkshire.</p>
         <div class="svc-tags"><span class="svc-tag">Chartered Surveyors</span><span class="svc-tag">Planning</span><span class="svc-tag">West Yorkshire</span></div>
       </div>
     </div>
@@ -437,19 +460,19 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
     <div class="gallery-slider-container reveal" id="gallerySlider">
       <div class="gallery-slider-track" id="sliderTrack">
         <div class="gallery-slide">
-          <img src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/Copy%20of%20Franks%20(6).jpg" alt="Property drone photography Huddersfield">
+          <img src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/Copy%20of%20Franks%20(6).jpg" alt="Property drone photography Huddersfield" loading="lazy" decoding="async">
         </div>
         <div class="gallery-slide">
-          <img src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/Copy%20of%20Franks%20(7).jpg" alt="Drone photography West Yorkshire">
+          <img src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/Copy%20of%20Franks%20(7).jpg" alt="Drone photography West Yorkshire" loading="lazy" decoding="async">
         </div>
         <div class="gallery-slide">
-          <img src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/Copy%20of%20Franks%20(4).jpg" alt="Drone site photography Yorkshire">
+          <img src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/Copy%20of%20Franks%20(4).jpg" alt="Drone site photography Yorkshire" loading="lazy" decoding="async">
         </div>
         <div class="gallery-slide">
-          <img src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/Copy%20of%20Franks%20(3).jpg" alt="Drone photography Leeds">
+          <img src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/Copy%20of%20Franks%20(3).jpg" alt="Drone photography Leeds" loading="lazy" decoding="async">
         </div>
         <div class="gallery-slide">
-          <img src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/Copy%20of%20Franks.png" alt="Drone photography West Yorkshire">
+          <img src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/Copy%20of%20Franks.png" alt="Drone photography West Yorkshire" loading="lazy" decoding="async">
         </div>
       </div>
     </div>
@@ -475,7 +498,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
     </div>
     <div class="clients-grid">
       <div class="cc reveal">
-        <div class="cc-title">Estate Agents — Huddersfield &amp; Leeds</div>
+        <div class="cc-title">Estate Agents, Huddersfield &amp; Leeds</div>
         <p class="cc-body">Give your property listings a competitive edge with drone photography that captures location, setting and scale. Properties with drone imagery consistently generate more interest and higher valuations.</p>
         <ul class="cc-list">
           <li>Residential sales listings</li>
@@ -485,7 +508,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
         </ul>
       </div>
       <div class="cc reveal">
-        <div class="cc-title">Chartered Surveyors — West Yorkshire</div>
+        <div class="cc-title">Chartered Surveyors, West Yorkshire</div>
         <p class="cc-body">Accurate, high-resolution drone imagery for surveying and valuation reports. We operate professionally on every site, with full insurance for peace of mind.</p>
         <ul class="cc-list">
           <li>Site and boundary photography</li>
@@ -495,7 +518,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
         </ul>
       </div>
       <div class="cc reveal">
-        <div class="cc-title">Property Developers — Yorkshire</div>
+        <div class="cc-title">Property Developers, Yorkshire</div>
         <p class="cc-body">Document construction progress, market off-plan plots and create compelling visuals for planning applications, investor packs and sales brochures across Yorkshire.</p>
         <ul class="cc-list">
           <li>Construction progress records</li>
@@ -512,13 +535,13 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
 <div class="roof-feature">
   <div class="roof-grid">
     <div class="roof-img-col reveal">
-      <img src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/DJI_0484.JPG" alt="Drone roof survey Halifax West Yorkshire">
+      <img src="https://raw.githubusercontent.com/franksmedia23-blip/asset2/refs/heads/main/DJI_0484.JPG" alt="Drone roof survey Halifax West Yorkshire" loading="lazy" decoding="async">
     </div>
     <div class="roof-text-col reveal">
       <div class="label-tag"><div class="label-tag-dot"></div> Roof Surveys</div>
       <h2>Roof Surveys Without <span class="accent">the Scaffolding.</span></h2>
-      <p>Our drone roof surveys give homeowners and property professionals a safe, cost-effective way to inspect roofs in detail — no ladders, no scaffolding, no fuss. High-resolution drone imagery captures everything you need to identify issues early.</p>
-      <p>Covering <strong style="color:rgba(240,237,232,.75);">Huddersfield, Halifax, Leeds and across West Yorkshire</strong> — we deliver edited imagery the same day.</p>
+      <p>Our drone roof surveys give homeowners and property professionals a safe, cost-effective way to inspect roofs in detail. No ladders, no scaffolding, no fuss. High-resolution drone imagery captures everything you need to identify issues early.</p>
+      <p>Covering <strong style="color:rgba(240,237,232,.75);">Huddersfield, Halifax, Leeds and across West Yorkshire</strong>, we deliver edited imagery the same day.</p>
       <ul class="roof-checklist">
         <li>Tiles, slates and flat roof inspections</li>
         <li>Chimney, flaunching and pointing</li>
@@ -557,7 +580,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
       <div class="ps reveal">
         <div class="ps-num">04</div>
         <div class="ps-title">Images Delivered</div>
-        <p class="ps-body">Edited, high-resolution imagery delivered digitally — typically the same day or next working day, ready to use immediately.</p>
+        <p class="ps-body">Edited, high-resolution imagery delivered digitally, typically the same day or next working day, ready to use immediately.</p>
       </div>
     </div>
   </div>
@@ -643,12 +666,12 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
             </select>
           </div>
           <div class="form-group"><label>Property / Location</label><textarea name="message" placeholder="Property address, area in West Yorkshire, what you need and any timescales..."></textarea></div>
-          <input type="hidden" name="source" value="Drone Photography Page — Bottom Form">
+          <input type="hidden" name="source" value="Drone Photography Page - Bottom Form">
           <button type="submit" class="btn btn-blue form-submit-btn">Send Enquiry <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg></button>
         </form>
         <div class="form-success-msg" id="bottomFormSuccess">
           <strong>Enquiry Sent!</strong>
-          <p>Thanks — we'll get back to you within one working day.</p>
+          <p>Thanks, we'll get back to you within one working day.</p>
         </div>
       </div>
     </div>
@@ -657,7 +680,6 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
 
 <!-- CTA -->
 <div class="cta-section">
-  <div class="cta-bg-txt">FM</div>
   <div class="cta-inner">
     <h2>Ready to see your property from above?</h2>
     <div class="cta-right">
@@ -671,7 +693,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
 <footer>
   <div class="footer-top">
     <div class="footer-brand">
-      <a href="index.html" class="footer-logo"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/Franks_Media__1_-removebg-preview.png" alt="Franks Media"></a>
+      <a href="index.html" class="footer-logo"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/Franks_Media__1_-removebg-preview.png" alt="Franks Media" loading="lazy" decoding="async"></a>
       <p>Drone photography, surveys and bespoke websites for businesses across the UK.</p>
     </div>
     <div class="footer-col">
@@ -693,7 +715,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
     </div>
   </div>
   <div class="footer-bottom">
-    <p>&copy; 2025 Franks Media. All rights reserved.</p>
+    <p>&copy; 2026 Franks Media. All rights reserved.</p>
     <div class="footer-bottom-links"><a href="legal.html">Privacy</a><a href="legal.html#terms">Terms</a></div>
   </div>
 </footer>
@@ -722,12 +744,12 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
         </select>
       </div>
       <div class="form-group"><label>Property / Location</label><textarea name="message" placeholder="Property address, area in West Yorkshire, what you need and any timescales..."></textarea></div>
-      <input type="hidden" name="source" value="Drone Photography Page — Modal">
+      <input type="hidden" name="source" value="Drone Photography Page - Modal">
       <button type="submit" class="btn btn-blue modal-submit">Send Enquiry <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg></button>
     </form>
     <div class="form-success" id="formSuccess">
       <strong>Enquiry Sent!</strong>
-      <p>Thanks — we'll get back to you within one working day.</p>
+      <p>Thanks, we'll get back to you within one working day.</p>
     </div>
   </div>
 </div>
@@ -845,6 +867,46 @@ document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()
   function startAuto(){autoTimer=setInterval(function(){goTo(current+1);},4500);}
   function resetAuto(){clearInterval(autoTimer);startAuto();}
   startAuto();
+})();
+</script>
+<!-- COOKIE CONSENT BANNER -->
+<style>
+.cookie-banner{position:fixed;left:24px;right:24px;bottom:24px;z-index:1000;max-width:480px;background:#141414;border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:26px 26px 22px;box-shadow:0 20px 60px rgba(0,0,0,.55);transform:translateY(140%);opacity:0;transition:transform .5s cubic-bezier(.22,.61,.36,1),opacity .5s ease;}
+.cookie-banner.show{transform:translateY(0);opacity:1;}
+.cookie-banner .cc-label{display:inline-block;font-family:'Syne',sans-serif;font-size:13px;font-weight:600;letter-spacing:.02em;color:#f0ede8;margin-bottom:10px;}
+.cookie-banner p{font-size:13px;line-height:1.65;color:rgba(240,237,232,.55);margin-bottom:18px;}
+.cookie-banner p a{color:#4da3ff;border-bottom:1px solid rgba(77,163,255,.3);padding-bottom:1px;}
+.cookie-actions{display:flex;gap:10px;flex-wrap:wrap;}
+.cc-btn{flex:1;min-width:120px;padding:11px 18px;border-radius:8px;font-family:'Outfit',sans-serif;font-size:13px;font-weight:500;letter-spacing:.02em;cursor:pointer;border:none;transition:all .25s;display:inline-flex;align-items:center;justify-content:center;}
+.cc-accept{background:#0057A8;color:#fff;}
+.cc-accept:hover{background:#0066cc;transform:translateY(-1px);}
+.cc-decline{background:transparent;color:rgba(240,237,232,.6);border:1px solid rgba(255,255,255,.14);}
+.cc-decline:hover{color:#f0ede8;border-color:rgba(255,255,255,.35);}
+@media(max-width:540px){.cookie-banner{left:16px;right:16px;bottom:16px;padding:22px 20px 18px;}}
+</style>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie consent">
+  <span class="cc-label">Cookies</span>
+  <p>We use cookies to understand how visitors use our site and to improve it. Analytics cookies are only set with your consent. See our <a href="legal.html#cookies">Cookie Policy</a>.</p>
+  <div class="cookie-actions">
+    <button class="cc-btn cc-accept" id="cookieAccept">Accept</button>
+    <button class="cc-btn cc-decline" id="cookieDecline">Decline</button>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY="fm_cookie_consent";
+  var banner=document.getElementById("cookieBanner");
+  var acc=document.getElementById("cookieAccept");
+  var dec=document.getElementById("cookieDecline");
+  function stored(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
+  function save(v){try{localStorage.setItem(KEY,v);}catch(e){}}
+  function hide(){banner.classList.remove("show");}
+  function show(){banner.classList.add("show");}
+  function accept(){save("accepted");hide();if(window.gtag){gtag("consent","update",{"analytics_storage":"granted"});}if(window.__loadGA){window.__loadGA();}}
+  function decline(){save("declined");hide();}
+  if(acc)acc.addEventListener("click",accept);
+  if(dec)dec.addEventListener("click",decline);
+  if(!stored()){setTimeout(show,700);}
 })();
 </script>
 </body>
