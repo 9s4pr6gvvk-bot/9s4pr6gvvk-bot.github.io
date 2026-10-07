@@ -475,7 +475,7 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
 /* TESTIMONIAL */
 .testi-section{background:#0a0a0a;border-bottom:1px solid rgba(255,255,255,.06);}
 .testi-inner{max-width:1320px;margin:0 auto;padding:96px 56px;}
-.testi-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:72px;align-items:center;}
+.testi-grid{display:grid;grid-template-columns:1fr 1.5fr;gap:72px;align-items:start;}
 .testi-card{background:#111;border:1px solid rgba(255,255,255,.07);border-radius:16px;padding:44px 44px 38px;position:relative;}
 .testi-quote-mark{font-family:'Syne',sans-serif;font-size:74px;font-weight:800;line-height:.7;color:rgba(77,163,255,.16);margin-bottom:10px;display:block;}
 .testi-card blockquote{font-family:'Syne',sans-serif;font-size:clamp(19px,1.9vw,25px);font-weight:500;line-height:1.5;letter-spacing:-.015em;color:#f0ede8;margin-bottom:26px;}
@@ -485,6 +485,8 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
 .testi-rule{width:1px;align-self:stretch;background:rgba(255,255,255,.1);flex-shrink:0;}
 .testi-attr-text strong{display:block;font-size:14.5px;color:#f0ede8;font-weight:500;margin-bottom:2px;}
 .testi-attr-text span{font-size:12px;color:rgba(240,237,232,.35);letter-spacing:.02em;}
+.testi-cards{display:flex;flex-direction:column;gap:24px;}
+.testi-logo--bielby{width:auto;max-width:150px;height:30px;filter:brightness(0) invert(1);}
 
 /* FAQ */
 .faq-section{background:#111;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);}
@@ -783,18 +785,33 @@ footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
         <p class="body-p">We work with land promoters, surveyors, developers and agents who need imagery that stands up in a marketing pack, a planning submission or an investor document.</p>
         <p class="body-p" style="margin-bottom:0;">Our aerial photography of the <strong>Clayton Heights site in Bradford</strong> features in Aura Residential's published case study for the scheme, which secured outline consent for up to 60 new homes.</p>
       </div>
-      <div class="testi-card reveal">
-        <span class="testi-quote-mark">&ldquo;</span>
-        <blockquote>Great job and quick turnaround. I'll be recommending you to others.</blockquote>
-        <div class="testi-attr">
-          <img class="testi-logo" src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/1fe91cc59b846dbd176f7377be688b6d0c7ab160/Asset-3.svg" alt="Aura Residential logo" width="99" height="26" loading="lazy" decoding="async">
-          <div class="testi-rule" aria-hidden="true"></div>
-          <div class="testi-attr-text">
-            <strong>Tom</strong>
-            <span>Aura Residential, Land &amp; Development</span>
+      <div class="testi-cards">
+        <div class="testi-card reveal">
+          <span class="testi-quote-mark">&ldquo;</span>
+          <blockquote>Thank you once again for over-delivering! Site visits took place on Tuesday and both commissions completed by Wednesday morning. I would highly recommend <a href="https://www.linkedin.com/company/franks-media/" target="_blank" rel="noopener" style="color:#4da3ff;border-bottom:1px solid rgba(77,163,255,.3);">Franks Media</a>.</blockquote>
+          <div class="testi-attr">
+            <img class="testi-logo testi-logo--bielby" src="https://cdn.prod.website-files.com/67f845f932f268860becd300/697cc4399053dae6211f4e95_Final%20Black%20logo%20PNG-p-2000.png" alt="Bielby Associates logo" loading="lazy" decoding="async">
+            <div class="testi-rule" aria-hidden="true"></div>
+            <div class="testi-attr-text">
+              <strong>James Bielby</strong>
+              <span>Director, Bielby Associates</span>
+            </div>
           </div>
+          <p style="font-size:12.5px;line-height:1.6;color:rgba(240,237,232,.32);margin-top:18px;">Two site commissions completed across Yorkshire. <a href="https://www.linkedin.com/posts/franks-media_here-are-two-sites-in-yorkshire-where-we-activity-7513572754583965698-amOa" target="_blank" rel="noopener" style="color:#4da3ff;border-bottom:1px solid rgba(77,163,255,.28);">See the work on LinkedIn</a></p>
         </div>
-        <p style="font-size:12.5px;line-height:1.6;color:rgba(240,237,232,.32);margin-top:18px;">Aerial photography supplied for the Clayton Heights, Bradford scheme. <a href="https://aura-residential.co.uk/clayton-heights-bradford-2/" target="_blank" rel="noopener" style="color:#4da3ff;border-bottom:1px solid rgba(77,163,255,.28);">View the case study</a></p>
+        <div class="testi-card reveal">
+          <span class="testi-quote-mark">&ldquo;</span>
+          <blockquote>Great job and quick turnaround. I'll be recommending you to others.</blockquote>
+          <div class="testi-attr">
+            <img class="testi-logo" src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/1fe91cc59b846dbd176f7377be688b6d0c7ab160/Asset-3.svg" alt="Aura Residential logo" width="99" height="26" loading="lazy" decoding="async">
+            <div class="testi-rule" aria-hidden="true"></div>
+            <div class="testi-attr-text">
+              <strong>Tom</strong>
+              <span>Aura Residential, Land &amp; Development</span>
+            </div>
+          </div>
+          <p style="font-size:12.5px;line-height:1.6;color:rgba(240,237,232,.32);margin-top:18px;">Aerial photography supplied for the Clayton Heights, Bradford scheme. <a href="https://aura-residential.co.uk/clayton-heights-bradford-2/" target="_blank" rel="noopener" style="color:#4da3ff;border-bottom:1px solid rgba(77,163,255,.28);">View the case study</a></p>
+        </div>
       </div>
     </div>
   </div>
