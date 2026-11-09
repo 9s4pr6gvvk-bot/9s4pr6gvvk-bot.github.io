@@ -2,45 +2,33 @@
 <html lang="en-GB">
 <head>
 <meta charset="UTF-8">
-<!-- Google tag (gtag.js) with consent gating -->
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('consent', 'default', {'analytics_storage':'denied','ad_storage':'denied'});
+  gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied'});
   window.__GA_ID = "G-V8N1Y72KV0";
   window.__loadGA = function(){
     if (window.__gaLoaded) return; window.__gaLoaded = true;
     var s = document.createElement("script"); s.async = true;
     s.src = "https://www.googletagmanager.com/gtag/js?id=" + window.__GA_ID;
     document.head.appendChild(s);
-    gtag('js', new Date());
-    gtag("config", window.__GA_ID);
+    gtag('js', new Date()); gtag("config", window.__GA_ID);
   };
   (function(){
     var c = null; try { c = localStorage.getItem("fm_cookie_consent"); } catch(e){}
-    if (c === "accepted") {
-      gtag('consent', 'update', {'analytics_storage':'granted'});
-      window.__loadGA();
-    }
+    if (c === "accepted") { gtag('consent','update',{'analytics_storage':'granted'}); window.__loadGA(); }
   })();
 </script>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<!-- PRIMARY SEO -->
+<meta name="theme-color" content="#0a0a0a">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Website Design Huddersfield | Franks Media | Web Design Yorkshire</title>
-<meta name="description" content="Professional website design in Huddersfield, West Yorkshire. Franks Media creates bespoke, mobile-first websites for businesses across Huddersfield, Leeds, Bradford, Halifax, Wakefield and Sheffield. CAA Registered drone photography too. Get a free quote today.">
-<meta name="keywords" content="website design Huddersfield, web design Huddersfield, website designer Huddersfield, web design Yorkshire, website design Leeds, web design Bradford, website design Halifax, web design Wakefield, web design Sheffield, web design Dewsbury, website design Barnsley, web designer West Yorkshire, bespoke website design Yorkshire, small business website Huddersfield, e-commerce website Yorkshire, affordable web design Huddersfield, drone photography Huddersfield, drone photography Yorkshire">
-<meta name="author" content="Franks Media">
+<meta name="description" content="Professional website design in Huddersfield, West Yorkshire. Franks Media builds bespoke websites for businesses across Huddersfield, Leeds, Bradford, Halifax, Wakefield and Sheffield. Drone photography too. Get a free quote today.">
 <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 <link rel="canonical" href="https://www.franks-media.co.uk/">
-
-<!-- GEO TARGETING -->
 <meta name="geo.region" content="GB-EYW">
 <meta name="geo.placename" content="Huddersfield, West Yorkshire">
 <meta name="geo.position" content="53.6450;-1.7850">
 <meta name="ICBM" content="53.6450, -1.7850">
-
-<!-- OPEN GRAPH -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.franks-media.co.uk/">
 <meta property="og:title" content="Website Design Huddersfield | Franks Media">
@@ -48,1325 +36,1044 @@
 <meta property="og:image" content="https://cdn.prod.website-files.com/67f845f932f268860becd300/67f845f932f268860becd389_Franks%20(5).jpg">
 <meta property="og:locale" content="en_GB">
 <meta property="og:site_name" content="Franks Media">
-
-<!-- TWITTER CARD -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Website Design Huddersfield | Franks Media">
-<meta name="twitter:description" content="Bespoke website design for businesses across Huddersfield and West Yorkshire. Get a free quote today.">
+<meta name="twitter:description" content="Bespoke website design for businesses across Huddersfield and West Yorkshire. Get a free quote.">
 <meta name="twitter:image" content="https://cdn.prod.website-files.com/67f845f932f268860becd300/67f845f932f268860becd389_Franks%20(5).jpg">
 
-<!-- STRUCTURED DATA Local Business -->
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "Franks Media",
-  "description": "Professional website design and drone photography based in Huddersfield, West Yorkshire. Serving businesses across Yorkshire including Leeds, Bradford, Halifax, Wakefield and Sheffield.",
-  "url": "https://www.franks-media.co.uk",
-  "telephone": "",
-  "email": "info@franks-media.co.uk",
-  "address": {
-    "@type": "PostalAddress",
-    "addressLocality": "Huddersfield",
-    "addressRegion": "West Yorkshire",
-    "addressCountry": "GB"
-  },
-  "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 53.6450,
-    "longitude": -1.7850
-  },
-  "areaServed": [
-    "Huddersfield","Leeds","Bradford","Halifax","Wakefield","Sheffield","Dewsbury","Barnsley","Batley","Birstall","Cleckheaton","Heckmondwike","Mirfield","Holmfirth","Slaithwaite","Marsden","Kirkburton","Skelmanthorpe","Brighouse","Elland","Sowerby Bridge","Keighley","Harrogate","York","Doncaster"
-  ],
-  "serviceType": ["Website Design","Web Development","E-Commerce Websites","Drone Photography","Drone Cinematography","Virtual Tours","3D Perspectives"],
-  "priceRange": "££",
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
-    "opens": "09:00",
-    "closes": "17:30"
-  },
-  "sameAs": []
+  "@context":"https://schema.org","@type":"LocalBusiness","name":"Franks Media",
+  "description":"Professional website design and drone photography based in Huddersfield, West Yorkshire. Serving businesses across Yorkshire including Leeds, Bradford, Halifax, Wakefield and Sheffield.",
+  "url":"https://www.franks-media.co.uk","email":"info@franks-media.co.uk",
+  "address":{"@type":"PostalAddress","addressLocality":"Huddersfield","addressRegion":"West Yorkshire","addressCountry":"GB"},
+  "geo":{"@type":"GeoCoordinates","latitude":53.6450,"longitude":-1.7850},
+  "areaServed":["Huddersfield","Leeds","Bradford","Halifax","Wakefield","Sheffield","Dewsbury","Barnsley","Batley","Mirfield","Holmfirth","Brighouse","Elland","Keighley","Harrogate","York","Doncaster"],
+  "serviceType":["Website Design","Web Development","E-Commerce Websites","Drone Photography","Drone Cinematography","Virtual Tours","3D Perspectives"],
+  "priceRange":"££",
+  "openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"17:30"}
 }
 </script>
-
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "WebPage",
-  "name": "Website Design Huddersfield | Franks Media",
-  "description": "Bespoke website design for businesses in Huddersfield and across West Yorkshire. Mobile-first, fast-loading websites built to generate enquiries.",
-  "url": "https://www.franks-media.co.uk/",
-  "breadcrumb": {
-    "@type": "BreadcrumbList",
-    "itemListElement": [{
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://www.franks-media.co.uk/"
-    }]
-  }
+  "@context":"https://schema.org","@type":"Review",
+  "reviewBody":"I appointed Franks Media to create a new website and can honestly say that the service level and attention to detail in the design stage, copy, client reporting and general advisory capacity was over and above what we were expecting.",
+  "author":{"@type":"Person","name":"James Bielby"},
+  "itemReviewed":{"@type":"LocalBusiness","name":"Franks Media"},
+  "reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}
 }
 </script>
-
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Service",
-  "serviceType": "Website Design",
-  "provider": {
-    "@type": "LocalBusiness",
-    "name": "Franks Media",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Huddersfield",
-      "addressRegion": "West Yorkshire",
-      "addressCountry": "GB"
-    }
-  },
-  "areaServed": "West Yorkshire",
-  "description": "Bespoke website design for small and medium businesses across Huddersfield, Leeds, Bradford, Halifax and West Yorkshire.",
-  "offers": {
-    "@type": "Offer",
-    "availability": "https://schema.org/InStock"
-  }
-}
-</script>
-
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Review",
-  "reviewBody": "I appointed Franks Media to create a new website and can honestly say that the service level and attention to detail in the design stage, copy, client reporting and general advisory capacity was over and above what we were expecting. Franks Media have surpassed our expectations and seamlessly managed the whole process from inception to the website going live.",
-  "author": {
-    "@type": "Person",
-    "name": "James Bielby"
-  },
-  "itemReviewed": {
-    "@type": "LocalBusiness",
-    "name": "Franks Media"
-  },
-  "reviewRating": {
-    "@type": "Rating",
-    "ratingValue": "5",
-    "bestRating": "5"
-  }
+  "@context":"https://schema.org","@type":"Review",
+  "reviewBody":"I couldn't be happier with the website Frankie has developed for me. He is professional, organised, incredibly helpful, and goes above and beyond for his clients.",
+  "author":{"@type":"Person","name":"Kasia Howley"},
+  "itemReviewed":{"@type":"LocalBusiness","name":"Franks Media"},
+  "reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5"}
 }
 </script>
 
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<link rel="manifest" href="site.webmanifest">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Outfit:wght@300;400;500;600&family=Poppins:wght@300;700&display=swap" rel="stylesheet">
+
 <style>
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
 :root{
-  --sans-fallback:ui-sans-serif,system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif;
-  --accent:#0057A8;--accent-bright:#4da3ff;
-  --ease:cubic-bezier(.22,.61,.36,1);--ease-io:cubic-bezier(.65,.05,.36,1);
-  --shadow-md:0 2px 6px rgba(0,0,0,.28),0 18px 40px -20px rgba(0,0,0,.55);
-  --shadow-lg:0 4px 12px rgba(0,0,0,.3),0 40px 80px -32px rgba(0,0,0,.7);
+  --page:#0a0a0a;--ink:#f0ede8;--ink-2:#111;--alt:#0e0e0e;--card:#131313;--accent:#0057A8;--accent-hover:#0066cc;--accent-bright:#4da3ff;--accent-tint:rgba(0,87,168,.14);--line:rgba(255,255,255,.1);--line-strong:rgba(255,255,255,.22);--muted:rgba(240,237,232,.5);
+  --f-head:"Syne",sans-serif;--f-body:"Outfit",sans-serif;--f-logo:"Poppins",Arial,sans-serif;
+  --h1:52px;--h2:48px;--h3:42px;--h4:38px;--h5:30px;--h6:24px;
+  --t-lg:18px;--t-md:16px;--t-sm:14px;
+  --container:1200px;--space:112px;--pill:300px;
+  --ease:cubic-bezier(.65,.05,.36,1);
 }
 html{scroll-behavior:smooth;}
-body{background:#0a0a0a;color:#f0ede8;font-family:'Outfit',sans-serif;font-weight:300;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
-a{text-decoration:none;color:inherit;}
+body{background:var(--page);color:var(--ink);font-family:var(--f-body);font-size:var(--t-md);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;}
+a{color:inherit;text-decoration:none;}
 img{display:block;max-width:100%;}
+h1,h2,h3,h4,h5,h6{font-family:var(--f-head);font-weight:700;line-height:1.05;letter-spacing:-.02em;}
+.container{width:100%;max-width:calc(var(--container) + 48px);margin:0 auto;padding:0 24px;}
+.small-text,.paragraph-title{font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;line-height:1.4;}
+.paragraph-title{margin-bottom:16px;}
+.section .paragraph-title:not(.white-text){color:var(--accent-bright);}
+.discover .paragraph-title,.yellow-box .paragraph-title{color:#fff !important;}
+.fade-in-on-scroll > .paragraph-title,.center-text-holder > .paragraph-title{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid var(--line);border-radius:100px;font-size:11px;letter-spacing:.14em;color:rgba(240,237,232,.6) !important;margin-bottom:24px;}
+.fade-in-on-scroll > .paragraph-title::before,.center-text-holder > .paragraph-title::before{content:'';width:5px;height:5px;border-radius:50%;background:var(--accent);}
+p{color:var(--muted);font-weight:300;}
+.no-margins{margin:0;}
+.white-text{color:#fff;}
+
+/* LOADER */
+.loader{display:none;}
+.anim .loader{display:flex;position:fixed;inset:0 0 auto 0;height:100vh;z-index:300;background:var(--ink-2);color:#fff;align-items:center;justify-content:center;flex-direction:column;gap:22px;overflow:hidden;}
+.loader-logo{width:min(320px,70vw);height:auto;}
+.loader-track{width:min(260px,60vw);height:2px;background:rgba(255,255,255,.18);overflow:hidden;}
+.loader-bar{height:100%;width:0%;background:var(--accent-bright);}
 
 /* NAV */
-nav{
-  position:fixed;top:0;left:0;right:0;z-index:100;
-  display:flex;justify-content:space-between;align-items:center;
-  padding:22px 56px;
-  transition:padding .35s ease,background .35s ease,backdrop-filter .35s ease,border-color .35s ease;
-}
-nav.scrolled{
-  padding:16px 56px;
-  background:rgba(10,10,10,.92);
-  backdrop-filter:blur(24px);
-  -webkit-backdrop-filter:blur(24px);
-  border-bottom:1px solid rgba(255,255,255,.07);
-}
-.logo{display:flex;align-items:center;}
-.logo img{height:90px;width:auto;max-width:200px;object-fit:contain;display:block;}
-.nav-right{display:flex;align-items:center;gap:44px;}
-.nav-links{display:flex;gap:36px;list-style:none;}
-.nav-links a{font-size:13px;letter-spacing:.06em;color:rgba(240,237,232,.5);font-weight:400;transition:color .25s;}
-.nav-links a:hover{color:#f0ede8;}
-.nav-btn{
-  font-size:13px;letter-spacing:.05em;font-weight:500;
-  padding:11px 22px;border-radius:8px;
-  color:#fff;background:#0057A8;border:none;
-  transition:background .25s,transform .2s,box-shadow .2s;
-  white-space:nowrap;flex-shrink:0;cursor:pointer;
-  font-family:'Outfit',sans-serif;
-  display:inline-flex;align-items:center;gap:8px;
-  box-shadow:0 2px 12px rgba(0,87,168,.35);
-}
-.nav-btn:hover{background:#0066cc;transform:translateY(-1px);box-shadow:0 4px 18px rgba(0,87,168,.5);}
-.nav-btn svg{width:12px;height:12px;transition:transform .25s;}
-.nav-btn:hover svg{transform:translateX(3px);}
+.fixed{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(10,10,10,.92);-webkit-backdrop-filter:blur(24px);backdrop-filter:blur(24px);border-bottom:1px solid transparent;transition:border-color .3s;}
+.fixed.scrolled{border-color:var(--line);}
+.navbar-holder{display:flex;align-items:center;justify-content:space-between;height:76px;}
+.brand{display:flex;align-items:center;}
+.brand img{height:44px;width:auto;}
+.nav-links{display:flex;gap:34px;align-items:center;}
+.nav-link-wrapper{position:relative;overflow:hidden;}
+.nav-link{display:block;font-size:var(--t-sm);font-weight:500;padding:4px 0;}
+.nav-line{position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .35s var(--ease);}
+.nav-link-wrapper:hover .nav-line,.nav-link.current+.nav-line{transform:scaleX(1);transform-origin:left;}
+.nav-cta{margin-left:10px;}
+.menu-button{display:none;width:44px;height:44px;border:1px solid var(--ink);border-radius:var(--pill);background:none;cursor:pointer;align-items:center;justify-content:center;flex-direction:column;gap:5px;}
+.menu-button span{display:block;width:18px;height:1.5px;background:var(--ink);transition:transform .3s;}
+.menu-open .menu-button span:first-child{transform:translateY(3.25px) rotate(45deg);}
+.menu-open .menu-button span:last-child{transform:translateY(-3.25px) rotate(-45deg);}
+
+/* BUTTONS */
+.button{display:inline-flex;align-items:center;gap:12px;padding:8px 8px 8px 24px;border-radius:var(--pill);background:var(--accent);color:#fff;font-size:var(--t-sm);font-weight:500;letter-spacing:.03em;border:1px solid var(--accent);cursor:pointer;font-family:var(--f-body);box-shadow:0 2px 12px rgba(0,87,168,.3);transition:background .25s,box-shadow .25s;}
+.button:hover{background:var(--accent-hover);box-shadow:0 4px 18px rgba(0,87,168,.45);}
+.button-text-holder{height:1.4em;overflow:hidden;}
+.button-text{display:block;line-height:1.4em;transition:transform .45s var(--ease);}
+.button:hover .button-text{transform:translateY(-100%);}
+.button-icon{width:36px;height:36px;border-radius:50%;background:#fff;color:var(--accent);display:flex;align-items:center;justify-content:center;transition:transform .45s var(--ease);}
+.button-icon svg{width:14px;height:14px;}
+.button:hover .button-icon{transform:rotate(-45deg);}
+.button.secondary{background:transparent;color:var(--ink);border-color:var(--line-strong);box-shadow:none;padding:8px 24px 8px 24px;}
+.button.secondary:hover{background:var(--ink);color:#0a0a0a;border-color:var(--ink);}
+.button.secondary:hover .dot{background:var(--accent);}
+.button.secondary .dot{width:8px;height:8px;border-radius:50%;background:var(--accent-bright);}
 
 /* HERO */
-.hero{height:100svh;min-height:700px;position:relative;display:flex;flex-direction:column;justify-content:flex-end;overflow:hidden;}
-.hero-bg{
-  position:absolute;inset:0;
-  background:url('https://cdn.prod.website-files.com/67f845f932f268860becd300/67f845f932f268860becd389_Franks%20(5).jpg') center/cover no-repeat;
-  animation:zoomIn 14s ease-out forwards;
-}
-@keyframes zoomIn{from{transform:scale(1.06);}to{transform:scale(1.0);}}
-.hero-bg::after{
-  content:'';position:absolute;inset:0;
-  background:linear-gradient(to bottom,rgba(10,10,10,.12) 0%,rgba(10,10,10,.05) 35%,rgba(10,10,10,.7) 75%,rgba(10,10,10,.95) 100%);
-}
-.hero-tag{position:absolute;top:130px;right:56px;display:flex;align-items:center;gap:8px;z-index:2;animation:fadeIn .8s 1.2s both;}
-.hero-tag-dot{width:6px;height:6px;border-radius:50%;background:#0057A8;}
-.hero-tag span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(240,237,232,.6);font-weight:400;}
-.hero-content{position:relative;z-index:2;padding:0 56px 72px;display:flex;justify-content:space-between;align-items:flex-end;gap:40px;}
-.hero-eyebrow{display:flex;align-items:center;gap:12px;margin-bottom:24px;animation:fadeUp .9s .3s both;}
-.hero-eyebrow-line{width:32px;height:1px;background:rgba(240,237,232,.35);}
-.hero-eyebrow span{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(240,237,232,.5);font-weight:400;}
-h1{font-family:'Syne',sans-serif;font-size:clamp(52px,7vw,90px);font-weight:700;line-height:1.0;letter-spacing:-.025em;color:#f0ede8;animation:fadeUp .9s .45s both;max-width:700px;}
-h1 .accent{color:#4da3ff;}
-.cycle-wrap{display:inline-block;position:relative;min-width:1px;}
-.cycle-wrap::after{content:attr(data-reserve);display:inline-block;visibility:hidden;pointer-events:none;white-space:nowrap;}
-#cycleWord{position:absolute;left:0;top:0;white-space:nowrap;transition:opacity .35s ease,transform .35s ease;color:#4da3ff;}
-#cycleWord.fade-out{opacity:0;transform:translateY(-10px);}
-#cycleWord.fade-in{opacity:0;transform:translateY(10px);}
+.hero{position:relative;padding-top:156px;padding-bottom:32px;}
+.hero-eyebrow{display:inline-flex;align-items:center;gap:10px;padding:7px 16px;border:1px solid var(--line);border-radius:100px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(240,237,232,.65);margin-bottom:28px;}
+.hero-eyebrow .dot{width:6px;height:6px;border-radius:50%;background:var(--accent-bright);box-shadow:0 0 0 4px rgba(77,163,255,.15);}
+.hero-grid{display:grid;grid-template-columns:1.55fr 1fr;gap:56px;align-items:end;margin-bottom:48px;}
+.hero-title{font-size:clamp(46px,6.6vw,96px);font-weight:700;line-height:.98;letter-spacing:-.035em;color:var(--ink);}
+.hero-title .accent{color:var(--accent-bright);}
+.cycle-wrap{display:inline-block;position:relative;overflow:hidden;vertical-align:top;padding-bottom:.08em;margin-bottom:-.08em;}
+.cycle-wrap::after{content:attr(data-reserve);display:inline-block;visibility:hidden;white-space:nowrap;}
+.cycle-inner{position:absolute;left:0;top:0;white-space:nowrap;}
+#cycleWord{display:inline-block;white-space:nowrap;transition:opacity .35s ease,transform .35s ease;}
+#cycleWord.fade-out{opacity:0;transform:translateY(-14px);}
+#cycleWord.fade-in{opacity:0;transform:translateY(14px);}
 #cycleWord.visible{opacity:1;transform:translateY(0);}
-.hero-right{flex-shrink:0;max-width:320px;animation:fadeUp .9s .6s both;}
-.hero-right p{font-size:15px;line-height:1.75;color:rgba(240,237,232,.55);margin-bottom:28px;}
-.hero-form{display:flex;flex-direction:column;gap:10px;}
-.hero-form input{
-  padding:13px 18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:8px;
-  color:#f0ede8;font-family:'Outfit',sans-serif;font-size:14px;font-weight:300;outline:none;
-  transition:border-color .25s,background .25s;
-}
-.hero-form input::placeholder{color:rgba(240,237,232,.3);}
-.hero-form input:focus{border-color:rgba(255,255,255,.35);background:rgba(255,255,255,.1);}
-.btn{
-  padding:13px 20px;border-radius:8px;font-family:'Outfit',sans-serif;font-size:13px;font-weight:500;letter-spacing:.05em;
-  display:inline-flex;align-items:center;justify-content:center;gap:9px;transition:all .25s;cursor:pointer;border:none;
-}
-.btn-blue{background:#0057A8;color:#fff;}
-.btn-blue:hover{background:#0066cc;transform:translateY(-1px);}
-.btn-dark{background:#0a0a0a;color:#f0ede8;}
-.btn-dark:hover{background:#1a1a1a;transform:translateY(-1px);}
-.btn-white{background:#fff;color:#0a0a0a;}
-.btn-white:hover{background:#e8e8e8;transform:translateY(-1px);}
-.btn svg{width:13px;height:13px;transition:transform .25s;}
-.btn:hover svg{transform:translateX(3px);}
-.hero-scroll{position:absolute;bottom:36px;left:50%;transform:translateX(-50%);z-index:2;display:flex;flex-direction:column;align-items:center;gap:6px;animation:fadeIn .8s 1.4s both;}
-.hero-scroll span{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(240,237,232,.3);}
-.scroll-bar{width:1px;height:44px;background:linear-gradient(to bottom,rgba(0,87,168,.8),transparent);animation:scrollBob 2s ease-in-out infinite;}
-@keyframes scrollBob{0%,100%{opacity:.3;}50%{opacity:.9;}}
-
-/* MARQUEE */
-.marquee-wrap{border-top:1px solid rgba(255,255,255,.07);border-bottom:1px solid rgba(255,255,255,.07);padding:18px 0;overflow:hidden;}
-.marquee{display:flex;width:max-content;animation:marquee 24s linear infinite;}
-.marquee-item{display:flex;align-items:center;gap:28px;padding-right:56px;font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(240,237,232,.28);font-weight:400;white-space:nowrap;}
-.marquee-sep{width:3px;height:3px;border-radius:50%;background:rgba(240,237,232,.18);}
-@keyframes marquee{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+.hero-aside p{font-size:17px;line-height:1.7;max-width:420px;margin-bottom:26px;}
+.hero-button-holder{display:flex;gap:12px;flex-wrap:wrap;}
+.hero-media{position:relative;height:clamp(320px,58vh,640px);border-radius:16px;overflow:hidden;background:#111;}
+.content_img-wrap{position:absolute;inset:0;overflow:hidden;}
+.content_img{width:100%;height:100%;object-fit:cover;}
+.content_img-wrap:last-child::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.5),transparent 40%);pointer-events:none;}
+.hero-caption{position:absolute;left:22px;bottom:20px;z-index:1;display:inline-flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.88);}
+.hero-caption::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--accent-bright);}
+.hero-meta{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-top:22px;color:rgba(240,237,232,.45);}
+.hero-meta .small-text{display:flex;align-items:center;gap:12px;flex-wrap:wrap;font-size:11px;letter-spacing:.14em;}
+.sep{width:3px;height:3px;border-radius:50%;background:rgba(240,237,232,.3);}
+.small-link{display:inline-block;transition:color .25s;}
+.small-link:hover{color:var(--accent-bright);}
 
 /* SECTIONS */
-.s{padding:120px 56px;max-width:1320px;margin:0 auto;}
-#about,#services,#work,#cta{scroll-margin-top:100px;}
+.section-spacing{padding:var(--space) 0;}
+.line{height:1px;background:var(--line);max-width:var(--container);margin:0 auto var(--space);}
+.grid-title{display:grid;grid-template-columns:1.4fr 1fr;gap:48px;align-items:end;margin-bottom:48px;}
+.h4-style{font-size:var(--h4);font-weight:500;max-width:760px;}
+.grid-title p{max-width:420px;justify-self:end;}
 
-/* LABEL TAG */
-.label-tag{display:inline-flex;align-items:center;gap:8px;padding:6px 14px;border:1px solid rgba(255,255,255,.1);border-radius:100px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(240,237,232,.4);margin-bottom:32px;width:fit-content;}
-.label-tag-dot{width:5px;height:5px;border-radius:50%;background:#0057A8;}
-.dim{color:#4da3ff;}
+/* PARTNERS */
+.partner-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line);}
+.partner{height:150px;display:flex;align-items:center;justify-content:center;border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:30px 36px;transition:background .3s;}
+.partner{transition:background .45s ease;}
+.partner{position:relative;}
+.partner .logo-colour{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);opacity:0;filter:none !important;transition:opacity .45s ease;}
+.partner:hover{background:var(--brand,var(--accent-tint)) !important;}
+.partner:hover .partner-logo:not(.logo-colour){opacity:0 !important;}
+.partner:hover .logo-colour{opacity:1;}
 
-/* ABOUT */
-.about-grid{display:grid;grid-template-columns:1fr 1.6fr;gap:120px;align-items:start;}
-.about-label{position:sticky;top:120px;}
-.about-label h2{font-family:'Syne',sans-serif;font-size:clamp(38px,4vw,54px);font-weight:700;letter-spacing:-.02em;line-height:1.05;}
-.about-body p{font-size:16px;line-height:1.85;color:rgba(240,237,232,.5);margin-bottom:22px;}
-.about-body p strong{color:rgba(240,237,232,.85);font-weight:500;}
-.stats-row{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid rgba(255,255,255,.08);border-radius:12px;overflow:hidden;margin-top:52px;}
-.stat{padding:32px 28px;border-right:1px solid rgba(255,255,255,.08);}
-.stat:last-child{border-right:none;}
-.stat-n{font-family:'Syne',sans-serif;font-size:38px;font-weight:700;letter-spacing:-.02em;color:#f0ede8;display:block;margin-bottom:6px;}
-.stat-l{font-size:12px;letter-spacing:.08em;color:rgba(240,237,232,.3);text-transform:uppercase;}
+.partner-logo{max-height:54px;max-width:72%;object-fit:contain;filter:brightness(0) invert(1);opacity:.45;transition:opacity .3s;}
+.partner:hover .partner-logo{opacity:1;}
+.partner-logo.grey{filter:grayscale(1) brightness(1.6);}
+.partner:hover .partner-logo.grey{filter:none;}
+.partner-logo.mono{filter:none;opacity:.55;}
+.partner:hover .partner-logo.mono{opacity:1;}
+.partner.more{flex-direction:column;align-items:flex-start;justify-content:space-between;}
+.partner.more strong{font-family:var(--f-head);font-size:var(--h6);font-weight:700;line-height:1.15;color:var(--accent-bright);}
 
-/* ABOUT OVERLAPPING PHOTOS */
-.about-photos{position:relative;margin-top:52px;height:260px;}
-.about-photo-main{position:absolute;top:0;left:0;width:68%;height:220px;overflow:hidden;border-radius:6px;box-shadow:0 24px 60px rgba(0,0,0,.5);z-index:1;}
-.about-photo-main img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease;}
-.about-photo-main:hover img{transform:scale(1.04);}
-.about-photo-overlap{position:absolute;bottom:0;right:0;width:52%;height:180px;overflow:hidden;border-radius:6px;box-shadow:0 24px 60px rgba(0,0,0,.6);border:3px solid #0a0a0a;z-index:2;}
-.about-photo-overlap img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .7s ease;}
-.about-photo-overlap:hover img{transform:scale(1.04);}
-@media(max-width:640px){
-  .about-photos{height:200px;}
-  .about-photo-main{width:72%;height:170px;}
-  .about-photo-overlap{width:56%;height:140px;}
-}
+/* PROJECTS */
+.gray{background:var(--alt);border:1px solid var(--line);border-radius:24px;padding-top:64px;padding-bottom:20px;max-width:calc(var(--container) + 48px);}
+.gray .grid-title{padding:0 24px;}
+.project-list-container{display:flex;flex-direction:column;}
+.project-link-wrapper{display:grid;grid-template-columns:1.2fr 1fr .6fr;align-items:center;gap:28px;padding:30px 24px;border-top:1px solid var(--line);position:relative;}
+.project-title-holder h3{font-size:var(--h3);font-weight:700;line-height:1.02;transition:color .3s;}
+.project-link-wrapper{transition:background .4s;}
+.project-link-wrapper:hover{background:rgba(255,255,255,.02);}
+.project-link-wrapper:hover .project-title-holder h3{color:var(--accent-bright);}
+.project-title-holder .url{display:block;margin-top:10px;font-size:var(--t-sm);color:var(--accent-bright);}
+.project-main-image-holder{position:relative;aspect-ratio:16/10;background:radial-gradient(ellipse 70% 60% at 55% 50%,rgba(0,87,168,.16) 0%,transparent 70%),#151515;border:1px solid var(--line);border-radius:14px;overflow:hidden;display:flex;align-items:center;justify-content:center;}
+.project-main-image{width:88%;height:88%;object-fit:contain;transition:transform .6s var(--ease);}
+.project-link-wrapper:hover .project-main-image{transform:scale(1.05);}
+.discover{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) scale(.85);background:var(--accent);color:#fff;border-radius:var(--pill);padding:12px 22px;opacity:0;transition:opacity .35s,transform .35s var(--ease);}
+.discover .paragraph-title{margin:0;}
+.project-link-wrapper:hover .discover{opacity:1;transform:translate(-50%,-50%) scale(1);}
+.project-category-wrapper{display:flex;flex-direction:column;align-items:flex-end;gap:8px;text-align:right;}
+.project-category-text{font-family:var(--f-head);font-size:var(--h6);font-weight:600;}
+.project-counter-holder{display:flex;gap:4px;font-size:var(--t-sm);color:var(--muted);}
 
-/* SERVICES */
-.services-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end;margin-bottom:56px;}
-.services-head h2{font-family:'Syne',sans-serif;font-size:clamp(38px,4vw,54px);font-weight:700;letter-spacing:-.02em;line-height:1.05;}
-.services-head p{font-size:15px;line-height:1.75;color:rgba(240,237,232,.4);max-width:340px;justify-self:end;align-self:end;}
-.service-list{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
-a.service-item{color:inherit;}
-.service-item{
-  position:relative;display:flex;flex-direction:column;height:100%;
-  padding:38px 32px 34px;border:1px solid rgba(255,255,255,.09);border-radius:14px;background:#111;
-  transition:border-color .42s cubic-bezier(.22,.61,.36,1),transform .62s cubic-bezier(.22,.61,.36,1),box-shadow .62s cubic-bezier(.22,.61,.36,1);overflow:hidden;
-}
-.service-item::before{content:'';position:absolute;left:0;top:0;right:0;height:0;background:#0057A8;transition:height .4s ease;}
-.service-item:hover{border-color:rgba(255,255,255,.22);transform:translateY(-6px);box-shadow:0 4px 12px rgba(0,0,0,.3),0 40px 80px -32px rgba(0,0,0,.7);}
-.service-item:hover::before{height:3px;}
-.si-num{font-family:'Syne',sans-serif;font-size:12px;letter-spacing:.16em;color:rgba(77,163,255,.85);font-weight:600;margin-bottom:22px;}
-.si-body{display:flex;flex-direction:column;flex:1;}
-.si-body h3{font-family:'Syne',sans-serif;font-size:22px;font-weight:600;letter-spacing:-.015em;line-height:1.18;margin-bottom:14px;color:#f0ede8;transition:color .25s;}
-.service-item:hover .si-body h3{color:#4da3ff;}
-.si-body p{font-size:14px;line-height:1.7;color:rgba(240,237,232,.42);}
-.si-link{margin-top:auto;padding-top:26px;}
-.si-arrow{position:absolute;top:34px;right:28px;width:38px;height:38px;border:1px solid rgba(255,255,255,.12);border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;color:rgba(240,237,232,.3);transition:all .3s;}
-.service-item:hover .si-arrow{border-color:#0057A8;color:#4da3ff;transform:rotate(-45deg);}
-.si-arrow svg{width:14px;height:14px;}
-@media(max-width:960px){.service-list{grid-template-columns:1fr;}}
-/* Blue sublink used in service items */
-.si-link{display:inline-flex;align-items:center;gap:7px;margin-top:12px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#4da3ff;font-weight:500;border-bottom:1px solid rgba(77,163,255,.3);padding-bottom:2px;}
-.si-link svg{width:10px;height:10px;}
+.work-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:0 24px 24px;}
+.work-card{display:flex;flex-direction:column;background:#121212;border:1px solid var(--line);border-radius:16px;overflow:hidden;transition:border-color .4s,transform .6s var(--ease),box-shadow .6s var(--ease);}
+a.work-card:hover{border-color:var(--line-strong);transform:translateY(-6px);box-shadow:0 30px 60px -30px rgba(0,0,0,.8);}
+.work-media{position:relative;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;background:radial-gradient(ellipse 70% 60% at 55% 50%,rgba(0,87,168,.2) 0%,transparent 70%),#161616;}
+.work-media img{width:84%;height:auto;aspect-ratio:3/2;object-fit:contain;filter:drop-shadow(0 22px 40px rgba(0,0,0,.55));transition:transform .6s var(--ease);}
+a.work-card:hover .work-media img{transform:translateY(-6px) scale(1.02);}
+.work-new{position:absolute;top:14px;left:14px;font-size:10px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;padding:5px 10px;border-radius:100px;background:var(--accent);color:#fff;}
+.work-info{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;padding:20px 22px 22px;border-top:1px solid var(--line);}
+.work-info h3{font-size:19px;font-weight:700;line-height:1.15;letter-spacing:-.01em;transition:color .3s;}
+a.work-card:hover .work-info h3{color:var(--accent-bright);}
+.work-info .url{display:block;margin-top:6px;font-size:13px;color:var(--accent-bright);}
+.work-info .url.muted{color:var(--muted);}
+.work-cat{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);white-space:nowrap;padding-bottom:2px;}
+.h4-style .count{font-size:.42em;font-weight:600;color:var(--accent-bright);vertical-align:super;margin-left:8px;letter-spacing:.04em;}
 
-/* FEATURE */
-.feature-outer{background:#111;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);}
-.feature-grid{display:grid;grid-template-columns:1fr 1fr;align-items:stretch;}
-.feature-img-col{position:relative;overflow:hidden;min-height:600px;background:#0a0a0a;}
-.feature-img-col img{width:100%;height:100%;object-fit:contain;transition:transform .8s ease;display:block;}
-.feature-img-col:hover img{transform:scale(1.03);}
-.feature-badge{position:absolute;bottom:32px;left:32px;background:rgba(10,10,10,.85);border:1px solid rgba(255,255,255,.1);backdrop-filter:blur(12px);border-radius:10px;padding:16px 20px;display:flex;align-items:center;gap:12px;}
-.badge-dot{width:8px;height:8px;border-radius:50%;background:#0057A8;flex-shrink:0;animation:pulse 2s ease-in-out infinite;}
-@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.35;}}
-.badge-txt{font-size:12px;letter-spacing:.06em;color:rgba(240,237,232,.7);}
-.badge-txt strong{display:block;color:#f0ede8;font-weight:500;margin-bottom:2px;}
-.feature-text-col{padding:72px 64px;display:flex;flex-direction:column;justify-content:center;}
-.feature-text-col .label-tag{margin-bottom:28px;}
-.feature-text-col h2{font-family:'Syne',sans-serif;font-size:clamp(32px,3vw,44px);font-weight:700;letter-spacing:-.02em;line-height:1.1;margin-bottom:24px;}
-.feature-text-col p{font-size:15px;line-height:1.8;color:rgba(240,237,232,.45);margin-bottom:16px;}
-.check-list{list-style:none;margin:28px 0 40px;display:flex;flex-direction:column;gap:14px;}
-.check-list li{display:flex;align-items:flex-start;gap:12px;font-size:14px;color:rgba(240,237,232,.55);line-height:1.5;}
-.check-list li::before{content:'';display:block;width:16px;height:16px;flex-shrink:0;border-radius:50%;background:rgba(0,87,168,.15);border:1px solid rgba(0,87,168,.5);margin-top:1px;}
+.arr{display:inline-block;width:.72em;height:.72em;vertical-align:.02em;margin-left:.15em;}
 
-/* GALLERY */
-.gallery-head{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:40px;}
-.gallery-head h2{font-family:'Syne',sans-serif;font-size:clamp(38px,4vw,54px);font-weight:700;letter-spacing:-.02em;line-height:1.05;}
-.gallery-link{font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:rgba(240,237,232,.35);display:flex;align-items:center;gap:8px;border-bottom:1px solid rgba(255,255,255,.1);padding-bottom:2px;transition:color .25s,border-color .25s;}
-.gallery-link:hover{color:#f0ede8;border-color:rgba(255,255,255,.4);}
-.gallery-link svg{width:13px;height:13px;}
-@media(max-width:640px){.gallery-link{display:none;}}
-.gallery-grid{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:340px 240px;gap:12px;}
-.g-item{overflow:hidden;border-radius:4px;position:relative;}
-.g-item:first-child{grid-row:span 2;}
-.g-item img{width:100%;height:100%;object-fit:cover;transition:transform .7s ease;}
-.g-item:hover img{transform:scale(1.05);}
-.g-overlay{position:absolute;inset:0;background:linear-gradient(to top,rgba(10,10,10,.7),transparent 55%);opacity:0;transition:opacity .35s;display:flex;align-items:flex-end;padding:24px 26px;}
-.g-item:hover .g-overlay{opacity:1;}
-.g-label{font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#fff;font-weight:500;display:block;}
-.g-sublabel{font-size:11px;color:rgba(255,255,255,.55);letter-spacing:.06em;margin-top:4px;display:block;}
-.g-item-video{overflow:hidden;border-radius:4px;position:relative;background:#000;}
-.g-item-video iframe{position:absolute;top:0;left:0;width:100%;height:100%;border:none;display:block;}
-.g-item-video:hover .g-overlay{opacity:1;}
-
-/* ============ SELECTED WORK STACKING DECK ============ */
-.work-outer{background:#0e0e0e;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);}
-.work-inner{max-width:1320px;margin:0 auto;padding:100px 56px 90px;}
-.work-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:64px;}
-.work-head h2{font-family:'Syne',sans-serif;font-size:clamp(38px,4vw,54px);font-weight:700;letter-spacing:-.02em;line-height:1.05;}
-.work-head h2 sup{font-size:.38em;font-weight:600;color:rgba(0,87,168,.9);letter-spacing:.04em;vertical-align:super;margin-left:8px;}
-.work-head p{font-size:15px;color:rgba(240,237,232,.4);max-width:340px;line-height:1.7;}
-
-/* Stacking deck each panel pins while the next slides over it */
-.work-deck{display:flex;flex-direction:column;gap:28px;}
-.work-panel{position:sticky;border-radius:18px;overflow:hidden;background:#131313;border:1px solid rgba(255,255,255,.08);display:grid;grid-template-columns:1fr 1.1fr;min-height:520px;box-shadow:0 -20px 60px rgba(0,0,0,.45);}
-.work-panel:nth-child(1){top:96px;}
-.work-panel:nth-child(2){top:110px;}
-.work-panel:nth-child(3){top:124px;}
-.work-panel:nth-child(4){top:138px;}
-.work-panel:nth-child(5){top:152px;}
-.work-panel:nth-child(6){top:166px;}
-.work-panel:nth-child(7){top:180px;}
-.work-panel:nth-child(8){top:194px;}
-
-/* ghost index number */
-.work-panel::before{content:attr(data-index);position:absolute;top:-30px;right:26px;font-family:'Syne',sans-serif;font-size:230px;font-weight:800;line-height:1;letter-spacing:-.05em;color:rgba(255,255,255,.035);pointer-events:none;user-select:none;z-index:0;}
-
-.work-info{position:relative;z-index:1;padding:64px 24px 64px 56px;display:flex;flex-direction:column;justify-content:center;}
-.work-cat{display:flex;align-items:center;gap:10px;margin-bottom:22px;}
-.work-cat .badge-dot{width:6px;height:6px;border-radius:50%;background:#0057A8;flex-shrink:0;animation:pulse 2s ease-in-out infinite;}
-.work-cat span{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(240,237,232,.45);font-weight:400;}
-.work-info h3{font-family:'Syne',sans-serif;font-size:clamp(28px,2.6vw,40px);font-weight:700;letter-spacing:-.02em;line-height:1.05;color:#f0ede8;margin-bottom:10px;}
-.work-url{display:inline-flex;align-items:center;gap:7px;font-size:13px;color:#4da3ff;letter-spacing:.02em;margin-bottom:24px;width:fit-content;border-bottom:1px solid rgba(77,163,255,.25);padding-bottom:2px;transition:color .25s,border-color .25s;}
-.work-url:hover{color:#7ec0ff;border-color:rgba(77,163,255,.6);}
-.work-url svg{width:11px;height:11px;}
-.work-info>p{font-size:15px;line-height:1.8;color:rgba(240,237,232,.5);margin-bottom:28px;max-width:420px;}
-
-.work-cta{align-self:flex-start;}
-
-.work-visual{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;padding:48px 48px 48px 12px;background:radial-gradient(ellipse 70% 60% at 55% 50%,rgba(0,87,168,.14) 0%,transparent 70%);}
-.work-visual img{width:100%;height:auto;max-height:430px;object-fit:contain;filter:drop-shadow(0 30px 55px rgba(0,0,0,.55));transition:transform .6s cubic-bezier(.22,1,.36,1);}
-.work-panel:hover .work-visual img{transform:translateY(-8px);}
-.work-visual.is-wide img{transform:scale(1.1);}
-.work-panel:hover .work-visual.is-wide img{transform:scale(1.1) translateY(-8px);}
-
-/* ============ CLIENT LOGOS ============ */
-/* LOGOS STRIP - full width */
-.logos-strip{margin-top:96px;padding-top:56px;border-top:1px solid rgba(255,255,255,.07);margin-left:calc(-56px);margin-right:calc(-56px);}
-.logos-strip-head{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:34px;gap:24px;padding:0 56px;}
-.logos-strip-label{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:rgba(240,237,232,.3);}
-.logos-strip-hint{font-size:11px;letter-spacing:.06em;color:rgba(240,237,232,.18);}
-.logos-marquee{position:relative;overflow:hidden;padding:4px 0;}
-.logos-marquee::before,.logos-marquee::after{content:'';position:absolute;top:0;bottom:0;width:80px;z-index:2;pointer-events:none;}
-.logos-marquee::before{left:0;background:linear-gradient(to right,#0e0e0e,transparent);}
-.logos-marquee::after{right:0;background:linear-gradient(to left,#0e0e0e,transparent);}
-.logos-track{display:flex;align-items:stretch;width:max-content;animation:logos-scroll 36s linear infinite;}
-.logos-track:hover{animation-play-state:paused;}
-.logo-item{display:flex;align-items:center;justify-content:center;width:250px;height:136px;flex-shrink:0;border-right:1px solid rgba(255,255,255,.07);background:transparent;transition:background .3s ease;padding:0;}
-.logo-item:first-child{border-left:1px solid rgba(255,255,255,.07);}
-.logo-item:hover{background:rgba(255,255,255,.04);}
-.logo-item a{display:flex;align-items:center;justify-content:center;width:100%;height:100%;padding:26px 40px;}
-.logo-item img{max-width:100%;max-height:100%;object-fit:contain;filter:brightness(0) invert(1);opacity:.4;transition:opacity .35s ease,filter .35s ease;}
-.logo-item:hover img{filter:brightness(0) invert(1);opacity:1;}
-.logo-item-kk img{filter:brightness(0) invert(1);opacity:.4;}
-.logo-item-kk:hover img{filter:brightness(0) invert(1);opacity:1;}
-.logo-item-clegg img{filter:brightness(1);opacity:.4;}
-.logo-item-clegg:hover img{filter:brightness(1);opacity:1;}
-.logo-item-ypct img{filter:grayscale(1) brightness(.8);opacity:.5;}
-.logo-item-ypct:hover img{filter:none;opacity:1;}
-.logo-item-mpc img{filter:brightness(0) invert(1);opacity:.4;}
-.logo-item-mpc:hover img{filter:none;opacity:1;}
-@keyframes logos-scroll{from{transform:translateX(0);}to{transform:translateX(-50%);}}
-@media(prefers-reduced-motion:reduce){.logos-track{animation:none;flex-wrap:wrap;width:auto;}}
-
-@media(max-width:1024px){
-  .work-inner{padding:80px 30px;}
-  .work-head{flex-direction:column;align-items:flex-start;gap:16px;margin-bottom:48px;}
-  .work-panel{grid-template-columns:1fr;min-height:0;}
-  .work-panel::before{font-size:150px;top:-16px;right:16px;}
-  .work-visual{order:-1;padding:44px 36px 8px;}
-  .work-visual img{max-height:300px;}
-  .work-info{padding:36px 36px 48px;}
-}
-@media(max-width:640px){
-  .work-inner{padding:64px 20px;}
-  .work-deck{gap:18px;}
-  .work-panel{border-radius:14px;}
-  .work-panel:nth-child(1){top:84px;}
-  .work-panel:nth-child(2){top:94px;}
-  .work-panel:nth-child(3){top:104px;}
-  .work-panel:nth-child(4){top:114px;}
-  .work-panel:nth-child(5){top:124px;}
-  .work-panel:nth-child(6){top:132px;}
-  .work-panel:nth-child(7){top:140px;}
-  .work-panel:nth-child(8){top:148px;}
-  .work-visual{padding:32px 22px 4px;}
-  .work-visual img{max-height:220px;}
-  .work-info{padding:26px 22px 36px;}
-  .work-info>p{font-size:14px;}
-  .work-cta{width:100%;justify-content:center;}
-  .logos-strip{margin-top:72px;padding-top:44px;margin-left:-20px;margin-right:-20px;}
-  .logos-strip-head{padding:0 20px;}
-  .logo-item{width:140px;height:86px;}
-  .logo-item a{padding:18px 22px;}
-}
+/* SERVICES (sticky) */
+.sticky-services-holder{height:400vh;position:relative;}
+.sticky-services{position:sticky;top:76px;height:calc(100vh - 76px);padding:0 24px 24px;}
+.services{height:100%;max-width:calc(var(--container) + 48px);margin:0 auto;background:var(--ink-2);border:1px solid var(--line);border-radius:24px;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;}
+.services-text-holder{padding:48px;display:flex;flex-direction:column;justify-content:space-between;}
+.services-text-container{display:flex;flex-direction:column;gap:6px;}
+.services-text{color:rgba(255,255,255,.25);transition:color .4s;cursor:default;}
+.services-text .h2-style{font-family:var(--f-head);font-size:var(--h2);font-weight:700;line-height:1.1;}
+.services-text.active .h2-style{color:var(--accent-bright);}
+.services-text p{color:rgba(255,255,255,.65);font-size:var(--t-sm);max-width:380px;max-height:0;overflow:hidden;opacity:0;transition:max-height .5s var(--ease),opacity .4s,margin .4s;}
+.services-text.active{color:#fff;}
+.services-text.active p{max-height:120px;opacity:1;margin:10px 0 14px;}
+.yellow-box{display:inline-block;align-self:flex-start;background:var(--accent);color:#fff;border-radius:var(--pill);padding:10px 20px;}
+.yellow-box .paragraph-title{margin:0;}
+.services-images-holder{position:relative;margin:16px;border-radius:16px;overflow:hidden;background:#000;}
+.services-images{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;clip-path:inset(100% 0 0 0);transition:clip-path .8s var(--ease);}
+.services-images.contain{object-fit:contain;background:#151515;padding:28px;}
+.services-images.active{clip-path:inset(0 0 0 0);}
+.services-images-holder{container-type:size;}
+.services-video{overflow:hidden;}
+.video-poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;}
+.services-video iframe{position:absolute;top:50%;left:50%;width:max(100cqw,177.78cqh);height:max(100cqh,56.25cqw);transform:translate(-50%,-50%) scale(1.2);border:0;pointer-events:none;opacity:0;transition:opacity .8s;}
+.services-video.playing iframe{opacity:1;}
+.services-video .cine-mp4{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .8s;}
+.services-video.playing .cine-mp4{opacity:1;}
 
 /* TESTIMONIAL */
-.testimonial-outer{background:#0e0e0e;border-top:1px solid rgba(255,255,255,.06);border-bottom:1px solid rgba(255,255,255,.06);overflow:hidden;}
-.testimonial-inner{max-width:1320px;margin:0 auto;padding:100px 56px;display:grid;grid-template-columns:1fr 1fr;gap:0;align-items:stretch;}
-.testimonial-left{padding-right:72px;border-right:1px solid rgba(255,255,255,.07);display:flex;flex-direction:column;justify-content:space-between;gap:48px;}
-.testimonial-right{padding-left:72px;display:flex;align-items:center;justify-content:center;}
-.testimonial-right img{width:100%;max-width:480px;height:auto;object-fit:contain;filter:drop-shadow(0 40px 80px rgba(0,0,0,.6));}
-.t-quote-mark{font-family:'Syne',sans-serif;font-size:80px;line-height:1;color:#0057A8;font-weight:800;margin-bottom:-16px;display:block;}
-.t-quote p{font-size:17px;line-height:1.9;color:rgba(240,237,232,.6);font-weight:300;font-style:italic;}
-.t-attribution{display:flex;align-items:center;gap:24px;padding-top:40px;border-top:1px solid rgba(255,255,255,.06);}
-.t-logo{height:36px;width:auto;object-fit:contain;filter:invert(1);opacity:1;}
-.t-divider{width:1px;height:40px;background:rgba(255,255,255,.1);}
-.t-name{font-family:'Syne',sans-serif;font-size:15px;font-weight:600;color:#f0ede8;}
-.t-role{font-size:12px;color:rgba(240,237,232,.35);margin-top:3px;letter-spacing:.04em;}
+.center-text-holder{text-align:center;margin-bottom:28px;}
+.logo-animation-holder{position:relative;aspect-ratio:3360/540;margin:16px 0 64px;overflow:hidden;}
+.logo-animation-half,.logo-animation-full{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;}
+.logo-svg{display:block;width:92%;height:auto;color:var(--ink);}
+.logo-animation-full .logo-svg{color:var(--ink);}
+.logo-animation-full .logo-svg{filter:drop-shadow(0 0 40px rgba(0,87,168,.35));}
+.logo-animation-half._1{clip-path:inset(0 0 66% 0);}
+.logo-animation-half._2{clip-path:inset(33% 0 33% 0);}
+.logo-animation-half._3{clip-path:inset(66% 0 0 0);}
+.logo-animation-full{opacity:0;}
+.testimonial-holder{display:grid;grid-template-columns:1.3fr 1fr;gap:24px;}
+.testimonial-holder + .testimonial-holder{margin-top:24px;}
+.quote-body{display:flex;flex-direction:column;gap:14px;}
+.testimonial-wordmark{font-family:"Cormorant Garamond",Georgia,serif;font-size:22px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);white-space:nowrap;padding-right:18px;border-right:1px solid var(--line);}
+.testimonial-item{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:40px;display:flex;flex-direction:column;justify-content:space-between;gap:36px;}
+.testimonial-item p.quote{font-size:var(--t-lg);color:var(--ink);line-height:1.7;}
+.testimonial-user-holder{display:flex;align-items:center;gap:18px;}
+.testimonial-logo{height:38px;width:auto;object-fit:contain;}
+.testimonial-content .paragraph-title{margin:0 0 2px;}
+.testimonial-visual{background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(0,87,168,.16) 0%,transparent 70%),var(--card);border:1px solid var(--line);border-radius:24px;display:flex;align-items:center;justify-content:center;padding:32px;}
+.testimonial-visual img{max-height:380px;object-fit:contain;filter:drop-shadow(0 30px 55px rgba(0,0,0,.55));}
 
-/* CTA */
-.cta-wrap{position:relative;padding:170px 56px;min-height:600px;display:flex;align-items:center;overflow:hidden;background:#0a0a0a;}
-.cta-wrap::before{content:'';position:absolute;inset:0;background:url('https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/Copy%20of%20Franks%20(1).jpg') center/cover no-repeat;transform:scale(1.02);z-index:0;}
-.cta-wrap::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(8,8,8,.72) 0%,rgba(8,8,8,.42) 45%,rgba(8,10,14,.18) 100%),linear-gradient(to top,rgba(8,8,8,.55) 0%,transparent 40%);}
-.cta-eyebrow{display:inline-flex;align-items:center;gap:10px;margin-bottom:26px;}
-.cta-eyebrow-line{width:30px;height:1px;background:#4da3ff;}
-.cta-eyebrow span{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:rgba(240,237,232,.75);font-weight:400;}
-.cta-inner{position:relative;z-index:2;width:100%;max-width:1320px;margin:0 auto;display:flex;justify-content:space-between;align-items:flex-end;gap:90px;}
-.cta-left{max-width:700px;}
-.cta-inner h2{font-family:'Syne',sans-serif;font-size:clamp(40px,5.6vw,72px);font-weight:700;letter-spacing:-.03em;line-height:1.0;color:#fff;text-shadow:0 2px 30px rgba(0,0,0,.35);}
-.cta-right{flex-shrink:0;display:flex;flex-direction:column;gap:18px;align-items:flex-start;padding-bottom:6px;}
-.cta-right p{font-size:15px;color:rgba(240,237,232,.82);line-height:1.65;max-width:280px;text-shadow:0 1px 12px rgba(0,0,0,.5);}
-.btn-outline-white{display:inline-flex;align-items:center;gap:8px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.72);font-weight:500;border-bottom:1px solid rgba(255,255,255,.35);padding-bottom:2px;transition:color .25s,border-color .25s;font-family:'Outfit',sans-serif;}
-.btn-outline-white:hover{color:#fff;border-color:rgba(255,255,255,.8);}
-.btn-outline-white svg{width:11px;height:11px;}
+/* CONTACT */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start;}
+.contact-grid h2{font-size:var(--h2);margin-bottom:20px;}
+.contact-lines{display:flex;flex-direction:column;gap:8px;margin-top:28px;}
+.contact-lines a{font-family:var(--f-head);font-size:var(--h6);width:fit-content;color:var(--accent-bright);background-image:linear-gradient(rgba(0,87,168,.35),rgba(0,87,168,.35));background-size:0% 40%;background-position:0 85%;background-repeat:no-repeat;transition:background-size .4s var(--ease);}
+.contact-lines a:hover{background-size:100% 40%;}
+.form{display:flex;flex-direction:column;gap:14px;}
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+.field{display:flex;flex-direction:column;gap:6px;}
+.field label{font-size:12px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;}
+.text-field{width:100%;padding:14px 18px;border:1px solid var(--line);border-radius:14px;font:inherit;font-size:var(--t-sm);background:rgba(255,255,255,.05);color:var(--ink);outline:none;transition:border-color .25s;}
+.text-field:focus{border-color:rgba(0,87,168,.8);background:rgba(0,87,168,.06);}
+.text-field::placeholder{color:rgba(240,237,232,.25);}
+select.text-field option{background:#1a1a1a;color:var(--ink);}
+textarea.text-field{resize:none;height:120px;}
+.form .button{align-self:flex-start;margin-top:6px;}
+.success-message{display:none;border:1px solid rgba(0,87,168,.5);border-radius:24px;padding:40px;background:var(--accent-tint);}
+.success-message strong{font-family:var(--f-head);font-size:var(--h6);font-weight:500;display:block;margin-bottom:6px;}
 
 /* FOOTER */
-footer{background:#080808;border-top:1px solid rgba(255,255,255,.06);}
-.footer-top{max-width:1320px;margin:0 auto;padding:72px 56px 56px;display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:60px;border-bottom:1px solid rgba(255,255,255,.06);}
-.footer-brand{display:flex;flex-direction:column;gap:20px;}
-.footer-logo{display:inline-flex;align-items:center;width:fit-content;}
-.footer-logo img{height:70px;width:auto;max-width:180px;object-fit:contain;}
-.footer-brand p{font-size:13px;line-height:1.75;color:rgba(240,237,232,.28);max-width:220px;}
-.footer-col h4{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:rgba(240,237,232,.22);margin-bottom:20px;font-weight:500;}
-.footer-col a,.footer-col p{display:block;font-size:13px;color:rgba(240,237,232,.35);margin-bottom:13px;line-height:1;transition:color .2s;}
-.footer-col a:hover{color:rgba(240,237,232,.75);}
-.footer-col .email{color:#4da3ff;font-size:14px;font-weight:400;border-bottom:1px solid rgba(77,163,255,.25);padding-bottom:1px;}
-.footer-col .email:hover{color:#7ec0ff;border-color:rgba(77,163,255,.6);}
-.footer-bottom{max-width:1320px;margin:0 auto;padding:24px 56px;display:flex;justify-content:space-between;align-items:center;}
-.footer-bottom p,.footer-bottom a{font-size:12px;color:rgba(240,237,232,.18);}
-.footer-bottom a:hover{color:rgba(240,237,232,.45);}
-.footer-bottom-links{display:flex;gap:24px;}
+footer{margin-top:0;}
+.footer-container{position:relative;z-index:3;margin-top:-28px;background:var(--light);color:#16181b;border-radius:28px 28px 0 0;padding:72px 0 28px;}
+.footer-container p{color:rgba(10,10,10,.55);}
+.footer-cta-band{position:relative;overflow:hidden;padding:170px 0;min-height:600px;display:flex;align-items:center;background:#0a0a0a;}
+.footer-cta-band::before{content:'';position:absolute;inset:0;background:url('images/cta-bg.webp') center/cover no-repeat;transform:scale(1.02);z-index:0;}
+.footer-cta-band::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(8,8,8,.72) 0%,rgba(8,8,8,.42) 45%,rgba(8,10,14,.18) 100%),linear-gradient(to top,rgba(8,8,8,.55) 0%,transparent 40%);}
+.footer-cta-band .container{position:relative;z-index:2;}
+.footer-cta h2{text-shadow:0 2px 30px rgba(0,0,0,.35);}
+.footer-email{text-shadow:0 1px 12px rgba(0,0,0,.5);}
+.footer-cta{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;}
+.footer-cta h2{font-size:clamp(36px,5vw,64px);line-height:1;color:var(--ink);max-width:680px;}
+.footer-cta h2 span{color:var(--accent-bright);}
+.footer-cta-side{display:flex;flex-direction:column;align-items:flex-start;gap:18px;flex-shrink:0;}
+.footer-email{font-family:var(--f-head);font-size:20px;font-weight:600;color:var(--ink);border-bottom:1px solid var(--line-strong);padding-bottom:2px;transition:color .25s,border-color .25s;}
+.footer-email:hover{color:var(--accent-bright);border-color:var(--accent-bright);}
+.footer-wrapper{display:grid;grid-template-columns:1.2fr 2fr;gap:48px;padding-bottom:56px;}
+.footer-logo{width:200px;max-width:100%;height:auto;filter:brightness(0);}
+.footer-wrapper p{font-size:var(--t-sm);max-width:280px;margin-top:16px;}
+.footer-content{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;}
+.title-small{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(10,10,10,.4);margin-bottom:16px;}
+.footer-link{display:block;font-size:var(--t-sm);padding:4px 0;color:#0a0a0a;}
+.footer-block .nav-line{background:var(--accent);}
+.footer-divider{display:flex;justify-content:space-between;gap:16px;border-top:1px solid rgba(10,10,10,.1);padding-top:22px;font-size:13px;color:rgba(10,10,10,.45);}
 
-/* MOBILE GALLERY SLIDER */
-@media(max-width:640px){.gallery-grid{display:none;}.gallery-slider{display:block;}}
-@media(min-width:641px){.gallery-slider{display:none;}}
-.gallery-slider{position:relative;overflow:hidden;border-radius:4px;}
-.slider-track{display:flex;transition:transform .5s cubic-bezier(.25,.46,.45,.94);}
-.slide{flex:0 0 100%;position:relative;height:320px;}
-.slide img{width:100%;height:100%;object-fit:cover;display:block;}
-.slide-caption{position:absolute;bottom:0;left:0;right:0;padding:28px 24px 24px;background:linear-gradient(to top,rgba(10,10,10,.85),transparent);}
-.slide-caption .g-label{font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:#fff;font-weight:600;display:block;}
-.slide-caption .g-sublabel{font-size:12px;color:rgba(255,255,255,.55);margin-top:4px;display:block;}
-.slider-controls{display:flex;align-items:center;justify-content:space-between;margin-top:20px;}
-.slider-dots{display:flex;gap:8px;}
-.slider-dot{width:6px;height:6px;border-radius:50%;background:rgba(255,255,255,.2);border:none;cursor:pointer;padding:0;transition:background .25s,transform .25s;}
-.slider-dot.active{background:#0057A8;transform:scale(1.3);}
-.slider-arrows{display:flex;gap:8px;}
-.slider-btn{width:40px;height:40px;border-radius:50%;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#f0ede8;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:background .25s,border-color .25s;}
-.slider-btn:hover{background:rgba(255,255,255,.14);border-color:rgba(255,255,255,.3);}
-.slider-btn svg{width:14px;height:14px;}
 
-/* CONTACT MODAL */
-.modal-overlay{position:fixed;inset:0;z-index:999;background:rgba(0,0,0,.75);backdrop-filter:blur(8px);display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .35s ease;}
-.modal-overlay.open{opacity:1;pointer-events:all;}
-.modal{background:#141414;border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:52px 48px;width:100%;max-width:540px;position:relative;transform:translateY(24px);transition:transform .35s ease;max-height:90vh;overflow-y:auto;}
-.modal-overlay.open .modal{transform:translateY(0);}
-.modal-close{position:absolute;top:20px;right:20px;width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:rgba(240,237,232,.5);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:20px;line-height:1;transition:background .2s,color .2s;font-family:sans-serif;}
-.modal-close:hover{background:rgba(255,255,255,.12);color:#f0ede8;}
-.modal h3{font-family:'Syne',sans-serif;font-size:26px;font-weight:700;letter-spacing:-.02em;margin-bottom:8px;color:#f0ede8;}
-.modal-sub{font-size:14px;color:rgba(240,237,232,.4);margin-bottom:36px;line-height:1.5;}
-.form-row{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:0;}
-.form-group{display:flex;flex-direction:column;gap:7px;margin-bottom:14px;}
-.form-group label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(240,237,232,.35);font-weight:400;}
-.form-group input,.form-group textarea,.form-group select{padding:13px 16px;background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:8px;color:#f0ede8;font-family:'Outfit',sans-serif;font-size:14px;font-weight:300;outline:none;transition:border-color .25s,background .25s;width:100%;}
-.form-group textarea{resize:none;height:110px;}
-.form-group select option{background:#1a1a1a;color:#f0ede8;}
-.form-group input:focus,.form-group textarea:focus,.form-group select:focus{border-color:rgba(0,87,168,.8);background:rgba(0,87,168,.06);}
-.form-group input::placeholder,.form-group textarea::placeholder{color:rgba(240,237,232,.2);}
-.modal-submit{width:100%;margin-top:8px;justify-content:center;}
-.form-success{display:none;text-align:center;padding:32px 0;}
-.form-success strong{color:#f0ede8;display:block;font-family:'Syne',sans-serif;font-size:22px;margin-bottom:10px;letter-spacing:-.01em;}
-.form-success p{font-size:15px;color:rgba(240,237,232,.5);line-height:1.6;}
-@media(max-width:540px){.modal{padding:36px 24px;}.form-row{grid-template-columns:1fr;}}
+/* LIGHT SECTIONS */
+:root{--light:#f2f0eb;--light-ink:#16181b;}
+.section.light{background:var(--light);color:var(--light-ink);
+  --ink:#16181b;--muted:rgba(22,24,27,.62);--line:rgba(22,24,27,.1);--line-strong:rgba(22,24,27,.2);
+  --accent-bright:#0057A8;--card:#ffffff;--alt:#ffffff;}
 
-@keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
-@keyframes fadeIn{from{opacity:0;}to{opacity:1;}}
-.reveal{opacity:1;transform:none;}
-.reveal.animate{opacity:0;transform:translateY(24px);transition:opacity .75s ease,transform .75s ease;}
-.reveal.animate.in{opacity:1;transform:translateY(0);}
-@media(max-width:768px){.reveal,.reveal.animate,.reveal.animate.in{opacity:1 !important;transform:none !important;transition:none !important;}}
+.section.light .line{display:none;}
+.section.light p{color:var(--muted);}
+.section.light .fade-in-on-scroll > .paragraph-title,.section.light .center-text-holder > .paragraph-title{color:rgba(22,24,27,.6) !important;}
+.section.light .partner-grid{border-color:var(--line);}
+.section.light .partner-logo.mono{filter:invert(1) brightness(.35) !important;opacity:.7;}
+.section.light .partner:hover .partner-logo.mono{opacity:0 !important;}
+.section.light .button.secondary{color:var(--ink);}
+.section.light .text-field{background:#fff;border-color:rgba(22,24,27,.1);color:#16181b;}
+.section.light .text-field:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(0,87,168,.1);}
+.section.light .text-field::placeholder{color:rgba(22,24,27,.35);}
+.section.light select.text-field option{background:#fff;color:#16181b;}
+.section.light .field label{color:#16181b;}
+.section.light .services .paragraph-title.white-text{color:#fff;}
+.section.light .services{--ink:#f0ede8;--muted:rgba(240,237,232,.5);--line:rgba(255,255,255,.1);--accent-bright:#4da3ff;border-color:transparent;}
+.section.light .services-text p{color:rgba(255,255,255,.65);}
+.section.light .testimonial-item{background:#fff;border-color:rgba(22,24,27,.08);box-shadow:0 18px 40px -28px rgba(22,24,27,.25);}
+.section.light .testimonial-item p.quote{color:#16181b;}
+.section.light .testimonial-logo{filter:invert(1) brightness(.3);}
+.section.light .testimonial-visual{background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(0,87,168,.16) 0%,transparent 70%),#16181b;border-color:transparent;}
+
+/* NAV adapts to the section underneath */
+.fixed{transition:background-color .45s ease,border-color .45s ease;}
+.fixed .brand img,.fixed .nav-link,.fixed .menu-button,.fixed .menu-button span{transition:filter .45s ease,color .45s ease,border-color .45s ease,background-color .45s ease;}
+.fixed.nav-light{background:rgba(242,240,235,.86);border-color:rgba(22,24,27,.08);}
+.fixed.nav-light .brand img{filter:brightness(0);}
+.fixed.nav-light .nav-link{color:#16181b;}
+.fixed.nav-light .menu-button{border-color:#16181b;}
+.fixed.nav-light .menu-button span{background:#16181b;}
+
+/* COOKIE */
+.cookie-banner{position:fixed;left:24px;bottom:24px;z-index:200;max-width:420px;background:#141414;border:1px solid var(--line-strong);box-shadow:0 20px 60px rgba(0,0,0,.55);border-radius:20px;padding:22px;transform:translateY(140%);opacity:0;transition:transform .5s var(--ease),opacity .5s;}
+.cookie-banner.show{transform:none;opacity:1;}
+.cookie-banner p{font-size:13px;margin:8px 0 16px;}
+.cookie-banner p a{color:var(--accent-bright);text-decoration:underline;}
+.cookie-actions{display:flex;gap:10px;}
+.cc-btn{flex:1;padding:11px 16px;border-radius:var(--pill);font:inherit;font-size:13px;font-weight:500;cursor:pointer;border:1px solid var(--line-strong);}
+.cc-accept{background:var(--accent);border-color:var(--accent);color:#fff;}
+.cc-decline{background:transparent;color:var(--ink);}
 
 /* RESPONSIVE */
-@media(max-width:1024px){
-  nav,nav.scrolled{padding-left:30px;padding-right:30px;}
-  .s{padding:80px 30px;}
-  .hero-content{padding:0 30px 60px;}
-  .hero-tag{top:110px;right:30px;}
-  .about-grid{grid-template-columns:1fr;gap:48px;}
-  .about-label{position:static;}
-  .services-head{grid-template-columns:1fr;}
-  .services-head p{justify-self:start;}
-  .feature-grid{grid-template-columns:1fr;}
-  .feature-img-col{min-height:380px;}
-  .feature-text-col{padding:48px 30px;}
-  .gallery-grid{grid-template-columns:1fr 1fr;grid-template-rows:260px 200px;}
-  .testimonial-inner{grid-template-columns:1fr;gap:0;}
-  .testimonial-left{padding-right:0;padding-bottom:48px;border-right:none;border-bottom:1px solid rgba(255,255,255,.07);}
-  .testimonial-right{padding-left:0;padding-top:48px;}
-  .cta-wrap{padding:72px 30px;}
-  .cta-inner{flex-direction:column;align-items:flex-start;gap:36px;}
-  .footer-top{grid-template-columns:1fr 1fr;gap:40px;padding:56px 30px 40px;}
-  .footer-bottom{padding:20px 30px;}
+@media(max-width:991px){
+  :root{--space:88px;}
+  .work-grid{grid-template-columns:repeat(2,1fr);}
+  .hero-grid{grid-template-columns:1fr;gap:28px;}
+  .hero{padding-top:120px;}
+  :root{--h1:40px;--h2:32px;--h3:28px;--h4:22px;--h5:18px;--h6:16px;}
+  .menu-button{display:flex;}
+  .nav-menu{position:fixed;top:76px;left:0;right:0;background:#0a0a0a;border-bottom:1px solid var(--line);padding:12px 24px 28px;transform:translateY(-8px);opacity:0;pointer-events:none;transition:opacity .3s,transform .3s var(--ease);}
+  .menu-open .nav-menu{opacity:1;transform:none;pointer-events:auto;}
+  .nav-light .nav-menu{background:var(--light);border-color:rgba(22,24,27,.08);}
+  .nav-links{flex-direction:column;align-items:flex-start;gap:6px;}
+  .nav-link{font-size:22px;font-family:var(--f-head);}
+  .nav-cta{margin:12px 0 0;}
+  .grid-title{grid-template-columns:1fr;gap:20px;}
+  .grid-title p{justify-self:start;}
+  .partner-grid{grid-template-columns:repeat(2,1fr);}
+  .services{grid-template-columns:1fr;grid-template-rows:auto 1fr;}
+  .services-text-holder{padding:32px 28px 8px;gap:20px;}
+  .testimonial-holder,.contact-grid,.footer-wrapper{grid-template-columns:1fr;}
 }
-@media(max-width:640px){
-  h1{font-size:42px;}
-  .nav-links{display:none;}
-  .logo img{height:52px;max-width:140px;}
-  nav,nav.scrolled{padding-left:20px;padding-right:20px;}
-  .nav-btn{font-size:12px;padding:9px 16px;}
-  .hero-tag{top:100px;right:20px;}
-  .hero-content{flex-direction:column;align-items:flex-start;gap:32px;}
-  .hero-right{max-width:100%;}
-  .stats-row{grid-template-columns:1fr;}
-  .stat{border-right:none;border-bottom:1px solid rgba(255,255,255,.08);}
-  .stat:last-child{border-bottom:none;}
-  .footer-top{grid-template-columns:1fr;}
-  .footer-logo img{height:52px;max-width:130px;}
-  .footer-bottom{flex-direction:column;gap:12px;text-align:center;}
-  .service-item{grid-template-columns:44px 1fr auto;gap:16px;}
+@media(max-width:767px){
+  :root{--h1:38px;--h2:32px;--h3:28px;--h4:24px;--h5:18px;--h6:18px;}
+  :root{--space:72px;}
+  .work-grid{grid-template-columns:1fr;padding:0 12px 12px;}
+  .svc-stacked .sticky-services-holder{height:auto;}
+  .svc-stacked .sticky-services{position:static;height:auto;padding:0 12px;}
+  .svc-stacked .services{display:block;height:auto;}
+  .svc-stacked .services-images-holder{display:none;}
+  .svc-stacked .services-text-holder{padding:28px 20px 8px;gap:18px;}
+  .svc-stacked .services-text-container{gap:0;}
+  .svc-stacked .services-text{color:#fff;padding-bottom:26px;margin-bottom:26px;border-bottom:1px solid rgba(255,255,255,.08);}
+  .svc-stacked .services-text:last-child{border-bottom:0;margin-bottom:0;}
+  .svc-stacked .services-text .h2-style{color:#fff !important;font-size:26px;}
+  .svc-stacked .services-text p{max-height:none;opacity:1;margin:10px 0 16px;}
+  .svc-stacked .svc-m{position:relative;aspect-ratio:16/10;border-radius:12px;overflow:hidden;background:#000;}
+  .svc-stacked .svc-m .services-images{clip-path:none;}
+  .svc-stacked .yellow-box{display:none;}
+  .hero-media{height:clamp(260px,52vh,420px);border-radius:12px;}
+  .hero-meta{flex-direction:column;gap:10px;margin-top:18px;}
+  .footer-cta{flex-direction:column;align-items:flex-start;}
+  .footer-cta-band{padding:88px 0;min-height:0;}
+  .footer-container{padding-top:56px;border-radius:22px 22px 0 0;}
+  .project-link-wrapper{grid-template-columns:1fr;gap:16px;}
+  .project-category-wrapper{flex-direction:row;justify-content:space-between;align-items:center;}
+  .discover{opacity:1;transform:translate(-50%,-50%) scale(1);top:auto;bottom:14px;transform:translateX(-50%);}
+  .project-link-wrapper:hover .discover{transform:translateX(-50%);}
+  .footer-content{grid-template-columns:1fr 1fr;}
+  .footer-divider{flex-direction:column;}
+}
+@media(max-width:479px){
+  :root{--h1:32px;--h2:28px;--h3:24px;--h4:20px;--h5:18px;--h6:16px;}
+  .form-row{grid-template-columns:1fr;}
+  .partner{height:110px;padding:20px;}
+  .testimonial-item{padding:28px;}
+  .cookie-banner{left:16px;right:16px;bottom:16px;}
+}
+@media(prefers-reduced-motion:reduce){
+  *{transition:none !important;}
+  .anim .loader{display:none;}
 }
 </style>
 </head>
 <body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="fm-logo" viewBox="0 0 3360 472"><path d="M0 0 C19.6 16.3 30.6 34.2 36.6 58.8 C37 64 37 64 34 71 C26.0 74.4 20.7 74.3 12.0 74.4 C9.1 74.4 6.2 74.4 3.2 74.4 C1.6 74.4 1.6 74.4 -6.0 74.3 C-7.6 74.3 -7.6 74.3 -15.3 74.4 C-16.8 74.4 -16.8 74.4 -24.2 74.4 C-26.9 74.4 -29.6 74.3 -32.3 74.3 C-39 74 -39 74 -45 71 C-50 65 -50 65 -52.7 60.1 C-58.5 50.9 -64.9 45.2 -75 41 C-85.9 38.8 -95.8 39.2 -106 44 C-112.4 49.3 -115.9 53.8 -118 62 C-118.4 70.7 -118.1 77.1 -114 85 C-100.0 98.9 -85.4 103.3 -66.9 109.3 C-60.6 111.4 -54.8 113.7 -48.8 116.6 C-41.9 120.0 -35.5 122.6 -28.2 125.0 C-0.1 134.6 23.1 151.4 37 178 C44.5 200.0 43.7 228.3 34.1 249.3 C33.5 250.6 33.5 250.6 30 257 C29.0 258.7 28.0 260.5 27.0 262.3 C20.7 271.9 12.9 278.9 4 286 C2.7 287.2 1.4 288.3 0.1 289.6 C-28.1 312.4 -68.5 313.5 -103 311 C-113.8 309.1 -123.8 306.2 -134.2 302.6 C-135.6 302.2 -135.6 302.2 -142.4 299.8 C-155.5 294.8 -163.9 288.6 -174 279 C-175.3 277.8 -176.7 276.7 -178.1 275.5 C-193.2 261.4 -198.6 245.6 -203 226 C-203 218 -203 218 -200 213 C-187.8 207.8 -174.5 209.5 -161.5 209.5 C-158.6 209.5 -155.7 209.5 -152.7 209.5 C-151.3 209.5 -151.3 209.5 -144.3 209.5 C-143.0 209.5 -143.0 209.5 -136.5 209.5 C-130 210 -130 210 -122 214 C-118.6 218.9 -116.0 223.9 -113.3 229.3 C-108.8 238.1 -103.8 240.9 -95 245 C-82.1 247.5 -69.1 246.9 -57 242 C-50.3 236.4 -47.1 231.4 -45 223 C-44.4 211.5 -45.6 204.2 -53 195 C-66.6 184.7 -79.9 177.9 -96.5 173.8 C-111.2 170.1 -125 164.7 -139 159 C-141.2 158.1 -143.5 157.2 -145.8 156.4 C-166.2 148.4 -184.2 135.4 -195 116 C-206.2 88.3 -206.1 59.9 -196 32 C-192.0 23.6 -187.0 17.0 -181 10 C-180.1 9.0 -180.1 9.0 -176 4 C-173.3 1.9 -170.6 -0.1 -167.8 -2.0 C-166.4 -3.0 -165.0 -4.0 -163.6 -5.1 C-116.4 -34.7 -44.8 -31.9 0 0 Z " transform="translate(1810,34)"/><path d="M0 0 C0.9 -0 0.9 -0 5.5 -0.0 C11.6 -0.0 17.8 -0.0 23.9 -0.0 C28.1 -0.0 32.3 -0.0 36.6 -0.0 C45.5 -0.0 54.3 -0.0 63.2 -0.0 C74.6 -0.0 86.0 -0.1 97.4 -0.1 C106.2 -0.1 114.9 -0.1 123.7 -0.1 C127.9 -0.1 132.1 -0.1 136.3 -0.1 C142.2 -0.2 148.0 -0.2 153.9 -0.2 C155.6 -0.2 157.4 -0.2 159.2 -0.2 C167.2 -0.2 172.6 0.3 180.2 3.1 C186.0 11.8 184.7 20.5 184.6 30.6 C184.6 32.6 184.6 34.6 184.6 36.6 C184.6 51.3 184.6 51.3 181.2 58.1 C173.1 63.5 166.0 63.2 156.6 63.3 C154.5 63.3 152.4 63.3 150.3 63.3 C148.0 63.3 145.8 63.3 143.4 63.3 C138.7 63.4 133.9 63.4 129.1 63.4 C121.6 63.5 114.0 63.5 106.5 63.5 C99.2 63.5 91.9 63.6 84.7 63.6 C83.5 63.6 83.5 63.6 77.8 63.6 C75.7 63.7 73.6 63.7 71.5 63.7 C69.6 63.7 67.8 63.7 65.9 63.7 C61.2 64.1 61.2 64.1 55.2 67.1 C51.6 73.1 51.8 76.4 51.8 83.4 C51.8 85.6 51.8 87.8 51.8 90.1 C51.8 92.4 51.8 94.7 51.8 97.1 C51.8 99.4 51.8 101.8 51.8 104.1 C51.8 106.4 51.8 108.6 51.8 110.9 C51.8 111.9 51.8 111.9 51.8 117.0 C52.2 122.1 52.2 122.1 55.2 127.1 C70.9 136.6 101.0 131.4 118.9 131.5 C120.2 131.5 120.2 131.5 126.9 131.5 C129.3 131.6 131.7 131.6 134.2 131.6 C140.2 132.1 140.2 132.1 146.2 136.1 C150.5 144.8 149.7 153.6 149.6 163.1 C149.6 165.0 149.7 167.0 149.7 169 C149.7 183.4 149.7 183.4 145.2 190.1 C137.3 194.0 131.5 193.5 122.7 193.5 C119.5 193.5 116.2 193.6 112.8 193.6 C109.3 193.6 105.8 193.6 102.4 193.6 C95.6 193.6 88.8 193.7 82.0 193.7 C80.5 193.7 80.5 193.7 72.9 193.7 C65.3 194.1 58.8 194.5 53.2 200.1 C51.7 204.5 52.0 208.7 52.0 213.3 C52.0 215.5 52.0 217.6 52.0 219.8 C52.0 222.2 52 224.5 51.9 226.9 C51.9 231.9 51.9 236.8 51.8 241.7 C51.8 249.5 51.7 257.3 51.7 265.0 C51.7 272.5 51.6 280.0 51.6 287.5 C51.6 289.8 51.5 292.2 51.5 294.6 C51.5 296.7 51.5 298.9 51.5 301.1 C51.5 303.0 51.5 305 51.5 306.9 C51.0 315.4 50.2 320.1 44.2 326.1 C32.9 329.3 21.4 328.4 9.7 328.4 C7.2 328.4 4.6 328.5 2.0 328.5 C-0.3 328.5 -2.8 328.5 -5.3 328.5 C-6.4 328.5 -6.4 328.5 -12.0 328.5 C-17.7 328.1 -17.7 328.1 -24.7 325.1 C-30.6 317.7 -29.9 311.3 -29.9 302.1 C-29.9 299.6 -29.9 297.1 -29.9 294.5 C-29.9 291.7 -29.9 289.0 -29.9 286.1 C-29.9 283.2 -29.9 280.3 -29.9 277.3 C-29.9 267.7 -29.9 258.1 -29.9 248.4 C-29.9 243.5 -29.9 238.5 -29.9 233.5 C-29.9 217.8 -29.9 202.1 -29.9 186.4 C-29.9 170.2 -29.9 154.0 -29.9 137.8 C-29.9 123.9 -30 110.1 -30 96.2 C-30 87.9 -30 79.6 -30.0 71.3 C-30.0 62.0 -30.0 52.7 -30.0 43.5 C-30.0 40.7 -30.0 38.0 -30.0 35.1 C-30.0 32.6 -30.0 30.1 -30.0 27.5 C-30.0 25.3 -30.0 23.1 -30.0 20.9 C-29.7 15.1 -29.7 15.1 -27.7 6.1 C-18.8 -1.2 -11.2 0.0 0 0 Z " transform="translate(61.7,14.8)"/><path d="M0 0 C2.5 -0.0 5.1 -0.0 7.8 -0.0 C9.2 -0.0 9.2 -0.0 16.4 -0.0 C17.8 -0.0 17.8 -0.0 25.2 -0.0 C31.3 -0.0 37.5 -0.0 43.7 -0.0 C53.0 -0.0 62.4 -0.1 71.7 -0.1 C77.7 -0.1 83.7 -0.1 89.7 -0.1 C92.5 -0.1 95.3 -0.1 98.1 -0.2 C135.8 -0.1 175.6 2.0 204.3 29.6 C210.3 36.5 215.2 43.3 219.8 51.1 C220.9 52.8 222.0 54.4 223.1 56.1 C235.8 79.7 234.7 112 227.8 137.1 C216.3 163.0 200.7 178.1 176.0 191.4 C167.8 196.1 167.8 196.1 165.8 200.1 C166.7 207.9 168.0 210.8 171.9 217.3 C175.2 222.8 178.4 228.3 181.4 234.1 C184.8 240.1 184.8 240.1 189.0 245.5 C194.6 253.2 198.7 261.3 203.0 269.8 C205.9 275.4 209.3 280.7 212.8 286.1 C216.2 292.1 219.5 298.1 222.8 304.1 C223.7 305.6 224.6 307.1 225.5 308.7 C227.8 313.1 227.8 313.1 228.8 321.1 C226.8 325.1 226.8 325.1 222.8 327.1 C211.3 329.0 199.5 328.3 187.9 328.3 C186.6 328.3 186.6 328.3 179.8 328.3 C177.2 328.3 174.7 328.3 172.0 328.3 C170.9 328.3 170.9 328.3 164.9 328.4 C156.7 328.0 151.6 326.7 144.8 322.1 C136.4 312.9 131.6 302.2 126.4 291.1 C123.8 286.1 123.8 286.1 119.1 279.3 C114.0 271.4 110.1 263.6 106.1 255.1 C103.1 248.8 99.5 243.0 95.8 237.1 C94.5 234.4 93.1 231.8 91.8 229.0 C87.2 219.9 82.7 212.5 74.8 206.1 C66.8 205.1 66.8 205.1 61.8 208.1 C59.2 214.7 59.4 220.0 59.2 227.1 C59.1 230.3 59.1 233.5 59.0 236.7 C58.8 246.7 58.7 256.7 58.6 266.6 C58.6 268.2 58.6 268.2 58.5 276.0 C58.4 282.3 58.4 288.6 58.3 294.9 C58.3 297.8 58.3 300.7 58.3 303.7 C58.2 306.3 58.2 309.0 58.2 311.7 C57.8 318.1 57.8 318.1 54.8 324.1 C43.8 330.7 29.8 328.3 17.4 328.4 C14.9 328.4 12.3 328.4 9.7 328.4 C7.3 328.4 4.8 328.4 2.3 328.4 C0.1 328.5 -2.1 328.5 -4.4 328.5 C-10.9 328.1 -15.4 326.9 -20.1 322.1 C-21.8 314.4 -22.4 308.6 -22.4 300.8 C-22.4 298.3 -22.4 295.8 -22.4 293.2 C-22.4 290.4 -22.4 287.7 -22.4 284.9 C-22.4 282.0 -22.4 279.1 -22.4 276.1 C-22.4 266.5 -22.4 256.9 -22.4 247.4 C-22.4 240.7 -22.4 234.1 -22.4 227.4 C-22.4 213.5 -22.4 199.6 -22.4 185.6 C-22.4 169.5 -22.4 153.4 -22.4 137.3 C-22.4 123.4 -22.4 109.6 -22.4 95.8 C-22.4 87.5 -22.4 79.2 -22.4 71.0 C-22.4 61.8 -22.4 52.6 -22.4 43.4 C-22.4 40.6 -22.4 37.9 -22.4 35.0 C-22.4 33.8 -22.4 33.8 -22.4 27.5 C-22.4 25.3 -22.4 23.1 -22.4 20.9 C-22.0 12.2 -21.4 7.3 -15.1 1.1 C-10.2 -0.4 -5.2 0.0 0 0 Z M63.8 67.1 C52.9 80.2 57.7 105.9 58.1 122.2 C58.1 124.9 58.2 127.6 58.3 130.3 C58.8 137.1 58.8 137.1 61.8 143.1 C70.9 148.6 80.8 147.3 91.1 147.3 C92.8 147.3 92.8 147.3 101.1 147.3 C117.6 147 129.8 146.2 142.8 135.1 C150.8 121.7 152.2 107.9 149.5 92.7 C146.5 80.9 142.1 76.6 131.8 70.1 C118.0 65.4 105.1 64.9 90.7 64.9 C88.9 64.9 87.1 64.9 85.2 64.9 C77.6 64.9 71.1 65.0 63.8 67.1 Z " transform="translate(309.1,14.8)"/><path d="M0 0 C5.2 0 10.4 -0.0 15.6 -0.0 C18.9 -0.0 22.2 -0.0 25.6 -0.0 C28.6 -0.0 31.6 -0.0 34.7 -0.0 C43.0 0.3 47.3 1.4 53.2 7.3 C60.1 21.8 65.9 36.7 70.6 52.1 C72.7 58.6 75.0 64.6 77.6 70.9 C80.7 78.3 83.1 85.4 85.1 93.1 C87.7 103.5 91.9 112.6 96.4 122.2 C100.8 131.9 104.0 142.1 107.2 152.3 C109.5 159.5 111.8 166.5 114.9 173.4 C118.0 180.8 120.3 188.0 122.6 195.6 C125.9 206.3 129.7 216.1 134.2 226.3 C135.5 230.5 136.8 234.8 138.1 239.0 C141.1 249.0 144.7 258.3 149.1 267.7 C154.7 279.9 158.5 292.5 162.2 305.3 C163.2 307.9 164.2 310.6 165.2 313.3 C165.2 316.6 165.2 319.9 165.2 323.3 C154.9 331.5 139.6 328.5 126.9 328.5 C124.3 328.5 121.6 328.5 118.9 328.5 C116.4 328.5 113.9 328.5 111.3 328.5 C110.1 328.5 110.1 328.5 104.3 328.5 C96.4 328.2 91.4 327.3 85.2 322.3 C80.5 313.8 77.2 305.1 74.0 296.0 C73.2 293.6 72.3 291.2 71.5 288.8 C70.7 286.6 70.0 284.5 69.2 282.3 C66.2 274.3 66.2 274.3 61.2 270.3 C53.3 267.6 43.3 269.1 35.0 269.0 C32.7 269.0 30.3 269.0 27.9 269.0 C23.0 269.0 18.1 269.0 13.1 269.0 C5.6 269 -1.9 268.9 -9.5 268.9 C-14.3 268.9 -19.1 268.9 -23.9 268.8 C-26.1 268.8 -28.4 268.8 -30.7 268.8 C-31.8 268.8 -31.8 268.8 -37.1 268.8 C-39.0 268.8 -40.8 268.8 -42.7 268.8 C-47.7 269.3 -47.7 269.3 -55.7 273.3 C-62.1 283.4 -64.6 294.0 -67.2 305.5 C-69.7 314.8 -72.3 320.1 -79.7 326.3 C-86.8 328.3 -92.1 328.5 -99.4 328.5 C-101.8 328.5 -104.3 328.5 -106.8 328.5 C-109.4 328.5 -112.0 328.5 -114.7 328.5 C-115.9 328.5 -115.9 328.5 -122.4 328.5 C-124.9 328.5 -127.4 328.5 -129.9 328.5 C-132.2 328.5 -134.4 328.5 -136.8 328.5 C-149.0 328.0 -149.0 328.0 -153.7 323.3 C-157.5 311.8 -150.6 299.1 -146.3 288.7 C-143.1 280.7 -140.4 273.1 -138.1 264.8 C-135.3 254.7 -131.1 245.7 -126.7 236.3 C-122.9 227.4 -119.9 218.6 -117.3 209.3 C-114.5 199.5 -110.8 190.6 -106.7 181.3 C-104.1 173.7 -101.6 166.0 -99.1 158.3 C-96.7 151.3 -96.7 151.3 -94.1 145.6 C-91.6 140.1 -90.0 134.7 -88.5 128.9 C-85.1 117.2 -80.8 106.3 -75.7 95.3 C-72.1 87.4 -69.3 79.9 -67.0 71.6 C-64.0 60.5 -59.7 50.2 -55.3 39.7 C-52.1 31.7 -49.9 23.6 -47.7 15.3 C-43.7 7.3 -43.7 7.3 -38.7 2.3 C-26.2 -1.2 -12.9 -0.0 0 0 Z M3.2 103.3 C-10.2 119.5 -16.0 143.6 -21.6 163.6 C-23.5 170.6 -25.7 176.7 -28.5 183.5 C-31.2 189.9 -32.9 194.4 -32.7 201.3 C-29.7 206.3 -29.7 206.3 -20.7 209.3 C-16.8 209.5 -12.9 209.6 -8.9 209.6 C-6.7 209.6 -4.4 209.6 -2.1 209.6 C0.1 209.6 2.4 209.6 4.8 209.6 C7.2 209.6 9.5 209.6 11.9 209.6 C29.3 209.5 29.3 209.5 37.2 207.3 C38.5 205.6 39.8 204.0 41.2 202.3 C40.3 194.8 38.3 188.4 35.9 181.3 C34.2 176.2 32.7 171 31.3 165.7 C29.4 159.2 27.4 153.4 24.8 147.2 C20.7 137.1 17.9 126.9 15.1 116.4 C13.2 110.3 13.2 110.3 9.2 104.3 C7.2 103.9 5.2 103.6 3.2 103.3 Z " transform="translate(730.7,14.6)"/><path d="M0 0 C2.7 -0.0 5.4 -0.0 8.2 -0.0 C10.8 -0.0 13.5 -0.0 16.2 -0.0 C18.6 -0.0 21.0 -0.1 23.4 -0.1 C31.4 0.3 36.4 2.2 42.7 7.2 C49.5 16.6 55.7 26.3 61.7 36.2 C65.1 41.6 68.3 46.8 72.4 51.7 C78.5 59.5 83.5 67.8 88.7 76.2 C90.0 78.2 91.3 80.2 92.6 82.3 C94.6 85.5 96.6 88.7 98.5 92 C102.7 98.8 107.2 105.5 111.7 112.2 C112.3 113.1 112.3 113.1 115.2 117.8 C118.7 123.2 118.7 123.2 123.6 129.5 C128.7 136.2 132.6 143 136.7 150.2 C139.7 154.6 142.8 158.9 145.9 163.2 C148.2 166.5 150.4 169.9 152.5 173.4 C155.7 178.2 155.7 178.2 162.7 184.2 C164.4 183.9 166.0 183.5 167.7 183.2 C169.6 174.5 170.0 167.3 170.0 158.4 C170.0 155.2 170.0 152.0 170.0 148.7 C170.0 147.0 170.0 145.3 170.0 143.5 C170.0 138.1 170.0 132.7 170.1 127.4 C170.1 112.1 170.1 96.8 170.2 81.5 C170.2 72.2 170.2 62.8 170.2 53.5 C170.3 49.9 170.3 46.3 170.3 42.8 C170.3 37.8 170.3 32.8 170.3 27.8 C170.3 25.0 170.3 22.2 170.3 19.3 C170.7 12.2 170.7 12.2 173.7 4.2 C184.7 -2.3 198.5 0.0 211 0 C212.3 -0.0 212.3 -0.0 218.9 -0.0 C221.5 -0.0 224.0 -0.0 226.6 -0.0 C228.9 -0.0 231.2 -0.1 233.6 -0.1 C239.7 0.2 239.7 0.2 247.7 3.2 C252.6 9.7 251.8 15.3 251.8 23.3 C251.9 25.8 251.9 28.4 251.9 31.1 C251.9 33.9 251.9 36.7 251.9 39.7 C251.9 42.6 251.9 45.6 251.9 48.7 C251.9 56.8 251.9 65.0 251.9 73.2 C251.9 78.3 251.9 83.4 251.9 88.5 C251.9 104.5 251.9 120.4 251.9 136.4 C251.9 154.8 252.0 173.3 252.0 191.7 C252.0 206.0 252.0 220.2 252.0 234.5 C252.0 243.0 252.0 251.5 252.1 260.0 C252.1 269.5 252.1 279.0 252.1 288.5 C252.1 291.3 252.1 294.2 252.1 297.1 C252.1 298.4 252.1 298.4 252.1 304.9 C252.1 307.1 252.1 309.4 252.1 311.7 C251.7 317.2 251.7 317.2 248.7 323.2 C238.3 331.5 222.7 328.4 210 328.5 C208.6 328.5 208.6 328.5 201.9 328.5 C199.3 328.5 196.7 328.5 194.1 328.5 C191.7 328.5 189.4 328.6 187.0 328.6 C178.8 328.1 173.1 326.4 166.7 321.2 C161.9 314.0 157.3 306.7 152.7 299.4 C146.6 289.7 140.3 280.4 133.7 271.2 C130.4 265.9 127.0 260.5 123.7 255.2 C120.4 250.5 117.1 245.9 113.7 241.2 C106.8 231.0 100.2 220.7 93.7 210.2 C91.3 206.4 88.9 202.6 86.5 198.8 C85.4 197.0 84.3 195.3 83.1 193.4 C78.3 186.0 73.2 178.9 67.8 171.9 C63 165.5 58.9 159.0 54.7 152.2 C52.7 149.9 50.7 147.6 48.7 145.2 C48.7 144.5 48.7 143.9 48.7 143.2 C46.7 142.5 44.7 141.9 42.7 141.2 C36.7 147.2 38.6 155.5 38.5 163.6 C38.5 166.8 38.5 170.1 38.5 173.4 C38.5 175.2 38.5 176.9 38.5 178.7 C38.5 184.1 38.4 189.6 38.4 195.1 C38.3 210.6 38.3 226.1 38.2 241.6 C38.2 251.1 38.2 260.6 38.1 270.1 C38.1 273.7 38.1 277.3 38.1 280.9 C38.1 286 38.0 291.0 38.0 296.1 C38.0 299 38.0 301.8 38.0 304.8 C37.6 316.3 37.6 316.3 35.7 322.2 C25.3 330.9 13.6 328.4 0.5 328.4 C-0.6 328.4 -0.6 328.4 -6.5 328.4 C-8.7 328.4 -11.0 328.4 -13.3 328.4 C-14.3 328.4 -14.3 328.4 -19.6 328.4 C-28.2 328.1 -33.0 327.4 -39.2 321.2 C-41.0 313.9 -41.5 308.4 -41.5 301.0 C-41.5 298.5 -41.5 296.0 -41.5 293.4 C-41.5 290.7 -41.5 287.9 -41.5 285.1 C-41.5 282.2 -41.5 279.3 -41.5 276.3 C-41.5 266.7 -41.5 257.1 -41.5 247.6 C-41.5 240.9 -41.5 234.3 -41.5 227.6 C-41.5 213.7 -41.5 199.7 -41.5 185.8 C-41.5 169.7 -41.5 153.5 -41.5 137.4 C-41.5 123.6 -41.5 109.7 -41.5 95.9 C-41.5 87.6 -41.5 79.4 -41.5 71.1 C-41.5 61.9 -41.5 52.7 -41.5 43.5 C-41.5 40.7 -41.5 38.0 -41.5 35.1 C-41.5 32.6 -41.5 30.1 -41.5 27.5 C-41.5 25.4 -41.5 23.2 -41.5 20.9 C-41.2 15.2 -41.2 15.2 -39.2 6.2 C-28.1 -3.0 -13.9 0.0 0 0 Z " transform="translate(979.2,14.7)"/><path d="M0 0 C2.6 -0.0 5.3 -0.0 8.1 -0.0 C10.7 -0.0 13.3 -0.0 15.9 -0.0 C17.1 -0.0 17.1 -0.0 23.1 -0.1 C29.1 0.2 29.1 0.2 36.1 3.2 C41.5 11.3 41.3 18.4 41.3 27.8 C41.3 29.9 41.3 32.0 41.3 34.1 C41.3 36.4 41.3 38.7 41.4 41.0 C41.4 45.8 41.4 50.6 41.4 55.3 C41.5 62.9 41.5 70.4 41.5 78.0 C41.6 85.3 41.6 92.5 41.7 99.8 C41.7 102.1 41.7 104.3 41.7 106.7 C41.7 108.8 41.7 110.9 41.7 113.0 C41.7 114.9 41.7 116.7 41.8 118.6 C42.1 123.2 42.1 123.2 45.1 128.2 C55.9 126.4 60.1 118.5 66.1 110.2 C67.7 108.2 69.3 106.2 70.9 104.1 C79.0 93.4 86.8 82.6 94.5 71.6 C99.1 65.2 99.1 65.2 103.0 61.4 C107.2 57.1 110.6 52.7 114.1 47.9 C114.7 47.1 114.7 47.1 117.8 42.8 C118.4 42.1 118.4 42.1 121.1 38.2 C121.9 37.2 121.9 37.2 125.5 32.2 C128.0 28.7 130.6 25.2 133.1 21.7 C147.4 2.4 147.4 2.4 158.1 0.2 C169.3 0.0 180.4 0.0 191.5 0.0 C194.6 0.0 197.7 0.0 201 0.0 C203.9 0.0 206.9 0.0 210.0 0.0 C211.3 0.0 211.3 0.0 218.3 0.0 C225.1 0.2 225.1 0.2 232.1 2.2 C234.1 5.2 234.1 5.2 234.1 11.2 C231.1 16.6 227.6 20.8 223.4 25.4 C217.7 31.7 213.0 38.3 208.1 45.2 C204.9 49.3 201.6 53.3 198.3 57.3 C191.8 65.3 185.6 73.6 179.6 82 C175.0 88.0 170.5 92.9 165.1 98.2 C162.1 102.2 159.1 106.2 156.1 110.2 C153.9 113.1 151.6 116 149.4 118.8 C123.1 152.5 123.1 152.5 123.1 164.2 C127.6 173.1 134.0 180.5 140.1 188.2 C142.4 191.3 144.7 194.4 147.0 197.5 C165.6 222.8 165.6 222.8 176.1 233.2 C179.2 237.2 182.2 241.2 185.1 245.2 C186.0 246.3 186.0 246.3 190.3 251.8 C193.2 255.6 196.0 259.4 198.7 263.3 C202.6 268.9 206.8 274.0 211.1 279.2 C212.8 281.4 214.5 283.6 216.2 285.9 C221.1 292.2 221.1 292.2 225.1 296.0 C232.6 303.9 238.6 312.4 240.1 323.2 C228.8 332.3 208.6 328.4 194.7 328.4 C191.6 328.4 188.5 328.4 185.3 328.4 C183.8 328.4 183.8 328.4 176.3 328.4 C173.6 328.4 170.9 328.4 168.1 328.4 C157.8 328.1 153.5 326.5 145.1 320.2 C142.7 317.3 140.5 314.3 138.3 311.2 C137.7 310.4 137.7 310.4 134.6 306.1 C134.0 305.3 134.0 305.3 131.1 301.2 C112.5 275.0 112.5 275.0 102.8 264.4 C97.9 259.0 94.2 253.3 90.1 247.2 C86.5 242.5 82.8 237.9 79.1 233.2 C75.8 228.5 72.5 223.9 69.1 219.2 C65.8 214.9 62.5 210.5 59.1 206.2 C57.5 203.9 55.8 201.6 54.1 199.2 C51.1 197.2 51.1 197.2 44.1 197.2 C34.5 216.6 41.1 252.5 41.2 274.4 C41.3 280.0 41.3 285.7 41.3 291.4 C41.3 292.2 41.3 292.2 41.3 296.6 C41.4 313.2 41.4 313.2 39.1 321.2 C30.0 330.3 19.5 328.5 7.3 328.5 C4.8 328.5 2.3 328.5 -0.3 328.5 C-2.8 328.5 -5.3 328.5 -7.9 328.6 C-10.4 328.6 -12.8 328.6 -15.3 328.6 C-16.4 328.6 -16.4 328.6 -22.0 328.6 C-28.6 328.2 -33.0 326.9 -37.8 322.2 C-39.5 314.5 -40.0 308.6 -40.0 300.9 C-40.0 298.4 -40.0 295.9 -40.0 293.3 C-40.0 290.5 -40.0 287.8 -40.0 285.0 C-40.0 282.1 -40.0 279.2 -40.0 276.2 C-40.0 266.6 -40.0 257.0 -40.0 247.5 C-40.0 240.8 -40.0 234.2 -40.0 227.5 C-40.0 213.6 -40.0 199.6 -40.0 185.7 C-40.0 169.6 -40.0 153.5 -40.0 137.4 C-40.0 123.5 -40.0 109.7 -40.0 95.9 C-40.0 87.6 -40.0 79.3 -40.0 71.1 C-40.0 61.9 -40.0 52.6 -40.0 43.4 C-40.0 40.7 -40.0 38 -40.0 35.1 C-40.0 33.9 -40.0 33.9 -40.0 27.5 C-40.0 25.4 -40.0 23.2 -40.0 20.9 C-39.6 12.3 -39.0 7.4 -32.8 1.2 C-22.4 -1.3 -10.6 0.0 0 0 Z " transform="translate(1326.8,14.7)"/><path d="M0 0 C3.0 -0.0 6.1 -0.0 9.3 -0.0 C12.7 -0.0 16.1 -0.0 19.5 -0.0 C22.9 -0.0 26.4 -0.0 29.8 -0.0 C37.1 -0.0 44.3 -0.0 51.6 -0.0 C60.9 -0.0 70.2 -0.1 79.5 -0.1 C86.6 -0.1 93.7 -0.1 100.9 -0.1 C104.3 -0.1 107.7 -0.1 111.2 -0.1 C115.9 -0.2 120.7 -0.2 125.5 -0.2 C126.9 -0.2 126.9 -0.2 133.8 -0.2 C140.4 0.1 140.4 0.1 146.4 3.1 C151.1 9.5 150.6 15.4 150.4 23.1 C148.4 30.1 148.4 30.1 144.4 34.1 C138.3 36.1 134.1 36.4 127.8 36.4 C126.7 36.4 126.7 36.4 121.2 36.4 C120.1 36.4 120.1 36.4 114.1 36.4 C109.2 36.4 104.3 36.5 99.4 36.5 C91.6 36.5 83.8 36.6 76.1 36.6 C68.6 36.6 61.1 36.6 53.6 36.7 C52.4 36.7 52.4 36.7 46.5 36.7 C45.4 36.7 45.4 36.7 40 36.7 C38.1 36.7 36.1 36.7 34.2 36.7 C29.4 37.1 29.4 37.1 23.4 40.1 C20.0 49.2 19.9 57.0 20.0 66.5 C20.0 67.4 20.0 67.4 20.0 71.9 C20 75.7 20.0 79.5 20.0 83.3 C20.0 89.0 20.0 94.8 20 100.6 C20 104.2 20.0 107.9 20.0 111.6 C20.0 113.3 20 115.0 20 116.8 C20.0 125.2 20.7 131.1 23.4 139.1 C33.2 145.0 45.0 143.3 56.2 143.3 C60.4 143.3 64.6 143.3 68.7 143.4 C75.4 143.4 82 143.4 88.6 143.4 C94.9 143.5 101.3 143.5 107.7 143.5 C108.7 143.5 108.7 143.5 113.7 143.5 C127.7 143.7 127.7 143.7 134.4 148.1 C136.9 153.3 137.2 157.4 137.4 163.1 C134.4 172.1 134.4 172.1 128.4 176.1 C121.6 176.5 115.0 176.7 108.2 176.7 C106.2 176.7 104.2 176.7 102.2 176.7 C95.8 176.8 89.4 176.8 83.1 176.8 C76.7 176.8 70.3 176.9 64.0 176.9 C60.0 176.9 56.1 176.9 52.1 177 C30.2 177.0 30.2 177.0 23.4 181.1 C18.8 190.2 20.2 200.6 20.2 210.5 C20.2 212.4 20.2 214.3 20.2 216.3 C20.2 220.3 20.2 224.3 20.2 228.4 C20.2 234.5 20.2 240.7 20.1 246.9 C20.1 250.8 20.1 254.7 20.1 258.6 C20.1 260.5 20.1 262.3 20.1 264.2 C20.1 271.6 20.3 277.9 22.4 285.1 C29.3 290.6 34.3 290.2 42.9 290.3 C45.0 290.3 47.2 290.3 49.4 290.3 C50.6 290.3 50.6 290.3 56.5 290.3 C61.5 290.4 66.4 290.4 71.3 290.4 C79.1 290.5 86.9 290.5 94.7 290.5 C102.2 290.5 109.7 290.6 117.2 290.6 C118.4 290.6 118.4 290.6 124.3 290.6 C126.5 290.7 128.6 290.7 130.9 290.7 C131.8 290.7 131.8 290.7 136.7 290.7 C141.4 291.1 141.4 291.1 146.4 294.1 C150.8 301.6 150.4 303.7 150.4 313.1 C147.4 322.1 147.4 322.1 142.4 325.1 C136.4 326.6 130.6 326.3 124.4 326.3 C122.9 326.3 122.9 326.3 115.4 326.3 C112.2 326.3 109.0 326.3 105.7 326.3 C102.4 326.3 99.1 326.3 95.8 326.3 C88.8 326.3 81.9 326.3 74.9 326.3 C66.0 326.3 57.1 326.3 48.2 326.3 C39.7 326.3 31.2 326.3 22.7 326.3 C19.5 326.4 16.3 326.4 13.0 326.4 C10.0 326.4 7.1 326.4 4.0 326.4 C1.4 326.4 -1.1 326.4 -3.8 326.4 C-10.5 326.1 -10.5 326.1 -19.5 324.1 C-26.2 316.2 -25.7 312.3 -25.7 302.2 C-25.7 299.6 -25.7 297.1 -25.7 294.5 C-25.7 291.7 -25.7 288.9 -25.7 286 C-25.7 283.0 -25.7 280.1 -25.7 277.0 C-25.7 268.9 -25.7 260.8 -25.7 252.8 C-25.7 247.7 -25.7 242.7 -25.8 237.6 C-25.8 221.8 -25.8 206.0 -25.8 190.2 C-25.8 171.9 -25.8 153.7 -25.8 135.4 C-25.9 121.3 -25.9 107.2 -25.9 93.1 C-25.9 84.7 -25.9 76.3 -25.9 67.8 C-25.9 58.5 -25.9 49.1 -25.9 39.7 C-25.9 36.9 -25.9 34.1 -25.9 31.2 C-25.9 28.6 -25.9 26.1 -25.9 23.4 C-25.9 21.2 -25.9 19.0 -25.9 16.7 C-25.5 11.1 -25.5 11.1 -22.5 4.1 C-15.5 -1.1 -8.6 0.0 0 0 Z " transform="translate(2433.5,16.8)"/><path d="M0 0 C2.1 -0 4.2 -0 6.4 -0.0 C10.9 -0.0 15.4 -0 19.9 0 C26.7 0.0 33.5 0.0 40.3 -0.0 C115.3 -0.0 115.3 -0.0 144.6 12.2 C146.2 12.9 147.8 13.5 149.4 14.1 C164.1 20.1 175.5 27.8 187.6 37.9 C190.5 40.3 193.5 42.6 196.5 44.7 C210.4 56.5 220.3 73.5 227.4 90.1 C228.5 92.6 229.6 95.1 230.7 97.7 C238.9 118.9 240.0 139.8 239.9 162.3 C239.9 164.4 239.9 166.5 239.9 168.6 C239.7 188.1 239.4 207.1 231.6 225.2 C230.7 227.4 229.8 229.5 228.9 231.7 C212.5 269.5 184.9 297.0 146.6 313.2 C138.3 315.6 130.0 317.4 121.6 319.2 C119.6 319.7 117.6 320.2 115.6 320.6 C87.6 327.0 59.3 326.5 30.8 326.5 C24.4 326.5 18.1 326.5 11.7 326.5 C7.7 326.5 3.6 326.5 -0.3 326.5 C-1.3 326.5 -1.3 326.5 -6.0 326.5 C-26.1 326.4 -26.1 326.4 -32.3 320.2 C-34.3 313.3 -34.6 308.2 -34.6 301.0 C-34.6 298.5 -34.6 295.9 -34.6 293.3 C-34.6 290.5 -34.6 287.8 -34.6 284.9 C-34.6 282.0 -34.6 279.1 -34.6 276.0 C-34.6 268.0 -34.6 260.0 -34.6 252.0 C-34.6 245.3 -34.6 238.6 -34.6 231.9 C-34.6 216.1 -34.6 200.3 -34.6 184.5 C-34.6 168.2 -34.6 151.9 -34.7 135.6 C-34.7 121.6 -34.7 107.6 -34.7 93.6 C-34.7 85.2 -34.7 76.9 -34.7 68.5 C-34.7 59.2 -34.7 49.9 -34.7 40.5 C-34.7 37.8 -34.7 35.0 -34.7 32.1 C-34.7 29.6 -34.7 27.1 -34.7 24.4 C-34.7 22.2 -34.7 20.0 -34.7 17.8 C-34.2 11.3 -33.0 6.9 -28.3 2.2 C-18.9 -0.4 -9.7 -0.0 0 0 Z M14.6 39.2 C8.3 47.6 10.4 57.8 10.4 67.8 C10.4 70.1 10.4 72.4 10.4 74.7 C10.4 82.2 10.4 89.7 10.4 97.2 C10.4 102.4 10.4 107.6 10.4 112.8 C10.4 123.8 10.4 134.7 10.4 145.6 C10.4 159.6 10.3 173.6 10.3 187.7 C10.3 198.4 10.3 209.2 10.3 219.9 C10.3 225.1 10.3 230.3 10.3 235.4 C10.2 242.6 10.2 249.9 10.2 257.1 C10.2 259.2 10.2 261.4 10.2 263.6 C10.3 282.9 10.3 282.9 16.6 289.2 C27.4 291.6 37.5 291.6 48.5 291.5 C50.7 291.5 52.9 291.5 55.1 291.5 C94.3 291.2 136.1 285.6 165.6 257.2 C190.6 227.3 201.6 188.1 198.2 149.3 C193.9 114.5 181.7 83.3 155.6 59.2 C148.9 55.0 148.9 55.0 141.6 51.2 C140.2 50.4 140.2 50.4 133.3 46.5 C108.0 34.2 78.1 35.9 50.5 35.9 C47.7 35.9 44.9 35.9 42.0 35.9 C39.3 35.9 36.7 35.9 33.9 35.9 C31.5 35.9 29.1 35.9 26.6 35.8 C20.6 36.2 20.6 36.2 14.6 39.2 Z " transform="translate(2681.3,16.7)"/><path d="M0 0 C4.8 6.5 4.1 12.0 4.1 19.9 C4.1 22.5 4.1 25.0 4.1 27.7 C4.1 30.5 4.1 33.3 4.1 36.2 C4.1 37.7 4.1 37.7 4.1 45.2 C4.1 53.3 4.2 61.4 4.2 69.5 C4.2 74.6 4.2 79.7 4.2 84.8 C4.2 100.6 4.2 116.5 4.2 132.3 C4.2 150.7 4.2 169.0 4.2 187.3 C4.3 201.5 4.3 215.6 4.3 229.8 C4.3 238.2 4.3 246.7 4.3 255.1 C4.3 264.6 4.3 274.0 4.3 283.4 C4.3 284.8 4.3 284.8 4.3 292.0 C4.3 294.5 4.3 297.1 4.3 299.7 C4.3 302 4.3 304.2 4.3 306.5 C3.9 312.8 2.5 316.4 -2 321 C-13.1 323.4 -21.9 323.7 -33 321 C-41.1 312.9 -40.2 303.7 -40.2 292.7 C-40.2 290.2 -40.2 287.8 -40.2 285.2 C-40.2 282.6 -40.2 279.9 -40.2 277.2 C-40.2 275.7 -40.2 275.7 -40.2 268.6 C-40.2 259.3 -40.2 249.9 -40.2 240.6 C-40.2 234.1 -40.2 227.6 -40.2 221.1 C-40.2 207.5 -40.2 193.9 -40.2 180.3 C-40.2 164.6 -40.2 148.9 -40.2 133.2 C-40.2 118.1 -40.2 103.0 -40.2 87.9 C-40.2 81.4 -40.2 75.0 -40.2 68.6 C-40.2 59.6 -40.2 50.6 -40.2 41.6 C-40.2 39.0 -40.2 36.3 -40.2 33.5 C-40.2 31.1 -40.2 28.7 -40.2 26.1 C-40.2 24.0 -40.2 21.9 -40.2 19.7 C-39.6 5.6 -39.6 5.6 -33 -1 C-21.3 -4.3 -11.4 -3.8 0 0 Z " transform="translate(3018,20)"/><path d="M0 0 C1.1 -0.0 1.1 -0.0 7.2 -0.0 C13.8 0.2 13.8 0.2 21.8 3.2 C26.6 9.6 29.0 13.5 31.6 20.6 C35.3 30.1 39.5 39.1 43.8 48.2 C44.7 50.6 45.7 53.1 46.7 55.6 C49.1 61.4 51.5 67.0 54.3 72.6 C57.0 78.3 59.3 83.8 61.5 89.8 C64.4 97.3 67.8 103.9 71.7 111.0 C75.9 118.6 79.7 125.9 82.5 134.0 C85.6 142.7 89.2 150.7 93.3 159.0 C95.7 164.0 97.8 169.0 100 174.1 C102.2 179.6 104.7 185 107.3 190.2 C110.8 197.2 110.8 197.2 113.9 206.1 C117.5 216.2 122.5 225.3 127.7 234.6 C131.2 241.0 134 247.5 136.8 254.2 C137.8 254.9 138.7 255.5 139.8 256.2 C141.4 255.9 143.1 255.5 144.8 255.2 C148.7 249.3 151.0 243.8 153.8 237.2 C155.2 234.2 156.6 231.3 158.1 228.2 C162.0 220 165.5 211.6 168.8 203.1 C171.8 195.6 175.3 188.4 178.8 181.2 C179.7 178.8 180.6 176.5 181.5 174.0 C184.2 167.5 187.2 161.7 190.6 155.6 C195.5 146.8 199.3 138.0 202.7 128.6 C205.7 120.7 209.5 113.2 213.2 105.6 C216.7 98.3 219.7 90.8 222.8 83.2 C224.1 80.2 225.4 77.2 226.8 74.1 C229.2 68.8 231.5 63.4 233.5 58 C236.2 51.5 239.2 45.6 242.6 39.5 C246.7 32.2 250.2 25.0 253.2 17.1 C256.8 8.2 256.8 8.2 261.8 3.2 C269.2 0.0 273.7 -0.1 281.8 -0.1 C282.9 -0.1 282.9 -0.1 288.6 -0.1 C294.8 0.2 294.8 0.2 301.8 3.2 C306.6 9.7 305.9 15.2 305.9 23.1 C305.9 25.6 305.9 28.2 305.9 30.8 C305.9 33.6 305.9 36.4 305.9 39.3 C305.9 42.2 305.9 45.2 305.9 48.2 C306 56.3 306.0 64.3 306.0 72.4 C306.0 77.4 306.0 82.5 306.0 87.5 C306.0 103.3 306.0 119.0 306.0 134.8 C306.0 153.0 306.0 171.2 306.1 189.4 C306.1 203.4 306.1 217.5 306.1 231.6 C306.1 240 306.1 248.4 306.1 256.8 C306.1 266.1 306.1 275.5 306.1 284.9 C306.1 287.7 306.1 290.5 306.2 293.3 C306.1 294.6 306.1 294.6 306.1 301.0 C306.1 303.3 306.1 305.5 306.1 307.8 C305.8 313.2 305.8 313.2 302.8 319.2 C295.0 325.4 287.5 324.5 277.8 324.2 C270.8 322.2 270.8 322.2 265.8 316.2 C263.6 309.7 264.6 302.0 264.6 295.2 C264.6 293.3 264.6 291.4 264.6 289.4 C264.5 285.3 264.5 281.2 264.5 277.1 C264.5 270.6 264.5 264.2 264.4 257.7 C264.4 243.9 264.3 230.1 264.3 216.3 C264.2 200.3 264.1 184.4 264.1 168.4 C264.0 162.0 264.0 155.6 264.0 149.2 C264.0 145.3 264.0 141.4 264 137.4 C264 135.6 263.9 133.9 263.9 132.0 C263.9 121.7 263.8 111.4 261.8 101.2 C247.9 106.8 239.8 135.0 233.8 148.2 C231.8 153.2 229.8 158.2 227.8 163.2 C226.1 166.7 224.5 170.2 222.8 173.6 C219.8 179.8 217.2 185.8 214.8 192.2 C211.7 200.4 208.1 208.1 204.2 215.9 C201.8 221.2 201.8 221.2 199.4 227.6 C196.8 234.1 193.8 240.1 190.5 246.3 C185.6 255.5 181.4 264.7 177.7 274.4 C175.0 281.0 171.9 287.4 168.8 293.8 C166.8 298.2 166.8 298.2 164.1 305.9 C161.0 314.3 157.8 319.2 149.8 323.2 C141.9 324.5 136.2 324.2 128.8 321.2 C119.4 311.8 115.1 301.6 110.6 289.3 C108.2 283.3 105.6 277.7 102.8 271.9 C98.6 263.2 95.2 254.3 91.8 245.2 C89.3 239.8 86.7 234.5 84.1 229.2 C82.2 225.2 80.6 221.1 79 217 C76.1 210.0 72.9 203.6 69.4 197.0 C64.6 187.9 60.4 178.8 56.7 169.1 C54.6 163.8 52.2 158.6 49.6 153.5 C46.7 147.4 44.2 141.6 41.9 135.3 C31.9 109.3 31.9 109.3 24.8 102.2 C24.1 102.4 24.1 102.4 20.8 103.2 C16.6 111.5 18.6 124.0 18.6 133.3 C18.6 135.2 18.6 137.1 18.6 139.1 C18.6 143.3 18.6 147.4 18.6 151.6 C18.6 158.2 18.5 164.8 18.5 171.4 C18.5 190.1 18.4 208.8 18.4 227.6 C18.3 239.0 18.3 250.5 18.3 262 C18.3 266.3 18.2 270.7 18.2 275.1 C18.2 281.2 18.2 287.3 18.2 293.4 C18.2 295.2 18.2 297.0 18.2 298.9 C18.1 306.6 17.9 312.0 14.8 319.2 C6.9 325.5 -0.2 324.5 -10.1 324.2 C-19.1 321.2 -19.1 321.2 -23.1 314.2 C-23.6 308.6 -23.6 308.6 -23.6 301.9 C-23.7 299.3 -23.7 296.7 -23.7 294.1 C-23.7 291.3 -23.7 288.5 -23.6 285.6 C-23.6 282.6 -23.7 279.7 -23.7 276.6 C-23.7 268.5 -23.7 260.4 -23.6 252.3 C-23.6 243.8 -23.6 235.3 -23.6 226.9 C-23.6 212.6 -23.6 198.4 -23.6 184.1 C-23.6 167.6 -23.6 151.2 -23.6 134.7 C-23.6 118.8 -23.6 103.0 -23.6 87.2 C-23.6 80.4 -23.6 73.7 -23.6 66.9 C-23.6 57.5 -23.6 48.1 -23.5 38.7 C-23.6 35.9 -23.6 33.1 -23.6 30.2 C-23.6 27.6 -23.5 25.1 -23.5 22.4 C-23.5 20.2 -23.5 18.0 -23.5 15.7 C-23.1 10.2 -23.1 10.2 -20.1 4.2 C-13.5 -0.7 -8.2 0.0 0 0 Z " transform="translate(2031.1,18.7)"/><path d="M0 0 C4.7 6.6 6.2 10.5 8.3 18.2 C10.4 26.0 12.8 33.5 16.1 41 C19.6 49.2 22.4 57.3 25 66 C27.6 74.6 30.7 82.7 34.6 90.9 C40.2 102.8 43.9 115.1 47.6 127.6 C50.2 135.7 53.5 143.2 57 151 C59.0 157.3 61.0 163.6 63.0 169.9 C65 176 65 176 68.4 184.2 C71.5 191.8 73.9 199.3 76.3 207.2 C79.6 218.2 83.6 228.1 88.7 238.3 C91.9 245.0 93.9 251.9 96 259 C99.6 270.3 103.6 281.3 108.2 292.3 C111.1 300.1 112.0 305.7 111 314 C105.0 319.9 101.1 319.9 92.6 320.3 C84.0 320 77.7 319.5 71.2 313.5 C64.9 304.7 62.1 294.6 59.1 284.3 C51.3 258.3 51.3 258.3 42 249 C34.8 247.2 29.6 246.7 22.4 246.7 C20.0 246.7 17.7 246.7 15.3 246.7 C12.8 246.7 10.3 246.7 7.7 246.7 C5.1 246.6 2.5 246.6 -0.1 246.6 C-5.5 246.6 -11.0 246.6 -16.5 246.6 C-24.9 246.6 -33.2 246.6 -41.6 246.6 C-46.9 246.6 -52.2 246.6 -57.5 246.6 C-60.1 246.6 -62.6 246.6 -65.1 246.6 C-67.5 246.6 -69.8 246.6 -72.2 246.6 C-73.3 246.6 -73.3 246.6 -78.4 246.6 C-84 247 -84 247 -93 250 C-104.2 263.4 -109.1 280.4 -113.2 297.2 C-115.8 305.9 -118.8 312.3 -126 318 C-136.9 320.7 -147.0 321.1 -158 318 C-159.3 316.6 -160.6 315.3 -162 314 C-162 302.4 -159.1 293.9 -154.6 283.4 C-151.8 276.6 -149.6 269.7 -147.3 262.8 C-144.1 253.0 -140.6 243.6 -136.3 234.2 C-131.5 223.7 -128.1 213.1 -124.9 202.0 C-123.1 196.5 -121.1 191.4 -118.8 186.1 C-116.1 179.7 -114 173.9 -112.1 167.3 C-109.8 159.5 -107.1 152.1 -104 144.5 C-100.8 136.9 -98.2 129.6 -96.1 121.6 C-93.9 113.1 -90.5 105.5 -86.6 97.5 C-80.7 85.1 -76.7 72.8 -72.9 59.6 C-70.6 51.7 -67.3 44.5 -64 37 C-61.8 30.3 -59.9 23.7 -57.9 17 C-55.2 8.7 -52.8 3.4 -46 -2 C-40.0 -4.3 -35.2 -4.4 -28.8 -4.6 C-26.6 -4.7 -24.4 -4.8 -22.2 -4.9 C-7.6 -5.0 -7.6 -5.0 0 0 Z M-28 62 C-37.6 74.0 -41.4 90.1 -45.9 104.6 C-47.9 110.7 -50.1 116.5 -52.5 122.4 C-56.6 132.8 -59.9 143.3 -63.0 154.0 C-65 160 -65 160 -68.6 168.2 C-74.1 181 -78.5 193.0 -77 207 C-68.3 213.9 -58.5 212.1 -47.9 212.2 C-47 212.2 -47 212.2 -42.2 212.2 C-38.2 212.2 -34.2 212.2 -30.2 212.2 C-24.1 212.2 -18.0 212.2 -11.9 212.3 C-8.0 212.3 -4.1 212.3 -0.3 212.3 C1.5 212.3 3.3 212.3 5.2 212.3 C13.1 212.3 18.6 212.1 26 209 C30.9 199.1 24.1 183.9 21 174 C18.2 166.8 15.4 159.8 12.6 152.7 C9.7 145.2 7.5 137.6 5.4 129.8 C3.5 123.3 0.7 117.2 -1.9 110.9 C-4.2 105.4 -5.9 99.9 -7.5 94.3 C-14.6 70.3 -14.6 70.3 -23 62 C-24.6 62 -26.3 62 -28 62 Z " transform="translate(3240,23)"/><path d="M0 0 C0.9 -0 0.9 -0 5.8 -0.0 C12.4 -0.0 18.9 -0.0 25.4 -0 C30.1 -0 34.9 -0.0 39.6 -0.0 C52.6 -0.0 65.6 -0.0 78.5 -0.0 C92.5 0 106.5 -0.0 120.5 -0.0 C148.0 -0.0 175.4 -0.0 202.8 -0.0 C234.8 0.0 266.7 0 298.6 0 C357.2 -0 415.9 0.0 474.6 0.0 C528.1 0.0 581.7 0.0 635.3 0.0 C649.0 0.0 662.7 0.0 676.5 0.0 C677.3 0.0 677.3 0.0 681.6 0.0 C726.3 0.0 771.0 0.0 815.8 0.0 C822.2 0.0 828.6 0.0 835.0 0.0 C836.6 0.0 836.6 0.0 844.5 0.0 C866.8 0.0 889.1 0.0 911.4 0.0 C938.5 0.0 965.6 0.0 992.7 0.0 C1006.6 0.0 1020.4 0.1 1034.3 0.0 C1047 0.0 1059.6 0.0 1072.3 0.1 C1076.9 0.1 1081.5 0.1 1086.1 0.1 C1092.3 0.1 1098.5 0.1 1104.7 0.1 C1106.5 0.1 1108.4 0.1 1110.2 0.1 C1122.6 0.1 1122.6 0.1 1129.3 3.5 C1133.0 11 1132.8 16.1 1132.3 24.5 C1128.3 30.5 1128.3 30.5 1122.3 34.5 C1111.3 35.8 1100.2 35.6 1089.1 35.6 C1087.2 35.6 1085.3 35.6 1083.3 35.6 C1077 35.6 1070.6 35.6 1064.2 35.6 C1059.6 35.6 1054.9 35.6 1050.3 35.6 C1037.6 35.6 1024.9 35.6 1012.2 35.6 C998.5 35.6 984.8 35.6 971.1 35.6 C944.3 35.6 917.4 35.6 890.6 35.6 C868.8 35.6 847 35.6 825.1 35.6 C773.4 35.6 721.7 35.6 669.9 35.6 C669.1 35.6 669.1 35.6 664.9 35.6 C656.5 35.6 648.2 35.6 639.8 35.6 C638.1 35.6 636.4 35.6 634.7 35.6 C631.4 35.6 628.0 35.6 624.6 35.6 C572.2 35.6 519.8 35.6 467.3 35.7 C408.5 35.7 349.6 35.7 290.7 35.7 C259.5 35.7 228.3 35.7 197.1 35.7 C170.6 35.7 144.1 35.7 117.5 35.7 C104.0 35.7 90.4 35.7 76.9 35.7 C64.5 35.7 52.1 35.7 39.7 35.7 C35.2 35.7 30.7 35.7 26.2 35.7 C20.1 35.7 14.0 35.7 7.9 35.7 C6.2 35.7 4.4 35.7 2.6 35.7 C-18.0 35.7 -18.0 35.7 -26.6 28.5 C-29.6 22.5 -29.6 22.5 -29.6 12.5 C-22.7 -1.3 -13.8 -0.0 0 0 Z " transform="translate(33.6,433.4)"/></symbol></svg>
+
+<div class="loader" aria-hidden="true">
+  <img class="loader-logo loader-word" src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/Franks_Media__1_-removebg-preview.png" alt="">
+  <div class="loader-track"><div class="loader-bar"></div></div>
+</div>
 
 <!-- NAV -->
-<nav id="nav">
-  <div class="logo">
-    <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/Franks_Media__1_-removebg-preview.png" alt="Franks Media">
-  </div>
-  <div class="nav-right">
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#portfolio">Our Work</a></li>
-    </ul>
-    <button onclick="openModal()" class="nav-btn">Get in Touch <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg></button>
-  </div>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-tag">
-    <div class="hero-tag-dot"></div>
-    <span>Huddersfield, West Yorkshire</span>
-  </div>
-  <div class="hero-content">
-    <div class="hero-left">
-      <h1>Showcase<br>Your Business<br><span class="cycle-wrap accent" data-reserve="Professionally."><span id="cycleWord">Professionally.</span></span></h1>
+<div class="fixed" id="nav">
+  <div class="container">
+    <div class="navbar-holder">
+      <a href="#top" class="brand" aria-label="Franks Media home"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/Franks_Media__1_-removebg-preview.png" alt="Franks Media"></a>
+      <nav class="nav-menu" aria-label="Main">
+        <div class="nav-links">
+          <div class="nav-link-wrapper"><a href="#top" class="nav-link current">Home</a><div class="nav-line"></div></div>
+          <div class="nav-link-wrapper"><a href="#about" class="nav-link">About</a><div class="nav-line"></div></div>
+          <div class="nav-link-wrapper"><a href="#projects" class="nav-link">Projects</a><div class="nav-line"></div></div>
+          <div class="nav-link-wrapper"><a href="#services" class="nav-link">Services</a><div class="nav-line"></div></div>
+          <div class="nav-link-wrapper"><a href="drone-photography.html" class="nav-link">Drone</a><div class="nav-line"></div></div>
+          <div class="nav-link-wrapper"><a href="#contact" class="nav-link">Contact</a><div class="nav-line"></div></div>
+          <a href="#contact" class="button nav-cta">
+            <span class="button-text-holder"><span class="button-text">Get a Quote</span><span class="button-text">Get a Quote</span></span>
+            <span class="button-icon"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg></span>
+          </a>
+        </div>
+      </nav>
+      <button class="menu-button" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
     </div>
-    <div class="hero-right">
-      <p>Drone photography, bespoke websites, drone cinematography and immersive 3D imagery for businesses across Huddersfield and Yorkshire.</p>
-      <form id="heroForm" class="hero-form" action="https://formspree.io/f/xnjgybry" method="POST">
-        <input type="tel" name="phone" placeholder="Your phone number" required>
-        <input type="hidden" name="source" value="Hero Form">
-        <button type="submit" class="btn btn-blue">
-          Request a Call Back
-          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-        </button>
-      </form>
-      <div id="heroSuccess" style="display:none;padding:14px 18px;background:rgba(0,87,168,.15);border:1px solid rgba(0,87,168,.4);border-radius:8px;font-size:14px;color:rgba(240,237,232,.8);margin-top:10px;">
-        &#10003; Thanks! We'll call you back shortly.
-      </div>
-    </div>
-  </div>
-  <div class="hero-scroll">
-    <div class="scroll-bar"></div>
-    <span>Scroll</span>
-  </div>
-</section>
-
-<!-- MARQUEE -->
-<div class="marquee-wrap">
-  <div class="marquee">
-    <div class="marquee-item">Drone Photography<div class="marquee-sep"></div></div>
-    <div class="marquee-item">Drone Cinematography<div class="marquee-sep"></div></div>
-    <div class="marquee-item">3D Drone Imagery<div class="marquee-sep"></div></div>
-    <div class="marquee-item">Virtual Tours<div class="marquee-sep"></div></div>
-    <div class="marquee-item">Website Design<div class="marquee-sep"></div></div>
-    <div class="marquee-item">E-Commerce<div class="marquee-sep"></div></div>
-    <div class="marquee-item">3D Perspectives<div class="marquee-sep"></div></div>
-    <div class="marquee-item">CAA Registered<div class="marquee-sep"></div></div>
-    <div class="marquee-item">Drone Photography<div class="marquee-sep"></div></div>
-    <div class="marquee-item">Drone Cinematography<div class="marquee-sep"></div></div>
-    <div class="marquee-item">3D Drone Imagery<div class="marquee-sep"></div></div>
-    <div class="marquee-item">Virtual Tours<div class="marquee-sep"></div></div>
-    <div class="marquee-item">Website Design<div class="marquee-sep"></div></div>
-    <div class="marquee-item">E-Commerce<div class="marquee-sep"></div></div>
-    <div class="marquee-item">3D Perspectives<div class="marquee-sep"></div></div>
-    <div class="marquee-item">CAA Registered<div class="marquee-sep"></div></div>
   </div>
 </div>
 
-<!-- ABOUT -->
-<section class="s" id="about">
-  <div class="about-grid">
-    <div class="about-label reveal">
-      <div class="label-tag"><div class="label-tag-dot"></div> About Us</div>
-      <h2>Comprehensive<br><span class="dim">digital</span><br><span class="dim">services.</span></h2>
+<main id="top">
+
+<!-- HERO -->
+<header class="hero">
+  <div class="container hero-head">
+    <div class="hero-grid">
+      <h1 class="hero-title"><span class="ht-lead">Showcase your business</span> <span class="cycle-wrap accent" data-reserve="professionally."><span class="cycle-inner"><span id="cycleWord" class="visible">professionally.</span></span></span></h1>
+      <div class="hero-aside animate-on-load">
+        <p>Bespoke websites built from scratch, plus drone photography and cinematography for businesses across Yorkshire.</p>
+        <div class="hero-button-holder">
+          <a href="#contact" class="button">
+            <span class="button-text-holder"><span class="button-text">Get a Free Quote</span><span class="button-text">Get a Free Quote</span></span>
+            <span class="button-icon"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg></span>
+          </a>
+          <a href="#projects" class="button secondary">
+            <span class="button-text-holder"><span class="button-text">View Work</span><span class="button-text">View Work</span></span>
+            <span class="dot"></span>
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="about-body reveal">
-      <p>Based in <strong>Huddersfield, West Yorkshire</strong>, Franks Media delivers bespoke website design and drone photography and imaging for businesses across Yorkshire. From Huddersfield and Leeds to Bradford, Halifax, Wakefield and Sheffield, we give businesses a presence that commands attention online.</p>
-      <p>Whether you need a high-performance business website, a full e-commerce solution, cinematic drone footage, or an interactive 3D property model, we bring the expertise to make it real, on time and on budget.</p>
-      <div class="about-photos">
-        <div class="about-photo-main">
-          <img src="https://cdn.prod.website-files.com/67f845f932f268860becd300/67f845f932f268860becd389_Franks%20(5).jpg" alt="Drone photography Huddersfield">
+  </div>
+  <div class="container">
+    <div class="hero-media" id="heroMedia">
+      <div class="content_img-wrap"><img class="content_img" src="https://i.postimg.cc/hPY664NS/DJI-0196-FF.jpg" alt="Aerial view of Ardara, County Donegal"></div>
+      <div class="content_img-wrap"><img class="content_img" src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/Copy%20of%20Franks%20(1).jpg" alt="Drone photograph by Franks Media"></div>
+      <div class="content_img-wrap"><img class="content_img" src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/DJI-0151-(2).jpg" alt="Aerial view of Fintra Beach, Killybegs"></div>
+      <div class="content_img-wrap"><img class="content_img" src="https://cdn.prod.website-files.com/67f845f932f268860becd300/67f845f932f268860becd389_Franks%20(5).jpg" alt="Aerial view of Castle Hill, Huddersfield"><span class="hero-caption animate-on-load">Castle Hill, Huddersfield</span></div>
+    </div>
+    <div class="hero-meta">
+      <div class="small-text animate-on-load">Web Design<span class="sep"></span>Drone Photography<span class="sep"></span>Cinematography<span class="sep"></span>3D Perspectives</div>
+      <div class="small-text animate-on-load">Huddersfield, West Yorkshire</div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section class="section light" id="about">
+  <div class="section-spacing">
+    <div class="line"></div>
+    <div class="container">
+      <div class="grid-title">
+        <div>
+          <div class="fade-in-on-scroll"><div class="paragraph-title">About the studio</div></div>
+          <h2 class="h4-style split-scrub">A Huddersfield studio building websites and shooting drone photography for businesses across Yorkshire.</h2>
         </div>
-        <div class="about-photo-overlap">
-          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/DJI-0151-(2).jpg" alt="Drone photography">
+        <div class="fade-in-on-scroll"><p>We work with businesses in Huddersfield, Leeds, Bradford, Halifax, Wakefield and Sheffield. Every site is built from scratch and every drone shoot is flown by us. Business websites, online shops, drone photo and video, and 3D property models.</p></div>
+      </div>
+      <div class="fade-in-on-scroll"><div class="paragraph-title">Trusted by</div></div>
+      <div class="partner-grid">
+        <a class="partner" style="--brand:#EF3125" href="https://www.bielbyassociates.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Bielby Associates"><img class="partner-logo mono" src="images/logos/bielby.png" alt="Bielby Associates" loading="lazy"><img class="partner-logo logo-colour" src="images/logos/bielby-colour.png" alt="" aria-hidden="true" loading="lazy"></a>
+        <a class="partner" style="--brand:#19272D" href="https://www.resultsurveying.com" target="_blank" rel="noopener noreferrer" aria-label="Result Surveying"><img class="partner-logo mono" src="images/logos/result.png" alt="Result Surveying" loading="lazy"><img class="partner-logo logo-colour" src="images/logos/result-colour.png" alt="" aria-hidden="true" loading="lazy"></a>
+        <a class="partner" style="--brand:#565656" href="https://www.t1assetmanagement.co.uk" target="_blank" rel="noopener noreferrer" aria-label="T1 Asset Management"><img class="partner-logo mono" src="images/logos/t1.png" alt="T1 Asset Management" loading="lazy"><img class="partner-logo logo-colour" src="images/logos/t1-colour.png" alt="" aria-hidden="true" loading="lazy"></a>
+        <a class="partner" style="--brand:#0d1b33" href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" aria-label="MPC Plastering and Building"><img class="partner-logo mono" src="images/logos/mpc.png" alt="MPC Plastering and Building" loading="lazy"><img class="partner-logo logo-colour" src="images/logos/mpc-colour.png" alt="" aria-hidden="true" loading="lazy"></a>
+        <a class="partner" style="--brand:#0f1f3d" href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer" aria-label="Yorkshire Property Charitable Trust"><img class="partner-logo mono" src="images/logos/ypct.png" alt="Yorkshire Property Charitable Trust" loading="lazy"><img class="partner-logo logo-colour" src="images/logos/ypct.png" alt="" aria-hidden="true" loading="lazy"></a>
+        <a class="partner" style="--brand:#ECE8E1" href="https://www.knaptonandknapton.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Knapton and Knapton"><img class="partner-logo mono" src="images/logos/kk.png" alt="Knapton and Knapton" loading="lazy"><img class="partner-logo logo-colour" src="images/logos/kk-colour.png" alt="" aria-hidden="true" loading="lazy"></a>
+        <a class="partner" style="--brand:#ECE8E1" href="https://www.cleggjoinery.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Clegg Joinery"><img class="partner-logo mono" src="images/logos/clegg.png" alt="Clegg Joinery" loading="lazy"><img class="partner-logo logo-colour" src="images/logos/clegg-colour.png" alt="" aria-hidden="true" loading="lazy"></a>
+        <a class="partner" style="--brand:#374149" href="https://nrdomestics.co.uk" target="_blank" rel="noopener noreferrer" aria-label="NR Domestics"><img class="partner-logo mono" src="images/logos/nr-domestics.png" alt="NR Domestics" loading="lazy"><img class="partner-logo logo-colour" src="images/logos/nr-domestics-colour.png" alt="" aria-hidden="true" loading="lazy"></a>
+        <a class="partner" style="--brand:#A0693F" href="https://harrogatehiddenstay.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Harrogate Hidden Stay"><img class="partner-logo mono" src="images/logos/harrogate-hidden-stay.png" alt="Harrogate Hidden Stay" loading="lazy"><img class="partner-logo logo-colour" src="images/logos/harrogate-hidden-stay.png" alt="" aria-hidden="true" loading="lazy"></a>
+        <a class="partner" style="--brand:#5F8B88" href="https://wellconnections.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Well Connections"><img class="partner-logo mono" src="images/logos/well-connections.png" alt="Well Connections" loading="lazy"><img class="partner-logo logo-colour" src="images/logos/well-connections.png" alt="" aria-hidden="true" loading="lazy"></a>
+        <a class="partner" style="--brand:#0E5A75" href="https://lastisfast.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Last Is Fast"><img class="partner-logo mono" src="images/logos/last-is-fast.png" alt="Last Is Fast" loading="lazy"><img class="partner-logo logo-colour" src="images/logos/last-is-fast.png" alt="" aria-hidden="true" loading="lazy"></a>
+        <a class="partner" style="--brand:#1D3A4E" href="https://wilsonjoinery.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Wilson Joinery"><img class="partner-logo mono" src="images/logos/wilson-joinery.png" alt="Wilson Joinery" loading="lazy"><img class="partner-logo logo-colour" src="images/logos/wilson-joinery.png" alt="" aria-hidden="true" loading="lazy"></a>
+        <a class="partner" style="--brand:#F4EFE6" href="https://ceibamethod.co.uk" target="_blank" rel="noopener noreferrer" aria-label="CEIBA"><img class="partner-logo mono" src="images/logos/ceiba.png" alt="CEIBA" loading="lazy"><img class="partner-logo logo-colour" src="images/logos/ceiba-colour.png" alt="" aria-hidden="true" loading="lazy"></a>
+        <a class="partner" style="--brand:#E2762B" href="https://jstechinstallations.co.uk" target="_blank" rel="noopener noreferrer" aria-label="JS Tech Installations"><img class="partner-logo mono" src="images/logos/js-tech.png" alt="JS Tech Installations" loading="lazy"><img class="partner-logo logo-colour" src="images/logos/js-tech-colour.png" alt="" aria-hidden="true" loading="lazy"></a>
+        <a class="partner" style="--brand:#D7192E" href="https://artmartialprint.co.uk" target="_blank" rel="noopener noreferrer" aria-label="ARTMARTIAL PRINT"><img class="partner-logo mono" src="images/logos/artmartial.png" alt="ARTMARTIAL PRINT" loading="lazy"><img class="partner-logo logo-colour" src="images/logos/artmartial.png" alt="" aria-hidden="true" loading="lazy"></a>
+        <a class="partner more" href="#contact"><span class="small-text">Your business</span><strong>Get in touch <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></strong></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="section" id="projects">
+  <div class="section-spacing">
+    <div class="container gray">
+      <div class="grid-title">
+        <div>
+          <div class="fade-in-on-scroll"><div class="paragraph-title">Projects</div></div>
+          <div class="fade-in-on-scroll"><h2 class="h4-style">Selected work<sup class="count">(15)</sup></h2></div>
         </div>
+        <div class="fade-in-on-scroll"><p>Recent websites for trades, surveyors, coaches, shops and charities.</p></div>
+      </div>
+
+      <div class="work-grid">
+        <a class="work-card fade-in-on-scroll" href="https://knaptonandknapton.co.uk" target="_blank" rel="noopener noreferrer">
+          <div class="work-media"><img src="images/work/knapton.webp" alt="Knapton and Knapton website on desktop and mobile" loading="lazy"></div>
+          <div class="work-info"><div><h3>Knapton &amp; Knapton</h3><span class="url">knaptonandknapton.co.uk <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></span></div><span class="work-cat">Architecture</span></div>
+        </a>
+        <a class="work-card fade-in-on-scroll" href="https://t1assetmanagement.co.uk" target="_blank" rel="noopener noreferrer">
+          <div class="work-media"><img src="images/work/t1.webp" alt="T1 Asset Management website on desktop and mobile" loading="lazy"></div>
+          <div class="work-info"><div><h3>T1 Asset Management</h3><span class="url">t1assetmanagement.co.uk <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></span></div><span class="work-cat">Rent Review</span></div>
+        </a>
+        <a class="work-card fade-in-on-scroll" href="https://harrogatehiddenstay.co.uk" target="_blank" rel="noopener noreferrer">
+          <div class="work-media"><span class="work-new">New</span><img src="images/work/harrogate-hidden-stay.webp" alt="Harrogate Hidden Stay website on desktop and mobile" loading="lazy"></div>
+          <div class="work-info"><div><h3>Harrogate Hidden Stay</h3><span class="url">harrogatehiddenstay.co.uk <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></span></div><span class="work-cat">Holiday Let</span></div>
+        </a>
+        <a class="work-card fade-in-on-scroll" href="https://wellconnections.co.uk" target="_blank" rel="noopener noreferrer">
+          <div class="work-media"><span class="work-new">New</span><img src="images/work/well-connections.webp" alt="Well Connections website on desktop and mobile" loading="lazy"></div>
+          <div class="work-info"><div><h3>Well Connections</h3><span class="url">wellconnections.co.uk <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></span></div><span class="work-cat">Workplace Wellbeing</span></div>
+        </a>
+        <a class="work-card fade-in-on-scroll" href="https://bielbyassociates.co.uk" target="_blank" rel="noopener noreferrer">
+          <div class="work-media"><img src="images/work/bielby.webp" alt="Bielby Associates website on desktop and mobile" loading="lazy"></div>
+          <div class="work-info"><div><h3>Bielby Associates</h3><span class="url">bielbyassociates.co.uk <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></span></div><span class="work-cat">Surveyors</span></div>
+        </a>
+        <a class="work-card fade-in-on-scroll" href="https://wilsonjoinery.co.uk" target="_blank" rel="noopener noreferrer">
+          <div class="work-media"><span class="work-new">New</span><img src="images/work/wilson-joinery.webp" alt="Wilson Joinery website on desktop and mobile" loading="lazy"></div>
+          <div class="work-info"><div><h3>Wilson Joinery</h3><span class="url">wilsonjoinery.co.uk <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></span></div><span class="work-cat">Bespoke Joinery</span></div>
+        </a>
+        <a class="work-card fade-in-on-scroll" href="https://nrdomestics.co.uk" target="_blank" rel="noopener noreferrer">
+          <div class="work-media"><span class="work-new">New</span><img src="images/work/nr-domestics.webp" alt="NR Domestics website on desktop and mobile" loading="lazy"></div>
+          <div class="work-info"><div><h3>NR Domestics</h3><span class="url">nrdomestics.co.uk <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></span></div><span class="work-cat">Appliance Repairs</span></div>
+        </a>
+        <a class="work-card fade-in-on-scroll" href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer">
+          <div class="work-media"><img src="images/work/mpc.webp" alt="MPC Plastering and Building website on desktop and mobile" loading="lazy"></div>
+          <div class="work-info"><div><h3>MPC Plastering &amp; Building</h3><span class="url">mpcplastering-building.co.uk <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></span></div><span class="work-cat">Building</span></div>
+        </a>
+        <a class="work-card fade-in-on-scroll" href="https://lastisfast.co.uk" target="_blank" rel="noopener noreferrer">
+          <div class="work-media"><span class="work-new">New</span><img src="images/work/last-is-fast.webp" alt="Last Is Fast website on desktop and mobile" loading="lazy"></div>
+          <div class="work-info"><div><h3>Last Is Fast</h3><span class="url">lastisfast.co.uk <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></span></div><span class="work-cat">Swimwear Store</span></div>
+        </a>
+        <a class="work-card fade-in-on-scroll" href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer">
+          <div class="work-media"><img src="images/work/ypct.webp" alt="Yorkshire Property Charitable Trust website on desktop and mobile" loading="lazy"></div>
+          <div class="work-info"><div><h3>Yorkshire Property Charitable Trust</h3><span class="url">yorkshirepropertycharity.com <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></span></div><span class="work-cat">Charity</span></div>
+        </a>
+        <a class="work-card fade-in-on-scroll" href="https://ceibamethod.co.uk" target="_blank" rel="noopener noreferrer">
+          <div class="work-media"><span class="work-new">New</span><img src="images/work/ceiba.webp" alt="CEIBA website on desktop and mobile" loading="lazy"></div>
+          <div class="work-info"><div><h3>CEIBA</h3><span class="url">ceibamethod.co.uk <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></span></div><span class="work-cat">Coaching</span></div>
+        </a>
+        <a class="work-card fade-in-on-scroll" href="https://cleggjoinery.co.uk" target="_blank" rel="noopener noreferrer">
+          <div class="work-media"><img src="images/work/clegg.webp" alt="Clegg Joinery website on desktop and mobile" loading="lazy"></div>
+          <div class="work-info"><div><h3>Clegg Joinery</h3><span class="url">cleggjoinery.co.uk <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></span></div><span class="work-cat">Joinery</span></div>
+        </a>
+        <a class="work-card fade-in-on-scroll" href="https://jstechinstallations.co.uk" target="_blank" rel="noopener noreferrer">
+          <div class="work-media"><span class="work-new">New</span><img src="images/work/js-tech.webp" alt="JS Tech Installations website on desktop and mobile" loading="lazy"></div>
+          <div class="work-info"><div><h3>JS Tech Installations</h3><span class="url">jstechinstallations.co.uk <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></span></div><span class="work-cat">Telecoms</span></div>
+        </a>
+        <a class="work-card fade-in-on-scroll" href="https://www.resultsurveying.com" target="_blank" rel="noopener noreferrer">
+          <div class="work-media"><img src="images/work/result.webp" alt="Result Surveying website on desktop and mobile" loading="lazy"></div>
+          <div class="work-info"><div><h3>Result Surveying</h3><span class="url">resultsurveying.com <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></span></div><span class="work-cat">Surveying</span></div>
+        </a>
+        <a class="work-card fade-in-on-scroll" href="https://kasiahowley.co.uk" target="_blank" rel="noopener noreferrer">
+          <div class="work-media"><span class="work-new">New</span><img src="images/work/kasia-howley.webp" alt="Kasia Howley Music website on desktop and mobile" loading="lazy"></div>
+          <div class="work-info"><div><h3>Kasia Howley Music</h3><span class="url">kasiahowley.co.uk <svg class="arr" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 9 9 3M4 3h5v5"/></svg></span></div><span class="work-cat">Vocal Coach</span></div>
+        </a>
       </div>
     </div>
   </div>
 </section>
 
 <!-- SERVICES -->
-<section class="s" id="services" style="padding-top:0;">
-  <div class="services-head reveal">
-    <h2>What we <span class="dim">do</span></h2>
-    <p>Three core disciplines, one goal: getting your business noticed and getting you enquiries.</p>
-  </div>
-  <div class="service-list">
-    <a href="#portfolio" class="service-item reveal">
-      <span class="si-num">01</span>
-      <div class="si-body">
-        <h3>Website Design</h3>
-        <p>Bespoke, conversion-focused websites for businesses across Huddersfield, Leeds, Bradford, Halifax, Wakefield and Yorkshire. Fast, mobile-first, and built to grow with you.</p>
-        <span class="si-link">
-          View work
-          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-        </span>
-      </div>
-      <div class="si-arrow">
-        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-      </div>
-    </a>
-    <a href="drone-photography.html" class="service-item reveal">
-      <span class="si-num">02</span>
-      <div class="si-body">
-        <h3>Drone Photography</h3>
-        <p>CAA Registered drone photography paired with precise 3D perspectives and interactive models. For estate agents, surveyors, developers and tourism operators who want imagery and spatial detail that photography alone cannot capture.</p>
-        <span class="si-link">
-          View drone photography services
-          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-        </span>
-      </div>
-      <div class="si-arrow">
-        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-      </div>
-    </a>
-    <a href="#work" class="service-item reveal">
-      <span class="si-num">03</span>
-      <div class="si-body">
-        <h3>Drone Cinematography</h3>
-        <p>Cinematic aerial video that brings properties, developments and locations to life. Smooth, broadcast-quality footage built to make your marketing stand out.</p>
-        <span class="si-link">
-          Watch our latest work
-          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-        </span>
-      </div>
-      <div class="si-arrow">
-        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-      </div>
-    </a>
-  </div>
-</section>
-
-<!-- SELECTED WORK STACKING CASE-STUDY DECK -->
-<div class="work-outer" id="portfolio">
-  <div class="work-inner">
-    <div class="work-head reveal">
-      <div>
-        <div class="label-tag"><div class="label-tag-dot"></div> Web Design</div>
-        <h2>Selected <span class="dim">Work</span><sup>(07)</sup></h2>
-      </div>
-      <p>A selection of recent websites, each built from scratch to fit the business behind it.</p>
-    </div>
-
-    <div class="work-deck">
-
-      <article class="work-panel" data-index="01">
-        <div class="work-info">
-          <div class="work-cat"><div class="badge-dot"></div><span>Plastering &amp; Building</span></div>
-          <h3>MPC Plastering &amp; Building</h3>
-          <a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">mpcplastering-building.co.uk
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-          <p>MPC had word-of-mouth but no web presence. We gave them one: a clean, image-led site anchored around a project gallery and a fast quote-request journey. Strong local SEO means they now show up when homeowners across Yorkshire search for plastering and building work, not just when someone already has their number.</p>
-          <a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
-            Visit Live Site
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
+<section class="section" id="services">
+  <div class="section-spacing" style="padding-bottom:0;">
+    <div class="container">
+      <div class="grid-title">
+        <div>
+          <div class="fade-in-on-scroll"><div class="paragraph-title">Services we can help with</div></div>
+          <div class="fade-in-on-scroll"><h2 class="h4-style">Websites, drone photography and video.</h2></div>
         </div>
-        <div class="work-visual is-wide">
-          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/MPC%20Computer%20and%20phone.png" alt="MPC Plastering and Building website on desktop and mobile" loading="lazy">
-        </div>
-      </article>
-      <article class="work-panel" data-index="02">
-        <div class="work-info">
-          <div class="work-cat"><div class="badge-dot"></div><span>Architectural Consultancy</span></div>
-          <h3>Knapton &amp; Knapton</h3>
-          <a href="https://www.knaptonandknapton.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">knaptonandknapton.co.uk
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-          <p>Knapton &amp; Knapton needed a web presence that matched the precision and craft of their architectural work. We built a clean, considered site that puts their projects front and centre and lets the work speak, with a structure that makes it straightforward for prospective clients to understand the practice and get in touch.</p>
-          <a href="https://www.knaptonandknapton.co.uk" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
-            Visit Live Site
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="work-visual is-wide">
-          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/Knapton%20COMPUTER%20AND%20PHONE%20(1).png" alt="Knapton and Knapton website on desktop and mobile" loading="lazy">
-        </div>
-      </article>
-      <article class="work-panel" data-index="03">
-        <div class="work-info">
-          <div class="work-cat"><div class="badge-dot"></div><span>Chartered Surveyors</span></div>
-          <h3>Bielby Associates</h3>
-          <a href="https://www.bielbyassociates.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">bielbyassociates.co.uk
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-          <p>Bielby Associates needed a site that matched the calibre of their surveying work. We stripped back a dated web presence and replaced it with something sharp, structured and built to convert, with clear service breakdowns, strong local search positioning and a layout that guides visitors straight to an enquiry. The firm now keeps us on retainer for ongoing updates.</p>
-          <a href="https://www.bielbyassociates.co.uk" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
-            Visit Live Site
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="work-visual">
-          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/bbbbbbbb%20(1).png" alt="Bielby Associates website on desktop and mobile" loading="lazy">
-        </div>
-      </article>
-      <article class="work-panel" data-index="04">
-        <div class="work-info">
-          <div class="work-cat"><div class="badge-dot"></div><span>Charity &amp; Property Community</span></div>
-          <h3>Yorkshire Property Charity Trust</h3>
-          <a href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer" class="work-url">yorkshirepropertycharity.com
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-          <p>Founded in 2015, Yorkshire Property Charitable Trust has raised over £600,000 for causes put forward by the Yorkshire property community. They needed a site that matched that track record: clear, professional and trusted. We built one.</p>
-          <a href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
-            Visit Live Site
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="work-visual is-wide">
-          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/YPCT%20COMPUTER%20AND%20PHONE%20(1).png" alt="Yorkshire Property Charity Trust website on desktop and mobile" loading="lazy">
-        </div>
-      </article>
-      <article class="work-panel" data-index="05">
-        <div class="work-info">
-          <div class="work-cat"><div class="badge-dot"></div><span>Joinery &amp; Carpentry</span></div>
-          <h3>Clegg Joinery</h3>
-          <a href="https://www.cleggjoinery.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">cleggjoinery.co.uk
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-          <p>A full brand and web build from the ground up. We designed the Clegg Joinery logo first, then carried that identity through into a site built to show the standard of the joinery itself. Clean galleries, clear services and a direct route to a quote for homeowners and contractors across Yorkshire.</p>
-          <a href="https://www.cleggjoinery.co.uk" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
-            Visit Live Site
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="work-visual is-wide">
-          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/Clegg%20COMPUTER%20AND%20PHONE%20(1).png" alt="Clegg Joinery website on desktop and mobile" loading="lazy">
-        </div>
-      </article>
-      <article class="work-panel" data-index="06">
-        <div class="work-info">
-          <div class="work-cat"><div class="badge-dot"></div><span>Building Surveying</span></div>
-          <h3>Result Surveying</h3>
-          <a href="https://www.resultsurveying.com" target="_blank" rel="noopener noreferrer" class="work-url">resultsurveying.com
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-          <p>Result Surveying’s previous site wasn’t keeping pace with the business. We rebuilt it mobile-first and speed-optimised, cutting load times in half and structuring the content so that homeowners and commercial clients can understand the services on offer and book a survey without friction.</p>
-          <a href="https://www.resultsurveying.com" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
-            Visit Live Site
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="work-visual">
-          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/Result-Surveying-Website-Launch-PNG-(1).png" alt="Result Surveying website on desktop and mobile" loading="lazy">
-        </div>
-      </article>
-      <article class="work-panel" data-index="07">
-        <div class="work-info">
-          <div class="work-cat"><div class="badge-dot"></div><span>Rent Review Specialist</span></div>
-          <h3>T1 Asset Management</h3>
-          <a href="https://www.t1assetmanagement.co.uk" target="_blank" rel="noopener noreferrer" class="work-url">t1assetmanagement.co.uk
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-          <p>A refined, authoritative online presence for T1 Asset Management, conveying trust and professionalism to prospective clients from the first visit.</p>
-          <a href="https://www.t1assetmanagement.co.uk" target="_blank" rel="noopener noreferrer" class="btn btn-blue work-cta">
-            Visit Live Site
-            <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-          </a>
-        </div>
-        <div class="work-visual">
-          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/T1%20phone%20and%20computer%20new%20transparent%2022.png" alt="T1 Asset Management website on desktop and mobile" loading="lazy">
-        </div>
-      </article>
-    </div>
-
-    <div class="logos-strip reveal">
-      <div class="logos-strip-head">
-        <div class="logos-strip-label">Trusted by businesses across Yorkshire</div>
-        <div class="logos-strip-hint">Click logo to view website</div>
-      </div>
-      <div class="logos-marquee">
-        <div class="logos-track">
-          <div class="logo-item"><a href="https://www.bielbyassociates.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Bielby Associates"><img src="https://images.squarespace-cdn.com/content/v1/68e96700e97e214d978494dd/fcb69960-7cc0-4864-9e06-f41306644dfb/Final+Black+logo.bmp.png?format=1500w" alt="Bielby Associates"></a></div>
-          <div class="logo-item"><a href="https://www.resultsurveying.com" target="_blank" rel="noopener noreferrer" aria-label="Result Surveying"><img src="https://images.squarespace-cdn.com/content/v1/691f70804af57b769fcaa963/eeb58a8d-3fad-47c0-96b1-d0ab02ebbe7a/result-logo+%281%29.png?format=1500w" alt="Result Surveying"></a></div>
-          <div class="logo-item"><a href="https://www.t1assetmanagement.co.uk" target="_blank" rel="noopener noreferrer" aria-label="T1 Asset Management"><img src="https://images.squarespace-cdn.com/content/v1/601fd0787b0ff91513ebe340/a4fbaec7-8c0d-427b-9f85-bc15ee43844e/Monochrome+on+Transparent.png?format=1500w" alt="T1 Asset Management"></a></div>
-          <div class="logo-item logo-item-mpc"><a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" aria-label="MPC Plastering and Building"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/MPC%20Transparent%20logo.png" alt="MPC Plastering and Building"></a></div>
-          <div class="logo-item logo-item-ypct"><a href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer" aria-label="Yorkshire Property Charity Trust"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/YPCT-01.png" alt="Yorkshire Property Charity Trust"></a></div>
-          <div class="logo-item logo-item-kk"><a href="https://www.knaptonandknapton.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Knapton &amp; Knapton"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/k-k/refs/heads/main/KK%20Logo%202%20(1)1%20(1).png" alt="Knapton &amp; Knapton"></a></div>
-          <div class="logo-item logo-item-clegg"><a href="https://www.cleggjoinery.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Clegg Joinery"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/CLEGG%20PNG.png" alt="Clegg Joinery"></a></div>
-
-          <div class="logo-item"><a href="https://www.bielbyassociates.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Bielby Associates"><img src="https://images.squarespace-cdn.com/content/v1/68e96700e97e214d978494dd/fcb69960-7cc0-4864-9e06-f41306644dfb/Final+Black+logo.bmp.png?format=1500w" alt="Bielby Associates"></a></div>
-          <div class="logo-item"><a href="https://www.resultsurveying.com" target="_blank" rel="noopener noreferrer" aria-label="Result Surveying"><img src="https://images.squarespace-cdn.com/content/v1/691f70804af57b769fcaa963/eeb58a8d-3fad-47c0-96b1-d0ab02ebbe7a/result-logo+%281%29.png?format=1500w" alt="Result Surveying"></a></div>
-          <div class="logo-item"><a href="https://www.t1assetmanagement.co.uk" target="_blank" rel="noopener noreferrer" aria-label="T1 Asset Management"><img src="https://images.squarespace-cdn.com/content/v1/601fd0787b0ff91513ebe340/a4fbaec7-8c0d-427b-9f85-bc15ee43844e/Monochrome+on+Transparent.png?format=1500w" alt="T1 Asset Management"></a></div>
-          <div class="logo-item logo-item-mpc"><a href="https://mpcplastering-building.co.uk" target="_blank" rel="noopener noreferrer" aria-label="MPC Plastering and Building"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/MPC%20Transparent%20logo.png" alt="MPC Plastering and Building"></a></div>
-          <div class="logo-item logo-item-ypct"><a href="https://yorkshirepropertycharity.com" target="_blank" rel="noopener noreferrer" aria-label="Yorkshire Property Charity Trust"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/YPCT-01.png" alt="Yorkshire Property Charity Trust"></a></div>
-          <div class="logo-item logo-item-kk"><a href="https://www.knaptonandknapton.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Knapton &amp; Knapton"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/k-k/refs/heads/main/KK%20Logo%202%20(1)1%20(1).png" alt="Knapton &amp; Knapton"></a></div>
-          <div class="logo-item logo-item-clegg"><a href="https://www.cleggjoinery.co.uk" target="_blank" rel="noopener noreferrer" aria-label="Clegg Joinery"><img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/9s4pr6gvvk-bot.github.io/refs/heads/main/CLEGG%20PNG.png" alt="Clegg Joinery"></a></div>
-
-        </div>
+        <div class="fade-in-on-scroll"><p>Book one service or combine them.</p></div>
       </div>
     </div>
   </div>
-</div>
-
-<!-- FEATURE -->
-<div class="feature-outer">
-  <div class="feature-grid" style="max-width:1320px;margin:0 auto;">
-    <div class="feature-img-col reveal">
-      <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/Result-Surveying-Website-Launch-PNG-(1).png" alt="Result Surveying website">
-    </div>
-    <div class="feature-text-col reveal">
-      <div class="label-tag"><div class="label-tag-dot"></div> Web Design</div>
-      <h2>Your new website,<br>made easy.</h2>
-      <p>We build stylish, conversion-focused websites for businesses across Huddersfield, Leeds, Bradford, Halifax and the wider Yorkshire region at honest, transparent rates.</p>
-      <p>Every site is built from scratch, never from a template, so your business stands out in a crowded market.</p>
-      <ul class="check-list">
-        <li>Bespoke design, never templates</li>
-        <li>Mobile-first &amp; fast-loading</li>
-        <li>E-commerce ready</li>
-        <li>Ongoing support included</li>
-      </ul>
-      <a href="#contact" class="btn btn-blue">
-        Start a Project
-        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-      </a>
-    </div>
-  </div>
-</div>
-
-<!-- GALLERY DRONE PHOTOGRAPHY -->
-<section class="s" id="work">
-  <div class="gallery-head reveal">
-    <h2>Drone <span class="dim">Photography</span></h2>
-    <a href="https://www.youtube.com/@FranksMedia23/videos" target="_blank" rel="noopener noreferrer" class="gallery-link">
-      View All Work
-      <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-    </a>
-  </div>
-
-  <!-- Desktop grid -->
-  <div class="gallery-grid">
-    <div class="g-item reveal">
-      <img src="https://cdn.prod.website-files.com/67f845f932f268860becd300/67f845f932f268860becd389_Franks%20(5).jpg" alt="Castle Hill, Huddersfield">
-      <div class="g-overlay">
-        <div><span class="g-label">Castle Hill</span><span class="g-sublabel">Huddersfield, West Yorkshire</span></div>
-      </div>
-    </div>
-    <div class="g-item reveal">
-      <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/DJI-0151-(2).jpg" alt="Fintra Beach, Killybegs, Donegal">
-      <div class="g-overlay">
-        <div><span class="g-label">Fintra Beach</span><span class="g-sublabel">Killybegs, Donegal</span></div>
-      </div>
-    </div>
-    <div class="g-item-video reveal">
-      <iframe src="https://www.youtube-nocookie.com/embed/TG7lhhD_dLg?si=qDrVWLOPewaWm9eQ&controls=1" title="Franks Media Showreel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      <div class="g-overlay" style="pointer-events:none;">
-        <div><span class="g-label">Showreel</span><span class="g-sublabel">Franks Media</span></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Mobile slider -->
-  <div class="gallery-slider">
-    <div class="slider-track" id="sliderTrack">
-      <div class="slide">
-        <img src="https://cdn.prod.website-files.com/67f845f932f268860becd300/67f845f932f268860becd389_Franks%20(5).jpg" alt="Castle Hill">
-        <div class="slide-caption"><span class="g-label">Castle Hill</span><span class="g-sublabel">Huddersfield, West Yorkshire</span></div>
-      </div>
-      <div class="slide">
-        <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/DJI-0151-(2).jpg" alt="Fintra Beach">
-        <div class="slide-caption"><span class="g-label">Fintra Beach</span><span class="g-sublabel">Killybegs, Donegal</span></div>
-      </div>
-      <div class="slide">
-        <img src="https://i.postimg.cc/hPY664NS/DJI-0196-FF.jpg" alt="Ardara">
-        <div class="slide-caption"><span class="g-label">Ardara</span><span class="g-sublabel">County Donegal, Ireland</span></div>
-      </div>
-    </div>
-    <div class="slider-controls">
-      <div class="slider-dots">
-        <button class="slider-dot active" onclick="goToSlide(0)"></button>
-        <button class="slider-dot" onclick="goToSlide(1)"></button>
-        <button class="slider-dot" onclick="goToSlide(2)"></button>
-      </div>
-      <div class="slider-arrows">
-        <button class="slider-btn" onclick="prevSlide()">
-          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M13 7H1M7 13 1 7l6-6"/></svg>
-        </button>
-        <button class="slider-btn" onclick="nextSlide()">
-          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-        </button>
+  <div class="sticky-services-holder">
+    <div class="sticky-services">
+      <div class="services">
+        <div class="services-text-holder">
+          <div class="paragraph-title white-text">What we do</div>
+          <div class="services-text-container">
+            <div class="services-text active"><div class="h2-style">Website Design</div><p>Bespoke sites built from scratch. Fast loading, work properly on phones and set up for local search.</p></div>
+            <div class="services-text"><div class="h2-style">Drone Photography</div><p>Aerial photography for estate agents, surveyors, developers and tourism operators.</p></div>
+            <div class="services-text"><div class="h2-style">Drone Cinematography</div><p>Aerial video of properties, developments and locations, edited and ready to use.</p></div>
+            <div class="services-text"><div class="h2-style">3D Perspectives</div><p>3D models of buildings and sites made from drone images.</p></div>
+          </div>
+          <div class="yellow-box"><div class="paragraph-title">Services</div></div>
+        </div>
+        <div class="services-images-holder">
+          <img class="services-images contain active" src="images/work/clegg.webp" alt="Clegg Joinery website on desktop and mobile" loading="lazy">
+          <img class="services-images" src="images/drone-photography.webp" alt="Aerial drone photograph of a commercial site beside the Humber Bridge with the site boundary marked in red" loading="lazy">
+          <div class="services-images services-video" id="cineCard">
+            <img class="video-poster" src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/DJI-0151-(2).jpg" alt="Drone cinematography by Franks Media" loading="lazy">
+            <div id="cineVideo" aria-hidden="true"></div>
+          </div>
+          <img class="services-images" src="https://i.postimg.cc/hPY664NS/DJI-0196-FF.jpg" alt="Aerial view of Ardara" loading="lazy">
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- TESTIMONIAL -->
-<div class="testimonial-outer">
-  <div class="testimonial-inner">
-    <div class="testimonial-left reveal">
-      <div class="t-quote">
-        <span class="t-quote-mark">"</span>
-        <p>I appointed Franks Media to create a new (long overdue) website and can honestly say that the service level and attention to detail in the design stage, copy, client reporting and general advisory capacity was over and above what we were expecting. Franks Media have surpassed our expectations and seamlessly managed the whole process from inception to the website going live. I would recommend Franks Media to anyone or any company looking for a new or refresh to their company website. I cannot say how easy Franks Media made the process feel, to the extent that we have retained Franks Media to update and modernise the website on an ongoing basis. Thanks for the great end result.</p>
+<section class="section light" id="reviews">
+  <div class="section-spacing">
+    <div class="container">
+      <div class="center-text-holder"><p class="paragraph-title">What clients say</p></div>
+      <div class="testimonial-holder">
+        <div class="testimonial-item fade-in-on-scroll">
+          <p class="quote">“I appointed Franks Media to create a new (long overdue) website and can honestly say that the service level and attention to detail in the design stage, copy, client reporting and general advisory capacity was over and above what we were expecting. I cannot say how easy Franks Media made the process feel, to the extent that we have retained Franks Media to update and modernise the website on an ongoing basis.”</p>
+          <div class="testimonial-user-holder">
+            <img class="testimonial-logo" src="images/logos/bielby.png" alt="Bielby Associates" loading="lazy">
+            <div class="testimonial-content">
+              <div class="paragraph-title">James Bielby</div>
+              <p class="no-margins">Director, Bielby Associates</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-visual fade-in-on-scroll">
+          <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/bbbbbbbb%20(1).png" alt="Bielby Associates website on desktop and mobile" loading="lazy">
+        </div>
       </div>
-      <div class="t-attribution">
-        <img class="t-logo" src="https://cdn.prod.website-files.com/67f845f932f268860becd300/697cc4399053dae6211f4e95_Final%20Black%20logo%20PNG-p-2000.png" alt="Bielby Associates">
-        <div class="t-divider"></div>
+      <div class="testimonial-holder">
+        <div class="testimonial-item fade-in-on-scroll">
+          <div class="quote-body">
+            <p class="quote">“I couldn’t be happier with the website Frankie has developed for me. He is professional, organised, incredibly helpful, and goes above and beyond for his clients.</p>
+            <p class="quote">From start to finish, Frankie has made the whole process so easy and extremely collaborative. He really takes the time to get to know your business and to understand what you want!</p>
+            <p class="quote">I honestly couldn’t recommend Frankie highly enough, he really is fantastic at what he does!”</p>
+          </div>
+          <div class="testimonial-user-holder">
+            <div class="testimonial-content">
+              <div class="paragraph-title">Kasia Howley</div>
+              <p class="no-margins">Vocal Coach &amp; Piano Vocalist</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-visual fade-in-on-scroll">
+          <img src="images/kasia-howley-mockup.webp" alt="Kasia Howley website on desktop and mobile" loading="lazy">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="section" id="contact">
+  <div class="section-spacing">
+    <div class="line"></div>
+    <div class="container">
+      <div class="contact-grid">
         <div>
-          <div class="t-name">James Bielby</div>
-          <div class="t-role">Director, Bielby Associates</div>
+          <div class="fade-in-on-scroll"><div class="paragraph-title">Contact</div></div>
+          <h2 class="split-scrub">Get a free quote.</h2>
+          <div class="fade-in-on-scroll"><p>New website, drone shoot or both. Tell us what you need and we’ll come back to you with a free quote.</p></div>
+          <div class="contact-lines fade-in-on-scroll">
+            <a href="mailto:info@franks-media.co.uk">info@franks-media.co.uk</a>
+            <span class="small-text" style="margin-top:8px;">Huddersfield, West Yorkshire</span>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="testimonial-right reveal">
-      <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/bbbbbbbb%20(1).png" alt="Bielby Associates website">
-    </div>
-  </div>
-</div>
-
-<!-- CTA -->
-<div class="cta-wrap" id="cta">
-  <div class="cta-inner">
-    <div class="cta-left">
-      <div class="cta-eyebrow"><span class="cta-eyebrow-line"></span><span>Let's work together</span></div>
-      <h2>Let's build something great together.</h2>
-    </div>
-    <div class="cta-right">
-      <p>Get in touch today. No obligation, just a conversation about your project.</p>
-      <button onclick="openModal()" class="btn btn-white">
-        Get in Touch
-        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-      </button>
-      <a href="mailto:info@franks-media.co.uk" class="btn-outline-white">info&#64;franks-media.co.uk
-        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-      </a>
-    </div>
-  </div>
-</div>
-
-<!-- CONTACT MODAL -->
-<div class="modal-overlay" id="contactModal" onclick="handleOverlayClick(event)">
-  <div class="modal">
-    <button class="modal-close" onclick="closeModal()">&#x2715;</button>
-    <h3>Start a Conversation</h3>
-    <p class="modal-sub">Tell us about your project and we'll be in touch shortly.</p>
-    <form id="contactForm" action="https://formspree.io/f/xnjgybry" method="POST">
-      <div class="form-row">
-        <div class="form-group"><label>First Name</label><input type="text" name="first_name" placeholder="James" required></div>
-        <div class="form-group"><label>Last Name</label><input type="text" name="last_name" placeholder="Smith" required></div>
-      </div>
-      <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="james@company.com" required></div>
-      <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" placeholder="+44 7700 000000"></div>
-      <div class="form-group">
-        <label>What are you interested in?</label>
-        <select name="service">
-          <option value="" disabled selected>Select a service</option>
-          <option>Website Design</option>
-          <option>Drone Photography</option>
-          <option>Drone Cinematography</option>
-          <option>Virtual Tours</option>
-          <option>3D Perspectives</option>
-          <option>Multiple Services</option>
-        </select>
-      </div>
-      <div class="form-group"><label>Tell us more</label><textarea name="message" placeholder="Give us a brief overview of your project..."></textarea></div>
-      <input type="hidden" name="source" value="Modal Homepage">
-      <button type="submit" class="btn btn-blue modal-submit">
-        Send Enquiry
-        <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-      </button>
-    </form>
-    <div class="form-success" id="formSuccess">
-      <strong>Message Sent!</strong>
-      <p>Thanks for getting in touch. We'll get back to you within one business day.</p>
-    </div>
-  </div>
-</div>
-
-<!-- SEO LOCATIONS SECTION -->
-<section class="areas-section">
-  <div class="areas-inner">
-    <div class="areas-text reveal">
-      <div class="label-tag"><div class="label-tag-dot"></div> Areas We Cover</div>
-      <h2 style="font-family:'Syne',sans-serif;font-size:clamp(28px,3vw,40px);font-weight:700;letter-spacing:-.02em;color:#f0ede8;margin-bottom:16px;">Website Design Across <span class="dim">Yorkshire</span></h2>
-      <p style="font-size:15px;color:rgba(240,237,232,.4);line-height:1.8;margin-bottom:0;">Based in Huddersfield, we work with businesses across West Yorkshire and beyond, from Leeds and Bradford to Halifax, Wakefield, Sheffield, Dewsbury and everywhere in between. If you're looking for a web designer in Yorkshire, we'd love to hear from you.</p>
-    </div>
-    <div class="areas-map reveal">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1202892.8661727274!2d-2.5264058310771103!3d53.92463486110496!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487935b588f279e9%3A0xcba0fa0330518560!2sYorkshire!5e0!3m2!1sen!2suk!4v1783255771700!5m2!1sen!2suk" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
-    </div>
-  </div>
-</section>
-
-<style>
-.areas-section{background:#0a0a0a;padding:80px 56px;border-top:1px solid rgba(255,255,255,.06);}
-.areas-inner{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;}
-.areas-text{display:flex;flex-direction:column;gap:20px;align-items:flex-start;}
-.areas-map{border-radius:16px;overflow:hidden;border:1px solid rgba(255,255,255,.08);box-shadow:0 24px 64px rgba(0,0,0,.5);}
-.areas-map iframe{display:block;width:100%;height:420px;border:0;transition:filter .4s ease;}
-.areas-map:hover iframe{filter:none;}
-@media(max-width:1024px){
-  .areas-section{padding:64px 30px;}
-  .areas-inner{grid-template-columns:1fr;gap:40px;}
-  .areas-map iframe{height:340px;}
-}
-@media(max-width:640px){
-  .areas-section{padding:56px 20px;}
-  .areas-map iframe{height:280px;}
-}
-</style>
-
-<!-- INLINE CONTACT FORM -->
-<section id="contact" style="background:#111;border-top:1px solid rgba(255,255,255,.06);padding:100px 56px;">
-  <div style="max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;">
-    <div>
-      <div class="label-tag"><div class="label-tag-dot"></div> Get in Touch</div>
-      <h2 style="font-family:'Syne',sans-serif;font-size:clamp(36px,4vw,54px);font-weight:700;letter-spacing:-.025em;line-height:1.05;color:#f0ede8;margin-bottom:24px;">Start a <span class="dim">Conversation.</span></h2>
-      <p style="font-size:16px;line-height:1.85;color:rgba(240,237,232,.45);margin-bottom:32px;">Whether you need a new website, drone photography or cinematography, we'd love to hear about your project. No obligation, just a chat.</p>
-      <div style="display:flex;flex-direction:column;gap:16px;">
-        <a href="mailto:info@franks-media.co.uk" style="display:flex;align-items:center;gap:12px;font-size:14px;color:rgba(240,237,232,.5);transition:color .25s;" onmouseover="this.style.color='#4da3ff'" onmouseout="this.style.color='rgba(240,237,232,.5)'">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          info&#64;franks-media.co.uk
-        </a>
-        <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:rgba(240,237,232,.5);">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-          Huddersfield, West Yorkshire
+        <div class="fade-in-on-scroll">
+          <form id="contactForm" class="form" action="https://formspree.io/f/xnjgybry" method="POST">
+            <div class="form-row">
+              <div class="field"><label for="fn">First name</label><input class="text-field" id="fn" type="text" name="first_name" placeholder="James" required></div>
+              <div class="field"><label for="ln">Last name</label><input class="text-field" id="ln" type="text" name="last_name" placeholder="Smith" required></div>
+            </div>
+            <div class="field"><label for="em">Email</label><input class="text-field" id="em" type="email" name="email" placeholder="james@company.com" required></div>
+            <div class="field"><label for="ph">Phone</label><input class="text-field" id="ph" type="tel" name="phone" placeholder="+44 7700 000000"></div>
+            <div class="field"><label for="sv">What are you interested in?</label>
+              <select class="text-field" id="sv" name="service">
+                <option value="" disabled selected>Select a service</option>
+                <option>Website Design</option><option>Drone Photography</option><option>Drone Cinematography</option>
+                <option>Virtual Tours</option><option>3D Perspectives</option><option>Multiple Services</option>
+              </select>
+            </div>
+            <div class="field"><label for="ms">Tell us more</label><textarea class="text-field" id="ms" name="message" placeholder="A short overview of your project"></textarea></div>
+            <input type="hidden" name="source" value="Homepage Contact Form">
+            <button type="submit" class="button">
+              <span class="button-text-holder"><span class="button-text">Send Enquiry</span><span class="button-text">Send Enquiry</span></span>
+              <span class="button-icon"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg></span>
+            </button>
+          </form>
+          <div class="success-message" id="formSuccess"><strong>Message sent.</strong><p>Thanks for getting in touch. We’ll reply within one business day.</p></div>
         </div>
-      </div>
-    </div>
-    <div>
-      <form id="inlineContactForm" action="https://formspree.io/f/xnjgybry" method="POST" style="display:flex;flex-direction:column;gap:14px;">
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
-          <div class="form-group"><label>First Name</label><input type="text" name="first_name" placeholder="James" required></div>
-          <div class="form-group"><label>Last Name</label><input type="text" name="last_name" placeholder="Smith" required></div>
-        </div>
-        <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="james@company.com" required></div>
-        <div class="form-group"><label>Phone Number</label><input type="tel" name="phone" placeholder="+44 7700 000000"></div>
-        <div class="form-group">
-          <label>What are you interested in?</label>
-          <select name="service">
-            <option value="" disabled selected>Select a service</option>
-            <option>Website Design</option>
-            <option>Drone Photography</option>
-            <option>Drone Cinematography</option>
-            <option>Virtual Tours</option>
-            <option>3D Perspectives</option>
-            <option>Multiple Services</option>
-          </select>
-        </div>
-        <div class="form-group"><label>Tell us more</label><textarea name="message" placeholder="Give us a brief overview of your project..." style="height:110px;resize:none;"></textarea></div>
-        <input type="hidden" name="source" value="Inline Contact Form Homepage">
-        <button type="submit" class="btn btn-blue" style="width:100%;justify-content:center;padding:15px 20px;font-size:14px;">
-          Send Enquiry
-          <svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg>
-        </button>
-      </form>
-      <div id="inlineFormSuccess" style="display:none;text-align:center;padding:40px 0;">
-        <strong style="color:#f0ede8;display:block;font-family:'Syne',sans-serif;font-size:22px;margin-bottom:10px;letter-spacing:-.01em;">Message Sent!</strong>
-        <p style="font-size:15px;color:rgba(240,237,232,.5);line-height:1.6;">Thanks for getting in touch. We'll get back to you within one business day.</p>
       </div>
     </div>
   </div>
 </section>
 
-<style>
-@media(max-width:768px){
-  #contact > div{grid-template-columns:1fr !important;gap:48px !important;}
-  #contact{padding:72px 24px !important;}
-}
-</style>
+</main>
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-top">
-    <div class="footer-brand">
-      <div class="footer-logo">
-        <img src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/Franks_Media__1_-removebg-preview.png" alt="Franks Media">
-      </div>
-      <p>Drone photography, 3D imaging and bespoke websites for businesses across the UK.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Navigate</h4>
-      <a href="#about">About Us</a>
-      <a href="web-design.html">Website Design</a>
-      <a href="drone-photography.html">Drone Photography</a>
-      <a href="#contact">Contact</a>
-    </div>
-    <div class="footer-col">
-      <h4>Legal</h4>
-      <a href="legal.html#terms">Terms &amp; Conditions</a>
-      <a href="legal.html">Privacy Policy</a>
-      <a href="legal.html#cookies">Cookie Policy</a>
-    </div>
-    <div class="footer-col">
-      <h4>Contact</h4>
-      <a href="mailto:info@franks-media.co.uk" class="email">info&#64;franks-media.co.uk</a>
-      <p>Huddersfield,<br>West Yorkshire</p>
+  <div class="footer-cta-band">
+    <div class="container">
+      <div class="footer-cta">
+          <h2>Have a project in mind? <span>Let’s talk.</span></h2>
+          <div class="footer-cta-side">
+            <a href="#contact" class="button">
+              <span class="button-text-holder"><span class="button-text">Get a Free Quote</span><span class="button-text">Get a Free Quote</span></span>
+              <span class="button-icon"><svg viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1 7h12M7 1l6 6-6 6"/></svg></span>
+            </a>
+            <a href="mailto:info@franks-media.co.uk" class="footer-email">info@franks-media.co.uk</a>
+          </div>
+        </div>
     </div>
   </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 Franks Media. All rights reserved.</p>
-    <div class="footer-bottom-links">
-      <a href="legal.html">Privacy</a>
-      <a href="legal.html#terms">Terms</a>
+  <div class="footer-container">
+    <div class="container">
+      <div class="footer-wrapper">
+        <div>
+          <img class="footer-logo" src="https://raw.githubusercontent.com/9s4pr6gvvk-bot/asset/refs/heads/main/Franks_Media__1_-removebg-preview.png" alt="Franks Media">
+          <p>Website design and drone photography for businesses across Yorkshire.</p>
+        </div>
+        <div class="footer-content">
+          <div class="footer-block">
+            <div class="title-small">Company</div>
+            <div class="nav-link-wrapper"><a href="#top" class="footer-link">Home</a><div class="nav-line"></div></div>
+            <div class="nav-link-wrapper"><a href="#about" class="footer-link">About</a><div class="nav-line"></div></div>
+            <div class="nav-link-wrapper"><a href="#projects" class="footer-link">Work</a><div class="nav-line"></div></div>
+            <div class="nav-link-wrapper"><a href="#contact" class="footer-link">Contact</a><div class="nav-line"></div></div>
+          </div>
+          <div class="footer-block">
+            <div class="title-small">Services</div>
+            <div class="nav-link-wrapper"><a href="web-design.html" class="footer-link">Website Design</a><div class="nav-line"></div></div>
+            <div class="nav-link-wrapper"><a href="drone-photography.html" class="footer-link">Drone Photography</a><div class="nav-line"></div></div>
+            <div class="nav-link-wrapper"><a href="https://www.youtube.com/@FranksMedia23/videos" target="_blank" rel="noopener noreferrer" class="footer-link">Showreel</a><div class="nav-line"></div></div>
+          </div>
+          <div class="footer-block">
+            <div class="title-small">Legal</div>
+            <div class="nav-link-wrapper"><a href="legal.html#terms" class="footer-link">Terms</a><div class="nav-line"></div></div>
+            <div class="nav-link-wrapper"><a href="legal.html" class="footer-link">Privacy</a><div class="nav-line"></div></div>
+            <div class="nav-link-wrapper"><a href="legal.html#cookies" class="footer-link">Cookies</a><div class="nav-line"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-divider">
+        <span>&copy; 2026 Franks Media. All rights reserved.</span>
+        <span>Huddersfield, West Yorkshire</span>
+      </div>
     </div>
   </div>
 </footer>
 
-<script>
-// Modal
-function openModal(){document.getElementById('contactModal').classList.add('open');document.body.style.overflow='hidden';}
-function closeModal(){document.getElementById('contactModal').classList.remove('open');document.body.style.overflow='';}
-function handleOverlayClick(e){if(e.target===document.getElementById('contactModal'))closeModal();}
-document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal();});
-
-// Hero form
-(function(){
-  var f=document.getElementById('heroForm');
-  if(!f)return;
-  f.addEventListener('submit',async function(e){
-    e.preventDefault();
-    var btn=f.querySelector('button[type=submit]'),orig=btn.innerHTML;
-    btn.textContent='Sending...';btn.disabled=true;
-    try{
-      var res=await fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}});
-      if(res.ok){f.style.display='none';document.getElementById('heroSuccess').style.display='block';}
-      else{btn.innerHTML=orig;btn.disabled=false;}
-    }catch{btn.innerHTML=orig;btn.disabled=false;}
-  });
-})();
-
-// Modal form
-(function(){
-  var f=document.getElementById('contactForm');
-  if(!f)return;
-  f.addEventListener('submit',async function(e){
-    e.preventDefault();
-    var btn=f.querySelector('button[type=submit]'),orig=btn.innerHTML;
-    btn.textContent='Sending...';btn.disabled=true;
-    try{
-      var res=await fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}});
-      if(res.ok){f.style.display='none';document.getElementById('formSuccess').style.display='block';}
-      else{btn.textContent='Error, please try again';btn.disabled=false;}
-    }catch{btn.textContent='Error, please try again';btn.disabled=false;}
-  });
-})();
-
-// Inline contact form
-(function(){
-  var f=document.getElementById('inlineContactForm');
-  if(!f)return;
-  f.addEventListener('submit',async function(e){
-    e.preventDefault();
-    var btn=f.querySelector('button[type=submit]'),orig=btn.innerHTML;
-    btn.textContent='Sending...';btn.disabled=true;
-    try{
-      var res=await fetch(f.action,{method:'POST',body:new FormData(f),headers:{'Accept':'application/json'}});
-      if(res.ok){f.style.display='none';document.getElementById('inlineFormSuccess').style.display='block';}
-      else{btn.innerHTML=orig;btn.disabled=false;}
-    }catch{btn.innerHTML=orig;btn.disabled=false;}
-  });
-})();
-
-// Gallery slider
-var currentSlide=0,totalSlides=3;
-function goToSlide(n){currentSlide=n;var t=document.getElementById('sliderTrack');if(t)t.style.transform='translateX(-'+(n*100)+'%)';document.querySelectorAll('.slider-dot').forEach(function(d,i){d.classList.toggle('active',i===n);});}
-function nextSlide(){goToSlide((currentSlide+1)%totalSlides);}
-function prevSlide(){goToSlide((currentSlide-1+totalSlides)%totalSlides);}
-(function(){
-  var t=document.getElementById('sliderTrack');if(!t)return;
-  var sx=0;
-  t.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
-  t.addEventListener('touchend',function(e){var d=sx-e.changedTouches[0].clientX;if(Math.abs(d)>40){d>0?nextSlide():prevSlide();}},{passive:true});
-})();
-
-// Nav scroll
-(function(){
-  var nav=document.getElementById('nav');
-  window.addEventListener('scroll',function(){
-    if(window.scrollY>60){nav.style.background='rgba(10,10,10,0.92)';nav.style.backdropFilter='blur(24px)';nav.style.webkitBackdropFilter='blur(24px)';nav.style.borderBottom='1px solid rgba(255,255,255,0.07)';nav.style.padding='16px 56px';}
-    else{nav.style.background='';nav.style.backdropFilter='';nav.style.webkitBackdropFilter='';nav.style.borderBottom='';nav.style.padding='';}
-  },{passive:true});
-})();
-
-// Scroll reveal
-(function(){
-  var els=document.querySelectorAll('.reveal');
-  if(!('IntersectionObserver' in window))return;
-  els.forEach(function(el,i){el.classList.add('animate');el.style.transitionDelay=(i*0.05)+'s';});
-  var io=new IntersectionObserver(function(entries){entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:0,rootMargin:'0px 0px -30px 0px'});
-  els.forEach(function(el){io.observe(el);});
-})();
-
-// Cycling word
-(function(){
-  var words=['Professionally.','Differently.','Exceptionally.','Boldly.','Confidently.','Powerfully.'];
-  var idx=0,el=document.getElementById('cycleWord');
-  if(!el)return;
-  var wrap=el.parentElement;
-  wrap.setAttribute('data-reserve',words.reduce(function(a,b){return a.length>b.length?a:b;}));
-  el.classList.add('visible');
-  setInterval(function(){
-    el.classList.remove('visible');el.classList.add('fade-out');
-    setTimeout(function(){
-      idx=(idx+1)%words.length;el.textContent=words[idx];
-      el.classList.remove('fade-out');el.classList.add('fade-in');
-      requestAnimationFrame(function(){requestAnimationFrame(function(){el.classList.remove('fade-in');el.classList.add('visible');});});
-    },360);
-  },2800);
-})();
-</script>
-<!-- COOKIE CONSENT BANNER -->
-<style>
-.cookie-banner{position:fixed;left:24px;right:24px;bottom:24px;z-index:1000;max-width:480px;background:#141414;border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:26px 26px 22px;box-shadow:0 20px 60px rgba(0,0,0,.55);transform:translateY(140%);opacity:0;transition:transform .5s cubic-bezier(.22,.61,.36,1),opacity .5s ease;}
-.cookie-banner.show{transform:translateY(0);opacity:1;}
-.cookie-banner .cc-label{display:inline-block;font-family:'Syne',sans-serif;font-size:13px;font-weight:600;letter-spacing:.02em;color:#f0ede8;margin-bottom:10px;}
-.cookie-banner p{font-size:13px;line-height:1.65;color:rgba(240,237,232,.55);margin-bottom:18px;}
-.cookie-banner p a{color:#4da3ff;border-bottom:1px solid rgba(77,163,255,.3);padding-bottom:1px;}
-.cookie-banner p a:hover{color:#7ec0ff;}
-.cookie-actions{display:flex;gap:10px;flex-wrap:wrap;}
-.cc-btn{flex:1;min-width:120px;padding:11px 18px;border-radius:8px;font-family:'Outfit',sans-serif;font-size:13px;font-weight:500;letter-spacing:.02em;cursor:pointer;border:none;transition:background .25s,transform .2s,border-color .25s,color .25s;display:inline-flex;align-items:center;justify-content:center;gap:8px;}
-.cc-accept{background:#0057A8;color:#fff;}
-.cc-accept:hover{background:#0066cc;transform:translateY(-1px);}
-.cc-decline{background:transparent;color:rgba(240,237,232,.6);border:1px solid rgba(255,255,255,.14);}
-.cc-decline:hover{color:#f0ede8;border-color:rgba(255,255,255,.35);}
-@media(max-width:540px){.cookie-banner{left:16px;right:16px;bottom:16px;padding:22px 20px 18px;}}
-</style>
 <div class="cookie-banner" id="cookieBanner" role="dialog" aria-live="polite" aria-label="Cookie consent">
-  <span class="cc-label">Cookies</span>
-  <p>We use cookies to understand how visitors use our site and to improve it. Analytics cookies are only set with your consent. See our <a href="legal.html#cookies">Cookie Policy</a>.</p>
+  <div class="small-text">Cookies</div>
+  <p>We use analytics cookies to see how visitors use the site. They are only set with your consent. See our <a href="legal.html#cookies">Cookie Policy</a>.</p>
   <div class="cookie-actions">
     <button class="cc-btn cc-accept" id="cookieAccept">Accept</button>
     <button class="cc-btn cc-decline" id="cookieDecline">Decline</button>
   </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/SplitText.min.js"></script>
 <script>
 (function(){
-  var KEY="fm_cookie_consent";
-  var banner=document.getElementById("cookieBanner");
-  var acc=document.getElementById("cookieAccept");
-  var dec=document.getElementById("cookieDecline");
-  function stored(){try{return localStorage.getItem(KEY);}catch(e){return null;}}
-  function save(v){try{localStorage.setItem(KEY,v);}catch(e){}}
-  function hide(){banner.classList.remove("show");}
-  function show(){banner.classList.add("show");}
-  function accept(){
-    save("accepted"); hide();
-    if(window.gtag){gtag("consent","update",{"analytics_storage":"granted"});}
-    if(window.__loadGA){window.__loadGA();}
+  var html = document.documentElement;
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var hasGsap = !!(window.gsap && window.ScrollTrigger && window.SplitText);
+
+  /* Nav: mobile menu + scrolled border */
+  var nav = document.getElementById('nav');
+  var btn = nav.querySelector('.menu-button');
+  btn.addEventListener('click', function(){
+    var open = nav.classList.toggle('menu-open');
+    btn.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('.nav-menu a').forEach(function(a){ a.addEventListener('click', function(){ nav.classList.remove('menu-open'); btn.setAttribute('aria-expanded', false); }); });
+  var lightZones = Array.prototype.slice.call(document.querySelectorAll('.section.light, .footer-container'));
+  function navTheme(){
+    nav.classList.toggle('scrolled', window.scrollY > 20);
+    var probe = nav.offsetHeight / 2, light = false;
+    for (var k = 0; k < lightZones.length; k++){
+      var r = lightZones[k].getBoundingClientRect();
+      if (r.top <= probe && r.bottom >= probe){ light = true; break; }
+    }
+    nav.classList.toggle('nav-light', light);
   }
-  function decline(){ save("declined"); hide(); }
-  if(acc)acc.addEventListener("click",accept);
-  if(dec)dec.addEventListener("click",decline);
-  if(!stored()){ setTimeout(show,700); }
+  window.addEventListener('scroll', navTheme, {passive:true});
+  window.addEventListener('resize', navTheme);
+  navTheme();
+
+
+  /* Hero: rotating word (as on the old site) */
+  (function(){
+    var words = ['professionally.','differently.','exceptionally.','boldly.','confidently.','powerfully.'];
+    var el = document.getElementById('cycleWord'); if (!el) return;
+    el.parentElement.parentElement.setAttribute('data-reserve', words.reduce(function(a,b){ return a.length > b.length ? a : b; }));
+    var i = 0, motion = !window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    function next(){
+      el.classList.remove('visible'); el.classList.add('fade-out');
+      setTimeout(function(){
+        i = (i + 1) % words.length; el.textContent = words[i];
+        el.classList.remove('fade-out'); el.classList.add('fade-in');
+        requestAnimationFrame(function(){ requestAnimationFrame(function(){ el.classList.remove('fade-in'); el.classList.add('visible'); }); });
+      }, 360);
+    }
+    if (motion) setTimeout(function(){ setInterval(next, 2800); }, 4200);
+  })();
+
+  /* Services: switch active item by scroll position (works with or without GSAP) */
+  var holder = document.querySelector('.sticky-services-holder');
+  var items = document.querySelectorAll('.services-text');
+  var imgs = document.querySelectorAll('.services-images');
+  var current = 0;
+  function setService(i){
+    if (i === current) return; current = i;
+    items.forEach(function(el,n){ el.classList.toggle('active', n === i); });
+    imgs.forEach(function(el,n){ el.classList.toggle('active', n <= i); });
+  }
+  var mobileSvc = window.matchMedia('(max-width: 767px)').matches;
+  if (mobileSvc){
+    // move each image (and the video card) under its service so they stack as cards
+    items.forEach(function(item, n){
+      var m = imgs[n]; if (!m) return;
+      var box = document.createElement('div'); box.className = 'svc-m';
+      m.classList.add('active'); box.appendChild(m); item.appendChild(box);
+      item.classList.add('active');
+    });
+    document.documentElement.classList.add('svc-stacked');
+  }
+  function onServicesScroll(){
+    if (mobileSvc) return;
+    var r = holder.getBoundingClientRect();
+    var total = r.height - window.innerHeight;
+    var p = Math.min(1, Math.max(0, -r.top / total));
+    setService(Math.min(items.length - 1, Math.floor(p * items.length)));
+  }
+  window.addEventListener('scroll', onServicesScroll, {passive:true});
+  items.forEach(function(el,n){ el.addEventListener('mouseenter', function(){ setService(n); }); });
+
+  /* Drone cinematography card.
+     1st choice: self-hosted clip at images/cinematography.mp4 (most reliable, no YouTube UI).
+     Fallback: YouTube, muted, from START, with retries. Poster photo shows until playback starts. */
+  (function(){
+    var ID = 'ibjkk-RDi4c', START = 58, MP4 = 'images/cinematography.mp4';
+    var card = document.getElementById('cineCard');
+    if (!card) return;
+    var started = false, player = null, ytLoaded = false;
+
+    function showPlaying(){ card.classList.add('playing'); }
+
+    function tryMp4(){
+      var v = document.createElement('video');
+      v.muted = true; v.defaultMuted = true; v.loop = true; v.autoplay = true;
+      v.playsInline = true; v.setAttribute('playsinline',''); v.setAttribute('muted','');
+      v.preload = 'auto'; v.className = 'cine-mp4';
+      v.addEventListener('playing', showPlaying);
+      v.addEventListener('error', function(){ v.remove(); loadYouTube(); }, true);
+      var src = document.createElement('source'); src.src = MP4; src.type = 'video/mp4';
+      src.addEventListener('error', function(){ v.remove(); loadYouTube(); });
+      v.appendChild(src);
+      card.appendChild(v);
+      var pr = v.play(); if (pr && pr.catch) pr.catch(function(){});
+    }
+
+    function kick(){
+      if (!player || !player.getPlayerState) return;
+      var st = player.getPlayerState();
+      if (st !== YT.PlayerState.PLAYING){
+        player.mute();
+        if (player.getCurrentTime && player.getCurrentTime() < START - 1) player.seekTo(START, true);
+        player.playVideo();
+      }
+    }
+
+    function build(){
+      if (player) return;
+      player = new YT.Player('cineVideo', {
+        videoId: ID,
+        host: 'https://www.youtube-nocookie.com',
+        playerVars: {autoplay:1, mute:1, controls:0, start:START, playsinline:1, rel:0, disablekb:1, fs:0, iv_load_policy:3, modestbranding:1, origin: location.origin},
+        events: {
+          onReady: function(e){
+            var ifr = e.target.getIframe && e.target.getIframe();
+            if (ifr) ifr.setAttribute('allow','autoplay; encrypted-media; picture-in-picture');
+            e.target.mute(); e.target.seekTo(START, true); e.target.playVideo();
+            // retry a few times in case the first play call is ignored
+            [1500, 4000, 8000].forEach(function(t){ setTimeout(kick, t); });
+          },
+          onStateChange: function(e){
+            if (e.data === YT.PlayerState.PLAYING) showPlaying();
+            if (e.data === YT.PlayerState.ENDED){ e.target.seekTo(START, true); e.target.playVideo(); }
+            if (e.data === YT.PlayerState.CUED || e.data === YT.PlayerState.PAUSED) setTimeout(kick, 400);
+          }
+        }
+      });
+    }
+
+    function loadYouTube(){
+      if (ytLoaded) return; ytLoaded = true;
+      if (window.YT && window.YT.Player){ build(); return; }
+      var prev = window.onYouTubeIframeAPIReady;
+      window.onYouTubeIframeAPIReady = function(){ if (prev) prev(); build(); };
+      var t = document.createElement('script'); t.src = 'https://www.youtube.com/iframe_api';
+      document.head.appendChild(t);
+    }
+
+    function start(){ if (started) return; started = true; tryMp4(); }
+
+    // start early, and nudge the player whenever the services panel comes into view
+    if ('IntersectionObserver' in window){
+      var holder = document.querySelector('.sticky-services-holder');
+      new IntersectionObserver(function(en){
+        if (en[0].isIntersecting){ start(); kick(); }
+      }, {rootMargin:'1200px 0px'}).observe(holder);
+    } else { start(); }
+    document.addEventListener('visibilitychange', function(){ if (!document.hidden) kick(); });
+  })();
+
+  /* Logo grid: size every logo to the same visual weight (area), not the same height */
+  (function(){
+    function fit(img){
+      var cell = img.parentElement; if (!img.naturalWidth || !cell) return;
+      var cw = cell.clientWidth, r = img.naturalWidth / img.naturalHeight;
+      var area = cw * cw * 0.07;
+      var h = Math.sqrt(area / r), w = h * r;
+      var maxW = cw * 0.68, maxH = cw * 0.24;
+      if (w > maxW){ w = maxW; h = w / r; }
+      if (h > maxH){ h = maxH; w = h * r; }
+      img.style.maxWidth = 'none'; img.style.maxHeight = 'none';
+      img.style.width = Math.round(w) + 'px'; img.style.height = Math.round(h) + 'px';
+    }
+    var logos = document.querySelectorAll('.partner-logo');
+    function all(){ logos.forEach(fit); }
+    logos.forEach(function(img){ if (img.complete) fit(img); else img.addEventListener('load', function(){ fit(img); }); });
+    var t; window.addEventListener('resize', function(){ clearTimeout(t); t = setTimeout(all, 150); });
+  })();
+
+  /* Form */
+  var f = document.getElementById('contactForm');
+  f.addEventListener('submit', async function(e){
+    e.preventDefault();
+    var b = f.querySelector('button[type=submit]'); b.disabled = true;
+    try {
+      var res = await fetch(f.action, {method:'POST', body:new FormData(f), headers:{'Accept':'application/json'}});
+      if (res.ok){ f.style.display = 'none'; document.getElementById('formSuccess').style.display = 'block'; }
+      else { b.disabled = false; alert('Something went wrong. Please email info@franks-media.co.uk'); }
+    } catch(err){ b.disabled = false; alert('Something went wrong. Please email info@franks-media.co.uk'); }
+  });
+
+  /* Cookies */
+  var KEY = 'fm_cookie_consent', banner = document.getElementById('cookieBanner');
+  function stored(){ try { return localStorage.getItem(KEY); } catch(e){ return null; } }
+  function save(v){ try { localStorage.setItem(KEY, v); } catch(e){} }
+  document.getElementById('cookieAccept').addEventListener('click', function(){
+    save('accepted'); banner.classList.remove('show');
+    if (window.gtag) gtag('consent','update',{'analytics_storage':'granted'});
+    if (window.__loadGA) window.__loadGA();
+  });
+  document.getElementById('cookieDecline').addEventListener('click', function(){ save('declined'); banner.classList.remove('show'); });
+  function showCookies(){ if (!stored()) setTimeout(function(){ banner.classList.add('show'); }, 700); }
+
+  if (!hasGsap || reduce){ showCookies(); return; }
+
+  /* Motion */
+  html.classList.add('anim');
+  document.body.style.overflow = 'hidden';
+  var fontsReady = (document.fonts && document.fonts.ready) ? Promise.race([document.fonts.ready, new Promise(function(r){ setTimeout(r, 2500); })]) : Promise.resolve();
+  fontsReady.then(function(){
+    gsap.registerPlugin(ScrollTrigger, SplitText);
+
+    var wraps = gsap.utils.toArray('.content_img-wrap');
+    var media = document.getElementById('heroMedia');
+    var titleSplit = new SplitText('.hero-title .ht-lead', {type:'lines,words', mask:'lines'});
+
+    window.scrollTo(0,0);
+    var r = media.getBoundingClientRect();
+    gsap.set(wraps, {position:'fixed', top:0, left:0, width:window.innerWidth, height:window.innerHeight, zIndex:150, borderRadius:0});
+    gsap.set('.fixed', {yPercent:-100, backgroundColor:'rgba(10,10,10,0)'});
+    gsap.set('.nav-link-wrapper, .nav-cta', {y:-30, opacity:0});
+    gsap.set(titleSplit.words, {yPercent:110});
+    gsap.set('.cycle-inner', {yPercent:110});
+    gsap.set('.animate-on-load', {y:40, opacity:0});
+
+    var tl = gsap.timeline({onComplete:function(){
+      document.body.style.overflow = '';
+      var l = document.querySelector('.loader'); if (l) l.remove();
+      gsap.set('.fixed', {clearProps:'backgroundColor'});
+      ScrollTrigger.refresh();
+      showCookies();
+    }});
+
+    tl.to('.loader-bar', {width:'100%', duration:1.21, ease:'power2.inOut'}, 0.3)
+      .to('.loader-word', {opacity:0, duration:.5}, 1.5)
+      .to('.loader', {height:0, duration:.5, ease:'power3.inOut'}, 1.5)
+      .to(wraps, {
+        top:r.top, left:r.left, width:r.width, height:r.height, borderRadius:16,
+        duration:.9, ease:'power3.inOut',
+        stagger:{each:.22, from:'end'},
+        onComplete:function(){ gsap.set(wraps,{clearProps:'all'}); }
+      }, 1.85)
+      .to('.fixed', {yPercent:0, backgroundColor:'rgba(10,10,10,.92)', duration:.5, ease:'power3.out'}, 2.5)
+      .to('.nav-link-wrapper, .nav-cta', {y:0, opacity:1, duration:.25, stagger:.06}, 2.7)
+      .to(titleSplit.words, {yPercent:0, duration:.9, stagger:.05, ease:'power4.out'}, 2.6)
+      .to('.cycle-inner', {yPercent:0, duration:.9, ease:'power4.out'}, 2.75)
+      .to('.animate-on-load', {y:0, opacity:1, duration:.8, stagger:.08, ease:'power3.out'}, 2.9);
+
+    /* Scroll reveals */
+    gsap.utils.toArray('.fade-in-on-scroll').forEach(function(el){
+      gsap.from(el, {y:50, opacity:0, duration:.8, ease:'power3.out',
+        scrollTrigger:{trigger:el, start:'top 90%', once:true}});
+    });
+
+    /* Scrubbed word fade */
+    gsap.utils.toArray('.split-scrub').forEach(function(el){
+      var s = new SplitText(el, {type:'words'});
+      gsap.fromTo(s.words, {opacity:.2}, {opacity:1, ease:'none', stagger:.5, duration:.05,
+        scrollTrigger:{trigger:el, start:'top 85%', end:'bottom 45%', scrub:true}});
+    });
+
+    /* Partners */
+    gsap.from('.partner', {y:50, opacity:0, duration:.8, stagger:.08, ease:'power3.out',
+      scrollTrigger:{trigger:'.partner-grid', start:'top 85%', once:true}});
+
+
+  });
 })();
 </script>
 </body>
